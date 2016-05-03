@@ -330,7 +330,7 @@
   height: 100%;
 }
 .sapUiBusy {
-  background-image: url(img-RTL/Busy.gif);
+  background-image: url(../base/img-RTL/Busy.gif);
   display: block;
   width: 48px;
   height: 48px;
@@ -1129,7 +1129,7 @@ html.sap-tablet .sapUiSelectable {
   /* 	this overwrites the default position: fixed which extends the window when something rendered outside */
   position: absolute;
 }
-.sapUiMedia-Std-Desktop .sapUiBLy {
+html.sapUiMedia-Std-Desktop .sapUiBLy {
   position: fixed;
   /* otherwise UX3 shell would not work... */
 }
