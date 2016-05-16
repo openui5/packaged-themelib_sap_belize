@@ -3474,7 +3474,8 @@ html.sap-desktop .sapUiFioriObjectPage > section > .sapUiForm {
   background-color: #3f5161;
 }
 .sapUiForm .sapUiFormTitle {
-  border-width: 0.0625rem;
+  border-width: 1px;
+  border-color: #69859d;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   color: #fafafa;
@@ -3694,7 +3695,8 @@ html[data-sap-ui-browser^="ff"] .sapUiSizeCompact .sapUiFormEdit[aria-labelledby
 }
 /* Grid */
 .sapUiFormResGrid.sapUiFormBackgrTranslucent > div {
-  background-color: rgba(63, 81, 97, 0.8);
+  background-color: rgba(63, 81, 97, 0);
+  /*TODO Clean up SAPPHIRE workaround @sapUiTranslucentBGOpacity);*/
 }
 .sapUiFormResGrid.sapUiFormBackgrSolid > div {
   background-color: #3f5161;

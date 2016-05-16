@@ -1168,13 +1168,13 @@ html[data-sap-ui-browser^="cr"] .sapUiFupInputMask > input {
 .sapUiUfdShellHeadBegin .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:after {
   right: 0;
   border-right: 4px solid transparent;
-  border-left: 1px solid #bfbfbf;
+  border-left: 1px solid rgba(63, 81, 97, 0.2);
 }
 .sapUiUfdShellHeadUsrItm:before,
 .sapUiUfdShellHeadEnd .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:before {
   left: 0;
   border-left: 4px solid transparent;
-  border-right: 1px solid #bfbfbf;
+  border-right: 1px solid rgba(63, 81, 97, 0.2);
 }
 .sapUiUfdShellHeadItm > span,
 .sapUiUfdShellHeadUsrItm {
@@ -3358,7 +3358,7 @@ html[data-sap-ui-browser="ie9"] .sapUiUfdShellCurtain {
   padding-right: 10px;
 }
 .sapUiUfdShellOvrlyHeadClose:before {
-  background-color: #bfbfbf;
+  background-color: rgba(63, 81, 97, 0.2);
   content: " ";
   height: 76%;
   top: 12%;

@@ -120,6 +120,7 @@
 @sapNegativeTextColor:  @sapNegativeColor; // #bb0000
 @sapCriticalTextColor:  @sapCriticalColor; // #e78c07
 @sapPositiveTextColor:  @sapPositiveColor; // #2b7d2b
+@sapNeutralTextColor:   @sapNeutralColor; // #5e696e
 
 
 /* Semantic Foreground Colors */
@@ -526,7 +527,7 @@
 // [Label "Toolbar Separator Color"]
 // [Description "The color of a toolbar's separators."]
 // [Tags "Base", "Toolbar", "Color"]
-@sapToolbar_SeparatorColor: @sapPrimary6;
+@sapToolbar_SeparatorColor: fade(@sapPrimary1, 20);
 
 // [Label "List Header Background Color"]
 // [Description "The background color of the header area of lists."]
@@ -622,7 +623,7 @@
 // [Label "Page Footer Background Color"]
 // [Description "The background color of page footers."]
 // [Tags "Base", "Page", "Color"]
-@sapPageFooter_Background: darken(@sapBaseColor, 9);
+@sapPageFooter_Background: @sapPrimary4;
 
 // [Label "Page Footer Text Color"]
 // [Description "The color of texts on page footers."]

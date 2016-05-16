@@ -63,7 +63,7 @@
 .sapUiCalHeadBAddText {
   width: 100%;
   float: right;
-  color: #e8e8e8;
+  color: #dddddd;
   font-size: 0.625rem;
 }
 .sapUiCalHeadPrev,
@@ -184,13 +184,13 @@ html.sap-desktop .sapUiCalHead > button.sapUiCalDsbl:focus,
   position: absolute;
   left: 100%;
   width: 100%;
-  color: #e8e8e8;
+  color: #dddddd;
   font-size: 11px;
   cursor: default;
   pointer-events: none;
 }
 .sapUiCalWH {
-  color: #e8e8e8;
+  color: #dddddd;
   white-space: nowrap;
 }
 .sapUiCalItem {
@@ -266,7 +266,7 @@ html.sap-desktop .sapUiCalItem:focus {
   left: 0;
   height: 33%;
   width: 100%;
-  color: #e8e8e8;
+  color: #dddddd;
   overflow: hidden;
   white-space: nowrap;
   line-height: 100%;
@@ -290,7 +290,7 @@ html.sap-desktop .sapUiCalItem:focus {
   left: 0;
   height: 33%;
   width: 50%;
-  color: #e8e8e8;
+  color: #dddddd;
   overflow: hidden;
   white-space: nowrap;
   line-height: 100%;
@@ -305,7 +305,7 @@ html.sap-desktop .sapUiCalItem:focus {
 /* CSS for control sap.ui.unified/Legend.control */
 /* ============================================= */
 .sapUiUnifiedLegend {
-  color: #e8e8e8;
+  color: #dddddd;
   font-familiy: Arial, Helvetica, sans-serif;
   font-size: 11px;
   font-weight: normal;
@@ -537,7 +537,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:focus:not(:active) > .sap
 }
 .sapUiCalendarAppText {
   float: right;
-  color: #e8e8e8;
+  color: #dddddd;
   padding-bottom: 0.375rem;
 }
 .sapUiCalendarRowNow {
@@ -958,11 +958,11 @@ html[data-sap-ui-browser^="cr"] .sapUiFupInputMask > input {
 }
 .sapUiMnuItm.sapUiMnuTfItm .sapUiMnuTfItemTf.sapUiMnuTfItemTfEnbl.sapUiMnuTfItemTfErr {
   border-color: #ff8888;
-  background-color: #ffffff;
+  background-color: #550000;
 }
 .sapUiMnuItm.sapUiMnuTfItm .sapUiMnuTfItemTf.sapUiMnuTfItemTfEnbl.sapUiMnuTfItemTfWarn {
   border-color: #fabd64;
-  background-color: #ffffff;
+  background-color: #5c3803;
 }
 .sapUiMnuTfItmStretch {
   display: inline-block;
@@ -1173,13 +1173,13 @@ html[data-sap-ui-browser^="cr"] .sapUiFupInputMask > input {
 .sapUiUfdShellHeadBegin .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:after {
   left: 0;
   border-left: 4px solid transparent;
-  border-right: 1px solid #4f667a;
+  border-right: 1px solid rgba(239, 244, 249, 0.2);
 }
 .sapUiUfdShellHeadUsrItm:before,
 .sapUiUfdShellHeadEnd .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:before {
   right: 0;
   border-right: 4px solid transparent;
-  border-left: 1px solid #4f667a;
+  border-left: 1px solid rgba(239, 244, 249, 0.2);
 }
 .sapUiUfdShellHeadItm > span,
 .sapUiUfdShellHeadUsrItm {
@@ -2165,7 +2165,7 @@ html.sap-desktop .sapUiCalItemSelBetween:focus {
   line-height: 1rem;
   height: 1rem;
   font-size: 0.75rem;
-  color: #e8e8e8;
+  color: #dddddd;
   padding-top: 0.375rem;
 }
 .sapUiCalNoNameLine > .sapUiCalItems > .sapUiCalItem.sapUiCalItemSel:not(.sapUiCalItemSelBetween) > .sapUiCalDayName {
@@ -3363,7 +3363,7 @@ html[data-sap-ui-browser="ie9"] .sapUiUfdShellCurtain {
   padding-left: 10px;
 }
 .sapUiUfdShellOvrlyHeadClose:before {
-  background-color: #4f667a;
+  background-color: rgba(239, 244, 249, 0.2);
   content: " ";
   height: 76%;
   top: 12%;

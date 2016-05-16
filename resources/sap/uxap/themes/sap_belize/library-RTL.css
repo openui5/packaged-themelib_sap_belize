@@ -1579,7 +1579,7 @@ html.sapUiMedia-Std-Phone .sapUiSizeCompact.sapUxAPObjectPageHeaderLockBtn .sapM
   color: #346187;
 }
 .sapUxAPObjectPageHeaderSeparator {
-  background-color: #bfbfbf;
+  background-color: rgba(63, 81, 97, 0.2);
 }
 /* ================================================= */
 /* CSS for control sap.uxap/ObjectPageHeaderContent  */

@@ -235,15 +235,15 @@
   vertical-align: top;
   white-space: nowrap;
 }
-.sapUiTableVScr .sapUiTableColHdrScr {
-  margin-right: 16px;
-}
 .sapUiTableColHdrFixed {
   display: inline-block;
   vertical-align: top;
 }
 .sapUiTableVScr .sapUiTableCtrlScr {
   margin-right: 16px;
+}
+html[data-sap-ui-browser^="ed"] .sapUiTableVScr .sapUiTableCtrlScr {
+  margin-right: 12px;
 }
 .sapUiTable:not(.sapUiTableVScr) .sapUiTableColHdr .sapUiTableCol:last-child {
   border-right: none;
@@ -541,8 +541,8 @@ html[data-sap-ui-browser^="ie"] .sapUiTableVSb {
 html[data-sap-ui-browser^="ie"] .sapUiTableHSb {
   height: 18px;
 }
-.sapUiTableRSel .sapUiTableHSb {
-  padding-left: 25px;
+html[data-sap-ui-browser^="ed"] .sapUiTableHSb {
+  height: 12px;
 }
 .sapUiTableHScr .sapUiTableHSb {
   display: block;
@@ -550,6 +550,9 @@ html[data-sap-ui-browser^="ie"] .sapUiTableHSb {
 .sapUiTableVScr .sapUiTableHSb {
   margin-right: 16px;
   /* 17px */
+}
+html[data-sap-ui-browser^="ed"] .sapUiTableVScr .sapUiTableHSb {
+  margin-right: 12px;
 }
 /*******************************************************************************
  * CHILD CONTROL STYLES
@@ -567,15 +570,15 @@ html[data-sap-ui-browser^="ie"] .sapUiTableHSb {
 }
 .sapUiTableCell > .sapUiTf.sapUiTfErr.sapUiTfStd,
 .sapUiTableCell > .sapUiTfCombo.sapUiTfErr.sapUiTfStd {
-  background-color: #ffffff;
+  background-color: #550000;
 }
 .sapUiTableCell > .sapUiTf.sapUiTfWarn.sapUiTfStd,
 .sapUiTableCell > .sapUiTfCombo.sapUiTfWarn.sapUiTfStd {
-  background-color: #ffffff;
+  background-color: #5c3803;
 }
 .sapUiTableCell > .sapUiTf.sapUiTfSucc.sapUiTfStd,
 .sapUiTableCell > .sapUiTfCombo.sapUiTfSucc.sapUiTfStd {
-  background-color: #ffffff;
+  background-color: #174417;
 }
 .sapUiTableCell > .sapUiTfCombo {
   padding: 0 8px 0 0;
@@ -865,7 +868,7 @@ html[data-sap-ui-browser^="ie"] .sapUiTableColHdrCnt {
 .sapUiAnalyticalTable .sapUiTableRowHdr.sapUiAnalyticalTableDummy {
   font-size: 14px;
   line-height: 28px;
-  color: #e8e8e8;
+  color: #dddddd;
 }
 .sapUiAnalyticalTable .sapUiTableColRsz {
   z-index: 3;

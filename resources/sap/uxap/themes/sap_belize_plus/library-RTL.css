@@ -1430,7 +1430,7 @@ html[data-sap-ui-animation="off"].sapUiMedia-Std-Desktop .sapUxAPAnchorBar.sapUx
   background-color: transparent;
 }
 .sapUxAPBreadCrumbs .sapMSlt .sapMSltLabel {
-  color: #e8e8e8;
+  color: #dddddd;
 }
 .sapUxAPBreadCrumbs .sapMSltPressed > .sapMSltArrow::before {
   color: #cae4fb;
@@ -1553,7 +1553,7 @@ html[data-sap-ui-browser^="cr4"].sap-phone .sapUxAPHierarchicalSelect .sapMSltLa
 }
 .sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderIdentifierDescription {
   font-size: 0.875rem;
-  color: #e8e8e8;
+  color: #dddddd;
 }
 .sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderIdentifierActions.sapUxAPObjectPageHeaderIdentifierActionsForce,
 .sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderIdentifierActions {
@@ -1584,7 +1584,7 @@ html.sapUiMedia-Std-Phone .sapUiSizeCompact.sapUxAPObjectPageHeaderLockBtn .sapM
   color: #cae4fb;
 }
 .sapUxAPObjectPageHeaderSeparator {
-  background-color: #4f667a;
+  background-color: rgba(239, 244, 249, 0.2);
 }
 /* ================================================= */
 /* CSS for control sap.uxap/ObjectPageHeaderContent  */
@@ -1632,10 +1632,10 @@ html.sapUiMedia-Std-Tablet .sapUxAPObjectPageHeaderContent .sapUxAPObjectPageHea
   font-size: 0.75rem;
 }
 .sapUxAPObjectPageHeaderDetails .sapMOHTitle .sapMText {
-  color: #e8e8e8;
+  color: #dddddd;
 }
 .sapUxAPObjectPageHeaderDetails .sapMLabel {
-  color: #e8e8e8;
+  color: #dddddd;
 }
 .sapUxAPObjectChildPage {
   background: #2f3c48;
