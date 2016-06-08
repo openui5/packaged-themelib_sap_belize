@@ -1131,6 +1131,12 @@ html.sap-desktop .sapMDialog {
 .sapUiPopupWithPadding .sapMDialogScrollCont {
   padding: 1rem;
 }
+.sapUiPopupWithPadding .sapMDialogScrollCont.sapMDialogStretchContent {
+  height: calc(100% - 2 *  1rem);
+}
+.sapMDialogScrollCont.sapMDialogStretchContent {
+  height: 100%;
+}
 /* messagedialog always has content padding */
 .sapMMessageDialog .sapMDialogScrollCont {
   box-sizing: border-box;
@@ -1467,9 +1473,15 @@ html[data-sap-ui-animation='off'] .sapMDialogBlockLayerAnimation {
   height: 100%;
   position: relative;
 }
+.sapMDynamicPageFixedContent .sapMDynamicPageContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .sapMDynamicPageContent {
   padding-top: 1rem;
-  background: #3f5161;
 }
 .sapMDynamicPageFooterSpacer .sapMDynamicPageContent {
   margin-bottom: 4rem;
@@ -1478,16 +1490,19 @@ html[data-sap-ui-animation='off'] .sapMDialogBlockLayerAnimation {
   margin-bottom: 3.5rem;
 }
 .sapMDynamicPageContent {
-  padding-right: 3rem;
-  padding-left: 3rem;
-}
-.sapMDynamicPage-Std-Tablet .sapMDynamicPageContent {
   padding-right: 2rem;
   padding-left: 2rem;
+  padding-bottom: 1rem;
 }
-.sapMDynamicPage-Std-Phone .sapMDynamicPageContent {
+.sapMDynamicPage-Std-Tablet .sapMDynamicPageContent {
   padding-right: 1rem;
   padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+.sapMDynamicPage-Std-Phone .sapMDynamicPageContent {
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
 }
 .sapMDynamicPageContentWrapper {
   width: 100%;
@@ -1496,6 +1511,7 @@ html[data-sap-ui-animation='off'] .sapMDialogBlockLayerAnimation {
   overflow-y: auto;
   will-change: transform;
   -webkit-overflow-scrolling: touch;
+  background: #3f5161;
 }
 .sapMDynamicPageSupressScroll .sapMDynamicPageContentWrapper {
   overflow: hidden;
@@ -1536,11 +1552,16 @@ html[data-sap-ui-animation='off'] .sapMDialogBlockLayerAnimation {
   bottom: 0;
   right: 0;
   left: 0;
-  border: 1px solid;
   border-radius: 0.25rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+}
+.sapMDynamicPage.sapMDynamicPageFixedContent .sapMDynamicPageFooter {
+  position: relative;
+}
+.sapMDynamicPage.sapMDynamicPageFixedContent .sapMDynamicPageFooter .sapMDynamicPageActualFooterControl {
+  bottom: 3rem;
 }
 .sapUiSizeCompact .sapMDynamicPage .sapMDynamicPageFooter .sapMDynamicPageActualFooterControl {
   height: 2.5rem;
@@ -1643,6 +1664,7 @@ html[data-sap-ui-animation='on'] .sapMDynamicPage .sapMDynamicPageActualFooterCo
 }
 .sapMDynamicPageTitle {
   z-index: 2;
+  height: 3rem;
   position: relative;
   padding: 0 2rem 0 3rem;
   display: flex;
@@ -1732,16 +1754,19 @@ html[data-sap-ui-animation='on'] .sapMDynamicPage .sapMDynamicPageActualFooterCo
   z-index: 2;
   position: relative;
   overflow: hidden;
-  padding: 1rem 3rem;
+  padding: 0 3rem 1rem 3rem;
 }
 .sapMDynamicPageHeader:focus {
   outline: none;
 }
+.sapMDynamicPageHeaderHidden {
+  display: none;
+}
 .sapMDynamicPage-Std-Tablet .sapMDynamicPageHeader {
-  padding: 1rem 2rem;
+  padding: 0 2rem 1rem 2rem;
 }
 .sapMDynamicPage-Std-Phone .sapMDynamicPageHeader {
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 .sapUiSizeCompact .sapMDynamicPageHeader {
   padding: 1rem 3rem;
@@ -2725,7 +2750,7 @@ html.sap-phone .sapMITBScrollContainer {
   height: 0.625rem;
 }
 .sapMITBInLine.sapMITBTextOnly > .sapMITBVertical.sapMITBFilter > .sapMITBText + .sapMITBContentArrow {
-  height: 0.75rem;
+  height: 0.8125rem;
 }
 html.sap-phone :not(.sapMITBInLine).sapMITBTextOnly > .sapMITBVertical.sapMITBFilter > .sapMITBText + .sapMITBContentArrow {
   height: 0.5rem;
@@ -2779,7 +2804,7 @@ html.sap-phone .sapMITBContent {
 }
 .sapMITBTextOnly .sapMITBTab {
   height: 1rem;
-  padding: 0.5rem 0 0.375rem 0;
+  padding: 0.5625rem 0 0.3125rem 0;
   text-align: left;
   width: auto;
 }
@@ -3412,6 +3437,7 @@ td.sapUiFormElementLbl > .sapMLabel {
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: normal;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .sapMLnk:active {
   background-color: transparent;
@@ -3474,6 +3500,10 @@ td.sapUiFormElementLbl > .sapMLabel {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.sapMListDummyArea {
+  position: fixed;
+  /* keep it in the visible viewport, so that IE does not scroll on focus */
 }
 /* swipe animations */
 @-webkit-keyframes sapMListSwpInAnim {
@@ -3549,6 +3579,9 @@ td.sapUiFormElementLbl > .sapMLabel {
   display: block;
   text-align: center;
   overflow: hidden;
+}
+.sapMGrowingListDescription {
+  display: none;
 }
 .sapMGrowingListBusyIndicatorVisible .sapMGrowingListTriggerText,
 .sapMGrowingListBusyIndicatorVisible .sapMGrowingListDescription {
@@ -4854,6 +4887,7 @@ html[dir=rtl] .sapMNCValueScr {
   .sapMNCIconImage {
     font-size: 1.5rem;
     height: 1.5rem;
+    line-height: 1.4rem;
     width: 1.5rem;
     margin-top: 0.375rem;
     padding-right: 0.5rem;
@@ -6855,7 +6889,7 @@ html.sap-tablet .sapMQuickViewPage > section {
 .sapMQuickViewPage .sapUiVlt .sapMText {
   font-weight: normal;
 }
-.sapMQuickViewPage .sapUiFormResGrid > div {
+.sapMQuickViewPage .sapUiFormResGrid.sapUiFormBackgrTranslucent > div {
   background-color: transparent;
 }
 .sapMQuickViewPage .sapUiSimpleForm .sapMTitle {
@@ -6884,9 +6918,11 @@ html.sap-tablet .sapMQuickViewPage > section {
   margin-bottom: 2rem;
 }
 .sapMQuickViewCard .sapUiHLayout,
-.sapMQuickViewCard .sapUiHLayoutChildWrapper,
 .sapMQuickViewCard .sapUiVlt {
   display: block;
+}
+.sapMQuickViewCard .sapUiHLayoutChildWrapper:only-child {
+  width: 100%;
 }
 html.sap-phone .sapMQuickViewPage .sapUiHLayout {
   margin: 1rem 0 0 0.75rem;
@@ -7412,6 +7448,14 @@ html[data-sap-ui-os^="Android"] .sapUiSizeCompact .sapMSegBBtn .sapUiIcon {
   width: auto;
   opacity: 0;
 }
+/* ------------------------------ */
+/* table context                  */
+/* ------------------------------ */
+.sapUiTableCell .sapMSlt,
+.sapUiSizeCondensed .sapUiTableCell .sapMSlt,
+.sapUiSizeCompact .sapUiTableCell .sapMSlt {
+  margin: 0;
+}
 /* ============================================= */
 /* CSS for control sap.m/SelectDialog.control    */
 /* ============================================= */
@@ -7771,6 +7815,15 @@ html.sap-tablet .sapMGTHvrOutln:active {
 }
 .sapMST .sapMGT {
   border: none;
+}
+.sapMSTFocusDiv {
+  position: absolute;
+  pointer-events: none;
+  left: 1px;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  border-radius: 0.25rem;
 }
 /* BREAKPOINT FOR SMALL PHONES */
 @media screen and (max-width: 374px) {
@@ -11071,10 +11124,10 @@ html[dir=rtl][data-sap-ui-browser^=ed] .sapMActionSheetButton > .sapMBtnInner {
 .sapMActionSheetDialog .sapMBtnReject > .sapMBtnInner {
   border-bottom: none;
 }
-.sapMActionSheetDialog .sapMActionSheetCancelButton > .sapMBtnInner {
+.sapMActionSheetDialog .sapMActionSheetButton.sapMActionSheetCancelButton > .sapMBtnInner {
   text-align: center;
 }
-.sapMActionSheetDialog .sapMActionSheetCancelButton > .sapMBtnInner {
+.sapMActionSheetDialog .sapMActionSheetButton.sapMActionSheetCancelButton > .sapMBtnInner {
   box-shadow: none;
   font-weight: normal;
   border-radius: 0;
@@ -12410,6 +12463,9 @@ html.sap-desktop .sapMFC:focus {
   outline: 1px dotted #ffffff;
   /* Usage of px as aligned with designers. */
 }
+html.sap-desktop .sapMFC:focus:not([tabindex]) {
+  outline: none;
+}
 /* ================================ */
 /* CSS for control sap.m/FeedInput  */
 /* Belize theme                     */
@@ -12699,7 +12755,7 @@ html.sap-phone .sapMFeedListItemTimestamp {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
-  color: #666666;
+  color: #dddddd;
 }
 .sapMGTHdrIconImage {
   font-family: Arial, Helvetica, sans-serif;
@@ -12714,21 +12770,52 @@ html.sap-phone .sapMFeedListItemTimestamp {
 .sapMGenericTileFtrFldTxt {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
-  color: #666666;
+  color: #dddddd;
 }
 .sapMGenericTileFtrFldIcn {
-  color: #666666;
+  color: #dddddd;
 }
-html.sap-desktop .sapMGT:hover,
-html.sap-phone .sapMGTHvrOutln:active,
-html.sap-tablet .sapMGTHvrOutln:active,
-html.sap-phone .sapMGTBackgroundHvrOutln:active,
-html.sap-tablet .sapMGTBackgroundHvrOutln:active {
-  box-shadow: 0 0 0.125rem 0 rgba(255, 255, 255, 0.3), 0 0 0 0.25rem #ffffff;
+html.sap-desktop .sapMGTWithoutImageHoverOverlay,
+html.sap-desktop .sapMGTWithImageHoverOverlay {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: background 0.2s;
+}
+html.sap-phone .sapMGTWithoutImageHoverOverlay,
+html.sap-phone .sapMGTWithImageHoverOverlay,
+html.sap-tablet .sapMGTWithoutImageHoverOverlay,
+html.sap-tablet .sapMGTWithImageHoverOverlay {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+html.sap-desktop .sapMGTWithoutImageHoverOverlay.sapMGTPressActive,
+html.sap-phone .sapMGTWithoutImageHoverOverlay.sapMGTPressActive,
+html.sap-tablet .sapMGTWithoutImageHoverOverlay.sapMGTPressActive {
+  background: rgba(239, 244, 249, 0.08) !important;
+}
+html.sap-desktop .sapMGTWithImageHoverOverlay.sapMGTPressActive,
+html.sap-phone .sapMGTWithImageHoverOverlay.sapMGTPressActive,
+html.sap-tablet .sapMGTWithImageHoverOverlay.sapMGTPressActive {
+  background: rgba(239, 244, 249, 0.22) !important;
+}
+html.sap-desktop .sapMGT:hover .sapMGTWithoutImageHoverOverlay:not(.sapMGTWithoutImagePressActive) {
+  background: rgba(239, 244, 249, 0.04);
+}
+html.sap-desktop .sapMGT:hover .sapMGTWithImageHoverOverlay:not(.sapMGTWithImagePressActive) {
+  background: rgba(239, 244, 249, 0.18);
 }
 html.sap-desktop .sapMGT:focus .sapMGTFocusDiv {
   border: 1px solid #ffffff;
 }
+/* This part is used to achieve dotted white black interlace border*/
 html.sap-desktop .sapMGT:focus .sapMGTFocusDiv:after {
   content: "";
   position: absolute;
@@ -12738,7 +12825,7 @@ html.sap-desktop .sapMGT:focus .sapMGTFocusDiv:after {
   right: 0;
   border-radius: 0.25rem;
   margin: -1px;
-  border: 1px dotted #000000;
+  border: 1px dotted #ffffff;
 }
 html.sap-desktop .sapMGT:focus:not([tabindex]) {
   border-color: transparent;
@@ -12782,6 +12869,9 @@ html.sap-desktop .sapMGT:focus:not([tabindex]) {
 /* Belize theme                      */
 /* ================================= */
 /* Head Container */
+.sapMITH {
+  box-shadow: inset 0 -0.25rem 0 -0.125rem #2f3c48;
+}
 .sapMITBHead {
   font-size: 0.75rem;
   padding: 1px 1px 0 1px;
@@ -12813,8 +12903,6 @@ html.sap-desktop .sapMGT:focus:not([tabindex]) {
 }
 .sapMITBContainerContent {
   border-bottom: 0.0625rem solid #536b80;
-  border-top: 0.0625rem solid #536b80;
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05);
 }
 /* Tab Item */
 .sapMITBItem {
@@ -12954,7 +13042,7 @@ html.sap-desktop .sapMImageContent:focus {
   outline-style: dotted;
   outline-width: 1px;
 }
-.sapMImageContent:focus:not([tabindex]) {
+html.sap-desktop .sapMImageContent:focus:not([tabindex]) {
   outline: none;
 }
 .sapMImageContentImageIcon.sapUiIcon {
@@ -14027,21 +14115,20 @@ html.sap-phone .sapMListInsetBG > .sapMListSwp {
 /* Growing feature */
 .sapMGrowingListTrigger {
   border-top: 1px solid #4d6377;
-  height: 5.0rem;
 }
 .sapMGrowingListBusyIndicator {
   margin: 1.5rem 1.0rem ;
   position: absolute;
 }
 .sapMGrowingListTriggerText {
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 .sapMGrowingListTriggerText > .sapMSLITitle {
   margin: 0.813rem 0;
-  /* overwrites any user-agent default margin values */
+  padding-bottom: 0;
 }
 .sapMGrowingListDescription {
-  padding: 0 4rem;
+  padding: 0.375rem 2rem 0.875rem 2rem;
   text-align: center;
 }
 /* Compact size */
@@ -14055,14 +14142,8 @@ html.sap-phone .sapMListInsetBG > .sapMListSwp {
 .sapUiSizeCompact .sapMTB.sapMListHdrTBar {
   height: 3rem;
 }
-.sapUiSizeCompact .sapMGrowingListTrigger {
-  height: 4rem;
-}
-.sapUiSizeCompact .sapMGrowingListTrigger > .sapMGrowingListBusyIndicator {
-  margin: 1rem;
-}
-.sapUiSizeCompact .sapMGrowingListTriggerText > .sapMSLITitle {
-  margin-bottom: 0;
+.sapUiSizeCompact .sapMGrowingListDescription {
+  padding-top: 0;
 }
 /* =================================== */
 /* CSS for control sap.m/ListItemBase  */
@@ -17122,8 +17203,6 @@ div.sapMSltPicker .sapMDialogScrollCont {
 /* ------------------------------ */
 .sapUiSizeCondensed .sapUiTableCell .sapMSlt {
   height: 1.5rem;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 /* ------------------------------ */
 /* Select in the Table            */
@@ -17311,10 +17390,20 @@ html.sap-desktop .sapMSliderHandle:focus {
 .sapMST {
   box-shadow: 0 0 0.125rem 0 rgba(63, 81, 97, 0.3);
 }
-html.sap-desktop .sapMST:hover,
-html.sap-tablet .sapMSTHvr:active,
-html.sap-phone .sapMSTHvr:active {
-  box-shadow: 0 0 0.125rem 0 rgba(63, 81, 97, 0.3), 0 0 0 0.25rem #ffffff;
+html.sap-desktop .sapMST:focus .sapMSTFocusDiv {
+  border: 1px solid #ffffff;
+}
+/* This part is used to achieve dotted white black interlace border*/
+html.sap-desktop .sapMST:focus .sapMSTFocusDiv:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.25rem;
+  margin: -1px;
+  border: 1px dotted #ffffff;
 }
 /* ===================================== */
 /* CSS for control sap.m/SplitContainer  */
@@ -17399,15 +17488,13 @@ html.sap-phone .sapMSTHvr:active {
 html[data-sap-ui-browser*='ie1'] .sapMSLIDiv {
   width: 100%;
 }
-.sapMSLIImg,
-.sapMSLIImgFirst {
+.sapMSLIImg {
   margin: 0.5rem 0.75rem 0.5rem 0rem;
   height: 2rem;
   width: 2rem;
 }
 .sapMSLIImgThumb,
 .sapMSLIImgIcon,
-.sapMSLIImgFirstIcon,
 .sapMSLIImgThumbIcon {
   width: 3rem;
   height: 3rem;
@@ -17420,8 +17507,7 @@ html[data-sap-ui-browser*='ie1'] .sapMSLIDiv {
 .sapMSLIImgThumb {
   margin-right: 0.75rem;
 }
-.sapMSLIImgIcon,
-.sapMSLIImgFirstIcon {
+.sapMSLIImgIcon {
   font-size: 1.375rem;
   color: #cae4fb;
   margin-left: -1rem;
@@ -17509,7 +17595,6 @@ html[data-sap-ui-browser*='ie1'] .sapMSLIDiv {
   height: 2rem;
 }
 .sapUiSizeCompact .sapMSLIImgIcon,
-.sapUiSizeCompact .sapMSLIImgFirstIcon,
 .sapUiSizeCompact .sapMSLIImgThumbIcon {
   height: 2rem;
   line-height: 2rem;
@@ -18239,7 +18324,7 @@ html.sap-phone .sapMTSSlt.sapMSltPressed.sapMSltIconOnly:not(.sapMSltDisabled) {
 .sapMTileCntFtrTxt {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
-  color: #666666;
+  color: #dddddd;
 }
 .sapMTileCnt.News {
   background-color: rgba(60, 158, 239, 0.85);
@@ -18547,6 +18632,7 @@ html.sap-desktop .sapMToken:hover {
   border: 1px solid #79bcf4;
   border-radius: 0.125rem;
 }
+html.sap-desktop .sapMToken.sapMTokenSelected:hover,
 .sapMToken.sapMTokenSelected:hover {
   background: #79bcf4;
   border: 1px solid #79bcf4;
