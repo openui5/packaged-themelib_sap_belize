@@ -4,7 +4,7 @@
 /* ================================ */
 
 .sapMST {
-	box-shadow: 0 0 0.125rem 0 fade(@sapUiTileBorderColor, 30);
+	box-shadow: @sapUiShadowLevel0;
 }
 
 html.sap-desktop .sapMST:focus .sapMSTFocusDiv {
@@ -22,4 +22,23 @@ html.sap-desktop .sapMST:focus .sapMSTFocusDiv:after {
 	border-radius: 0.25rem;
 	margin: -1px;
 	border: 1px dotted @sapUiContentFocusColor;
+}
+
+/* Bulleted indicator of multiple tiles*/
+.sapMSTBulleted > span {
+	background-color: @sapUiContentNonInteractiveIconColor;
+	box-shadow: 0 0 0.25rem fade(@sapUiContentShadowColor, 25);
+}
+
+.sapMSTBulleted > span.sapMSTActive {
+	background-color: lighten(@sapUiContentNonInteractiveIconColor, 45);
+	box-shadow: 0 0 0.25rem fade(@sapUiContentShadowColor, 25);
+}
+
+.sapMST .sapMSTIconDisplayArea {
+	background-color: darken(@sapUiHighlight, 18);
+}
+
+.sapMST.sapMSTIconPressed .sapMSTIconClickTapArea:hover ~.sapMSTIconDisplayArea {
+	background-color: @sapUiHighlight;
 }
