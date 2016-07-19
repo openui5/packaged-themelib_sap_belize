@@ -152,6 +152,9 @@
 .sapTntToolHeaderPopover.sapMOTAPopover.sapMPopover .sapMPopoverCont .sapMPopoverScroll .sapMBtn {
   padding: 0;
 }
+.sapTntToolHeader.sapMTB {
+  height: 3rem;
+}
 /* ==========================================================================
    CSS for control sap.tnt.SideNavigation
    ========================================================================== */
@@ -420,7 +423,7 @@ html:not([data-sap-ui-animation='off']) .sapTntToolPageAside {
 }
 /* Compact size */
 .sapUiSizeCompact .sapTntToolPageHeader {
-  height: 2rem;
+  height: 3rem;
 }
 .sapUiSizeCompact .sapTntToolPageAsideFooter {
   height: 2rem;
@@ -520,6 +523,8 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
 }
 .sapTntNavLIItem {
   background-color: #ffffff;
+}
+.sapTntNavLIItem > .sapMText {
   color: #333333;
 }
 .sapTntNavLIItem > .sapUiIcon {
@@ -528,11 +533,16 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
 .sapTntNavLIItem:not(.sapTntNavLIItemDisabled):hover {
   background-color: #f0f0f0;
 }
-.sapTntNavLIItem:not(.sapTntNavLIItemDisabled):active {
+.sapTntNavLI .sapTntNavLIGroup.sapTntNavLIItem:not(.sapTntNavLIItemDisabled):active,
+.sapTntNavLI .sapTntNavLIGroupItem.sapTntNavLIItem:not(.sapTntNavLIItemDisabled):active {
   background-color: #427cac;
+}
+.sapTntNavLI .sapTntNavLIGroup.sapTntNavLIItem:not(.sapTntNavLIItemDisabled):active > .sapMText,
+.sapTntNavLI .sapTntNavLIGroupItem.sapTntNavLIItem:not(.sapTntNavLIItemDisabled):active > .sapMText {
   color: #ffffff;
 }
-.sapTntNavLIItem:not(.sapTntNavLIItemDisabled):active > .sapUiIcon {
+.sapTntNavLI .sapTntNavLIGroup.sapTntNavLIItem:not(.sapTntNavLIItemDisabled):active > .sapUiIcon,
+.sapTntNavLI .sapTntNavLIGroupItem.sapTntNavLIItem:not(.sapTntNavLIItemDisabled):active > .sapUiIcon {
   color: #ffffff;
 }
 .sapTntNavLIItemSelected .sapTntNavLIItem,
@@ -569,11 +579,13 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
 /* CSS for control sap.tnt/ToolHeader  */
 /* Belize theme                        */
 /* =================================== */
-/*.sapTntToolHeader.sapMTB {
-	background-color: darken(@sapUiPageHeaderBackground, 8);
-	border: 1px solid darken(@sapUiPageHeaderBorderColor, 8);
+.sapTntToolHeader.sapMTB {
+  background-color: #d1e0ee;
+  border: 1px solid #b4cbe3;
 }
-*/
+.sapTntToolHeaderPopover.sapMOTAPopover.sapMPopover {
+  background-color: #d1e0ee;
+}
 /* ======================================= */
 /* CSS for control sap.tnt/SideNavigation  */
 /* Belize theme                            */
@@ -601,6 +613,7 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
 }
 .sapTntSideNavigationScrollIcon:not(.sapTntSideNavigationScrollIconDisabled):active {
   background-color: #427cac;
+  color: #ffffff;
 }
 /* ================================= */
 /* CSS for control sap.tnt/ToolPage  */
