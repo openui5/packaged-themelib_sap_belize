@@ -14,7 +14,7 @@
 /* Shared CSS for 'base' theme */
 .sapUiBody {
   background-color: #fafafa;
-  color: #000000;
+  color: #333333;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -22,7 +22,7 @@
 }
 .sapUiArea {
   background-color: #fafafa;
-  color: #000000;
+  color: #333333;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
@@ -38,7 +38,7 @@
   top: -10000px;
   background-color: #fafafa;
   /* repeat the body style in case the application adapts it */
-  color: #000000;
+  color: #333333;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
@@ -661,16 +661,16 @@ Usage:
 }
 .sapThemeText,
 .sapThemeText-asColor {
-  color: #000000;
+  color: #333333;
 }
 .sapThemeText-asBackgroundColor {
-  background-color: #000000;
+  background-color: #333333;
 }
 .sapThemeText-asBorderColor {
-  border-color: #000000;
+  border-color: #333333;
 }
 .sapThemeText-asOutlineColor {
-  outline-color: #000000;
+  outline-color: #333333;
 }
 .sapThemeTextInverted,
 .sapThemeTextInverted-asColor {
@@ -741,7 +741,7 @@ Usage:
 }
 .sapUiTInfMList {
   font-size: 0.9em;
-  color: #999999;
+  color: #cccccc;
   overflow-y: auto;
   max-height: 12em;
 }
@@ -784,7 +784,7 @@ Usage:
 }
 .sapUiTInfPList {
   font-size: 0.75em;
-  color: #999999;
+  color: #cccccc;
   background: white;
   overflow-y: scroll;
   max-height: 30em;
@@ -1026,9 +1026,9 @@ html.sapUiMedia-Std-Desktop .sapUiBLy {
   right: 0;
   opacity: 1;
   background-image: none;
-  background-repeat: repeat;
-  background-position: left top;
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /* hide this background image if a background is configured somewhere above */
 .sapUiGlobalBackgroundColor * > .sapUiGlobalBackgroundImage {
@@ -1049,9 +1049,9 @@ html.sapUiMedia-Std-Desktop .sapUiBLy {
 .sapUiBody {
   background-color: #fafafa;
   background-image: none;
-  background-repeat: repeat;
-  background-position: left top;
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .sapUiBody {
   background-attachment: fixed;

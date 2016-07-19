@@ -189,11 +189,11 @@ html.sap-desktop .sapUiCalHead > button.sapUiCalDsbl:focus,
   white-space: nowrap;
 }
 .sapUiCalItem {
-  color: #000000;
+  color: #333333;
   background-color: #f2f2f2;
 }
 .sapUiCalItemDsbl {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(51, 51, 51, 0.5);
   background-color: rgba(242, 242, 242, 0.5);
 }
 html.sap-desktop .sapUiCalItem:focus {
@@ -209,7 +209,7 @@ html.sap-desktop .sapUiCalItem:focus {
   margin-right: 0;
 }
 .sapUiCalItemOtherMonth {
-  color: #cccccc;
+  color: rgba(51, 51, 51, 0.5);
 }
 .sapUiCalItemNow {
   color: #427cac;
@@ -347,7 +347,7 @@ html.sap-desktop .sapUiCalItem:focus {
 /* ================================================== */
 .sapUiCalendarRow {
   background-color: #ffffff;
-  border: 0.0625rem solid #e6e6e6;
+  border: 0.0625rem solid #e5e5e5;
   box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -377,7 +377,7 @@ html.sapUiMedia-Std-Phone .sapUiCalendarRowWithHead > .sapUiCalendarRowApps {
   /* to inherit to subintervals - to be overwritten for fix heights*/
   border-width: 0 0.0625rem 0 0.0625rem;
   border-style: solid;
-  border-color: #e6e6e6;
+  border-color: #e5e5e5;
   box-sizing: border-box;
   float: right;
   cursor: default;
@@ -386,7 +386,7 @@ html.sapUiMedia-Std-Phone .sapUiCalendarRowWithHead > .sapUiCalendarRowApps {
   height: calc(100% - 1.75rem);
   border-width: 0 0 0 0.0625rem;
   border-style: solid;
-  border-color: #e6e6e6;
+  border-color: #e5e5e5;
   box-sizing: border-box;
   float: right;
 }
@@ -439,7 +439,7 @@ html.sapUiMedia-Std-Phone .sapUiCalendarRowWithHead > .sapUiCalendarRowApps {
   box-sizing: border-box;
   position: absolute;
   height: 3rem;
-  color: #000000;
+  color: #333333;
   background-color: #ffffff;
   border-right: 0.25rem solid #bfbfbf;
   outline: none;
@@ -800,6 +800,10 @@ html[dir=rtl][data-sap-ui-browser^="ed"] .sapUiUfdCurrencyValue {
   /* to make the field high enough for most themes; for themes with very large fonts this needs to be increased further */
   width: 5000px;
 }
+.sapUiFupInputMask > input[disabled],
+.sapUiFupInputMask > input:disabled {
+  cursor: default;
+}
 html[data-sap-ui-browser^="ie"] .sapUiFup > form input {
   display: block;
 }
@@ -847,7 +851,7 @@ html[data-sap-ui-browser^="cr"] .sapUiFupInputMask > input {
 .sapUiMnuItm.sapUiMnuItmDsbl,
 .sapUiMnuItm.sapUiMnuTfItm.sapUiMnuItmDsbl .sapUiMnuTfItemLbl,
 .sapUiMnuItm.sapUiMnuTfItm.sapUiMnuItmDsbl.sapUiMnuItmHov .sapUiMnuTfItemLbl {
-  color: #cccccc;
+  color: rgba(51, 51, 51, 0.5);
 }
 .sapUiMnuItm.sapUiMnuItmHov {
   color: #ffffff;
@@ -858,7 +862,7 @@ html[data-sap-ui-browser^="cr"] .sapUiFupInputMask > input {
 }
 .sapUiMnuItm.sapUiMnuItmDsbl.sapUiMnuItmHov {
   background-color: #bbbbbb;
-  color: #cccccc;
+  color: rgba(51, 51, 51, 0.5);
 }
 .sapUiMnuItmL,
 .sapUiMnuItmIco,
@@ -933,7 +937,7 @@ html[data-sap-ui-browser^="cr"] .sapUiFupInputMask > input {
   -webkit-border-radius: 0px;
   /*Needed for safari mobile*/
   background-color: #ffffff;
-  color: #000000;
+  color: #333333;
   width: 100%;
   outline: none;
   /* remove Webkit glow effect */
@@ -949,7 +953,7 @@ html[data-sap-ui-browser^="cr"] .sapUiFupInputMask > input {
 }
 .sapUiMnuItm.sapUiMnuTfItm .sapUiMnuTfItemTf.sapUiMnuTfItemTfDsbl {
   background-color: #959595;
-  color: #cccccc;
+  color: rgba(51, 51, 51, 0.5);
   /* Avoid text selection in disabled TextFields */
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -1147,7 +1151,7 @@ html[data-sap-ui-browser^="cr"] .sapUiFupInputMask > input {
   font-size: 22px;
   margin: 3px;
   margin-top: 4px;
-  color: #000000;
+  color: #333333;
   border-radius: 2px;
   border: 1px solid transparent;
   box-sizing: border-box;
@@ -1237,6 +1241,7 @@ html.sapUiMedia-Std-Desktop .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSel:hover 
   width: 100%;
   vertical-align: middle;
   display: inline-block;
+  line-height: normal;
 }
 .sapUiUfdShellHeadItmMarker {
   position: absolute;
@@ -1986,7 +1991,7 @@ html.sapUiMedia-Std-Phone .sapUiCalHeadB0 {
   font-size: 0.875rem;
 }
 .sapUiCalItemNow {
-  color: #000000;
+  color: #333333;
 }
 /* make outline for days on number to prevent it around week number */
 /* hide outline for all devices, but enable later for desktop */
@@ -2061,7 +2066,7 @@ html.sap-desktop .sapUiCalItemWeekEnd:focus {
 }
 .sapUiCalItemOtherMonth {
   background-color: transparent;
-  color: #808080;
+  color: #b3b3b3;
 }
 html.sap-desktop .sapUiCalItemOtherMonth:hover,
 html.sap-desktop .sapUiCalItemOtherMonth:focus {
@@ -2076,7 +2081,7 @@ html.sap-desktop .sapUiCalItemOtherMonth:focus {
 .sapUiCalItemSelBetween,
 .sapUiCalItemSelBetween.sapUiCalItemOtherMonth {
   background-color: #f3f7fa;
-  color: #000000;
+  color: #333333;
 }
 html.sap-desktop .sapUiCalItemSel:hover,
 html.sap-desktop .sapUiCalItemSel:focus {
@@ -2098,7 +2103,7 @@ html.sap-desktop .sapUiCalItemSelBetween:focus {
   box-shadow: inset -0.0625rem 0.0625rem 0 0 #ffffff, inset 0.0625rem -0.0625rem 0 0 #ffffff;
 }
 .sapUiCalItemNow.sapUiCalItemSelBetween {
-  color: #000000;
+  color: #333333;
 }
 .sapUiCalContentOver {
   bottom: 0.5rem;
@@ -2755,11 +2760,11 @@ html.sap-phone .sapUiCal[data-sap-ui-popup] > .sapUiCalContent > .sapUiCalYearPi
 /* intervals */
 .sapUiCalendarRowAppsInt,
 .sapUiCalendarRowAppsSubInt {
-  border-color: #dedede;
+  border-color: #dddddd;
 }
 .sapUiCalendarRowAppsIntHead {
   font-size: 0.75rem;
-  color: #000000;
+  color: #333333;
 }
 /* Appointments */
 /* as outlines can't have different offsets on one side (no left border) and don't work in IE just use a inner border */
@@ -3110,7 +3115,7 @@ html[data-sap-ui-browser^="ie"] .sapMFooter-CTX .sapUiFup:focus .sapMBtnInner.sa
   font-size: 0.875rem;
   padding: 0px;
   min-width: 5rem;
-  color: #000000;
+  color: #333333;
   box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2), 0 0 0.125rem 0 rgba(0, 0, 0, 0.3);
   border-radius: 0.25rem;
 }
@@ -3144,7 +3149,7 @@ html[data-sap-ui-browser^="ie"] .sapMFooter-CTX .sapUiFup:focus .sapMBtnInner.sa
 }
 .sapUiMnuItm.sapUiMnuItmDsbl.sapUiMnuItmHov,
 .sapUiMnuItm.sapUiMnuItmDsbl.sapUiMnuItmHov:active {
-  color: #cccccc;
+  color: rgba(51, 51, 51, 0.5);
   background-color: transparent;
 }
 .sapUiMnuItmL {
@@ -3159,13 +3164,13 @@ html[data-sap-ui-browser^="ie"] .sapMFooter-CTX .sapUiFup:focus .sapMBtnInner.sa
   color: #878787;
 }
 .sapUiMnuItm.sapUiMnuItmDsbl .sapUiMnuItmIco {
-  color: #cccccc;
+  color: rgba(51, 51, 51, 0.5);
 }
 .sapUiMnuItm.sapUiMnuItmHov:active .sapUiMnuItmIco {
   color: #ffffff;
 }
 .sapUiMnuItm.sapUiMnuItmDsbl.sapUiMnuItmHov:active .sapUiMnuItmIco {
-  color: #cccccc;
+  color: rgba(51, 51, 51, 0.5);
 }
 .sapUiMnuItmIco > img {
   padding-right: 0;

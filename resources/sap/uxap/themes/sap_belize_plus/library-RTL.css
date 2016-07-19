@@ -1481,7 +1481,7 @@ html.sapUiMedia-Std-Desktop .sapMSplitContainer.sapMSplitContainerHideMode .sapM
 }
 .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnContent,
 .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnIcon {
-  color: #ffffff;
+  color: #fafafa;
 }
 .sapUxAPAnchorBar .sapUxAPAnchorBarButton .sapMBtnInner.sapMBtnActive .sapMBtnIcon {
   color: #cae4fb;
@@ -1560,7 +1560,7 @@ html[data-sap-ui-animation="off"].sapUiMedia-Std-Desktop .sapUxAPAnchorBar.sapUx
 .sapUxAPAnchorBar .sapUxAPAnchorBarButton .sapMBtnInner.sapMBtnTransparent.sapMBtnHoverable:hover .sapMBtnContent,
 .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapMBtn:hover > .sapMBtnHoverable .sapMBtnContent,
 .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapMBtn:hover > .sapMBtnHoverable .sapMBtnIcon {
-  color: #ffffff;
+  color: #fafafa;
 }
 .sapMPopover.sapUxAPAnchorBarPopover .sapMBtn.sapUxAPAnchorBarButton:focus {
   background-color: #496b8a;
@@ -1834,9 +1834,6 @@ html.sapUiMedia-Std-Tablet .sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageHe
 .sapUxAPObjectPageHeaderDetailsHidden {
   background-color: #3f5161;
 }
-.sapUxAPObjectPageHeaderDetails .sapMObjectNumberEmph.sapMObjectNumber {
-  color: #fafafa;
-}
 .sapUxAPObjectPageHeaderDetails .sapMObjectNumberEmph.sapMObjectNumber > .sapMObjectNumberText {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.375rem;
@@ -1845,6 +1842,9 @@ html.sapUiMedia-Std-Tablet .sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageHe
 .sapUxAPObjectPageHeaderDetails .sapMObjectNumberEmph.sapMObjectNumber > .sapMObjectNumberUnit {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
+}
+.sapUxAPObjectPageHeaderDetails .sapMObjectNumberEmph.sapMObjectNumber:not(.sapMObjectNumberStatusError):not(.sapMObjectNumberStatusWarning):not(.sapMObjectNumberStatusSuccess) {
+  color: #fafafa;
 }
 .sapUxAPObjectPageHeaderDetails .sapMOHTitle .sapMText {
   color: #dddddd;

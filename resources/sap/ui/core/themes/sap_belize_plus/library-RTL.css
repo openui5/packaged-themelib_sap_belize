@@ -19,7 +19,7 @@
 /* Shared CSS for 'base' theme */
 .sapUiBody {
   background-color: #3f5161;
-  color: #ffffff;
+  color: #fafafa;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -27,7 +27,7 @@
 }
 .sapUiArea {
   background-color: #3f5161;
-  color: #ffffff;
+  color: #fafafa;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
@@ -43,7 +43,7 @@
   top: -10000px;
   background-color: #3f5161;
   /* repeat the body style in case the application adapts it */
-  color: #ffffff;
+  color: #fafafa;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
@@ -666,16 +666,16 @@ Usage:
 }
 .sapThemeText,
 .sapThemeText-asColor {
-  color: #ffffff;
+  color: #fafafa;
 }
 .sapThemeText-asBackgroundColor {
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 .sapThemeText-asBorderColor {
-  border-color: #ffffff;
+  border-color: #fafafa;
 }
 .sapThemeText-asOutlineColor {
-  outline-color: #ffffff;
+  outline-color: #fafafa;
 }
 .sapThemeTextInverted,
 .sapThemeTextInverted-asColor {
@@ -1031,9 +1031,9 @@ html.sapUiMedia-Std-Desktop .sapUiBLy {
   left: 0;
   opacity: 1;
   background-image: none;
-  background-repeat: repeat;
-  background-position: right top;
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /* hide this background image if a background is configured somewhere above */
 .sapUiGlobalBackgroundColor * > .sapUiGlobalBackgroundImage {
@@ -1054,9 +1054,9 @@ html.sapUiMedia-Std-Desktop .sapUiBLy {
 .sapUiBody {
   background-color: #3f5161;
   background-image: none;
-  background-repeat: repeat;
-  background-position: right top;
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .sapUiBody {
   background-attachment: fixed;
@@ -1157,7 +1157,7 @@ html.sap-desktop ::-webkit-scrollbar-corner {
 /* Belize theme                        */
 /* =================================== */
 #CSS_SCOPE_ROOT {
-  color: #ffffff;
+  color: #fafafa;
 }
 /**
  * sap.m.Shell background for the dark flavor should be defined one level deeper, in order to avoid putting sapContrast/

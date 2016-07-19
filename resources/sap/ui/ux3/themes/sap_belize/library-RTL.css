@@ -52,7 +52,7 @@
 }
 .sapUiUx3ActionBarItemRight {
   display: inline;
-  color: #000000;
+  color: #333333;
   font-weight: normal;
   padding: 0px 6px 0px 0px;
 }
@@ -70,7 +70,7 @@
   border: 1px solid transparent;
 }
 button.sapUiUx3ActionBarLiteMoreButton > span.sapUiBtnTxt {
-  color: #000000;
+  color: #333333;
   font-weight: normal;
 }
 button.sapUiUx3ActionBarLiteMoreButton:hover > span.sapUiBtnTxt {
@@ -110,7 +110,7 @@ button.sapUiUx3ActionBarLiteMoreButton:focus > span.sapUiBtnTxt {
   background-color: #a9a9a9;
 }
 .sapUiUx3ActionBarUpdatePopup.sapUiUx3TP {
-  color: #000000;
+  color: #333333;
   padding: 5px;
 }
 .sapUiUx3ActionBarFeeder {
@@ -365,7 +365,7 @@ ul.sapUiUx3CICollectionList li {
   border: 0;
   border-bottom: 1px solid #000000;
   font-weight: bold;
-  color: #000000;
+  color: #333333;
   cursor: pointer;
 }
 ul.sapUiUx3CICollectionList li:hover,
@@ -423,7 +423,7 @@ button.sapUiBtnS.sapUiBtnNorm.sapUiUx3EditCollectionButton.sapUiBtnStd:hover {
 /* CSS for control sap.ui.ux3/DataSet.control */
 /* ========================================== */
 .sapUiUx3DS {
-  color: #000000;
+  color: #333333;
   background-color: #ffffff;
   position: relative;
 }
@@ -445,7 +445,7 @@ button.sapUiBtnS.sapUiBtnNorm.sapUiUx3EditCollectionButton.sapUiBtnStd:hover {
 /* ==================================================== */
 .sapUiUx3DSSV {
   position: relative;
-  color: #000000;
+  color: #333333;
 }
 .sapUiUx3DSSVSelected {
   background-color: #a9a9a9;
@@ -498,7 +498,7 @@ button.sapUiBtnS.sapUiBtnNorm.sapUiUx3EditCollectionButton.sapUiBtnStd:hover {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
-  color: #000000;
+  color: #333333;
 }
 .sapUiUx3ExactAreaCont {
   overflow: auto;
@@ -703,7 +703,7 @@ html[data-sap-ui-browser="ie10"] .sapUiUx3ExactLstLb > ul > .sapUiLbxI > .sapUiL
   margin-left: 37px;
   overflow: hidden;
   white-space: nowrap;
-  color: #000000;
+  color: #333333;
   padding-right: 6px;
   text-overflow: ellipsis;
 }
@@ -788,7 +788,7 @@ html[data-sap-ui-browser="ie10"] .sapUiUx3ExactLstLb > ul > .sapUiLbxI > .sapUiL
   width: 24px;
 }
 .sapUiUx3ExactLstCollapsed > .sapUiUx3ExactLstHead:focus {
-  outline: 1px dotted #000000;
+  outline: 1px dotted #333333;
   outline-offset: -2px;
 }
 .sapUiUx3ExactLstCollapsed > .sapUiUx3ExactLstHead > .sapUiUx3ExactLstHeadTxt {
@@ -878,7 +878,7 @@ html[dir=rtl] .sapUiUx3ExactLstCollapsed > .sapUiUx3ExactLstHead > .sapUiUx3Exac
   cursor: pointer;
 }
 .sapUiUx3ExactLstTopActive.sapUiUx3ExactLstTop > .sapUiUx3ExactLstHead:focus {
-  outline: 1px dotted #000000;
+  outline: 1px dotted #333333;
 }
 .sapUiUx3ExactLstTopActive.sapUiUx3ExactLstTop > .sapUiUx3ExactLstHead:hover {
   background-color: #427cac;
@@ -913,9 +913,9 @@ html[dir=rtl] .sapUiUx3ExactLstCollapsed > .sapUiUx3ExactLstHead > .sapUiUx3Exac
   box-sizing: border-box;
   display: block;
   line-height: 25px;
-  border-top: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
+  border-top: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
   background-color: #fafafa;
 }
 .sapUiUx3FFLstHeadTxt {
@@ -925,7 +925,7 @@ html[dir=rtl] .sapUiUx3ExactLstCollapsed > .sapUiUx3ExactLstHead > .sapUiUx3Exac
   margin-left: 37px;
   overflow: hidden;
   white-space: nowrap;
-  color: #000000;
+  color: #333333;
   padding-right: 6px;
   text-overflow: ellipsis;
 }
@@ -942,7 +942,7 @@ html[dir=rtl] .sapUiUx3ExactLstCollapsed > .sapUiUx3ExactLstHead > .sapUiUx3Exac
 /* List Box */
 .sapUiUx3FFLst > .sapUiLbx {
   width: 100%;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e5e5e5;
   position: relative;
   height: 92%;
   height: calc(100% - 29px);
@@ -1016,7 +1016,7 @@ html[dir=rtl] .sapUiUx3ExactLstCollapsed > .sapUiUx3ExactLstHead > .sapUiUx3Exac
 }
 */
 .sapUiFeedChunkText {
-  color: #000000;
+  color: #333333;
   vertical-align: top;
   min-height: 48px;
   /*	display: inline-block;*/
@@ -1092,7 +1092,7 @@ html[dir=rtl] .sapUiUx3ExactLstCollapsed > .sapUiUx3ExactLstHead > .sapUiUx3Exac
 .sapUiFeederInput {
   background-color: #ffffff;
   border: 2px solid #000000;
-  color: #000000;
+  color: #333333;
   min-height: 64px;
   word-wrap: break-word;
 }
@@ -1122,7 +1122,7 @@ html[data-sap-ui-browser^="ie"] .sapUiFeederInput > p {
   height: 18px;
 }
 .sapUiFeederEmptyText {
-  color: #cccccc;
+  color: rgba(51, 51, 51, 0.5);
 }
 /* ================================================ */
 /* CSS for control sap.ui.ux3/NavigationBar.control */
@@ -1170,7 +1170,7 @@ html[data-sap-ui-browser^="ie"] .sapUiFeederInput > p {
   /*max-width: 300px;
 	overflow: hidden;
 	text-overflow: ellipsis;*/
-  color: #000000;
+  color: #333333;
   font-weight: bold;
   line-height: 25px;
 }
@@ -1181,7 +1181,7 @@ html[data-sap-ui-browser^="ie"] .sapUiFeederInput > p {
   cursor: pointer;
   font-size: 14px;
   padding: 3px 9px 7px;
-  color: #000000;
+  color: #333333;
   text-decoration: none;
   -moz-transition-property: color, font-size, padding;
   -moz-transition-duration: 0.3s;
@@ -1236,7 +1236,7 @@ html[data-sap-ui-browser*="ie"] .sapUiUx3NavBarItemSel > a {
 }
 .sapUiUx3NavBarArrow {
   display: block;
-  border-color: #000000 transparent #000000;
+  border-color: #333333 transparent #000000;
   border-style: none solid solid;
   border-width: medium 5px 5px;
   position: absolute;
@@ -1280,7 +1280,7 @@ html[data-sap-ui-browser*="ie"] .sapUiUx3NavBarItemSel > a {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  color: #000000;
+  color: #333333;
   cursor: pointer;
   width: 16px;
   height: 16px;
@@ -1680,7 +1680,7 @@ li.sapUiInPlaceMessage > div.sapUiNotifierMessageText:focus {
 /* CSS for control sap.ui.ux3/Overlay.control */
 /* ========================================== */
 .sapUiUx3OverlayOverlay {
-  color: #000000;
+  color: #333333;
   background-color: #ffffff;
   position: absolute;
   top: 0;
@@ -1774,7 +1774,7 @@ li.sapUiInPlaceMessage > div.sapUiNotifierMessageText:focus {
 .sapUiUx3QV {
   padding: 9px;
   width: 270px;
-  color: #000000;
+  color: #333333;
   background-color: #fafafa;
   border-width: 1px;
   border-style: solid;
@@ -2047,7 +2047,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
 }
 .sapUiUx3TP-feeder > .sapUiUx3TPContent > .sapUiFeeder {
   width: 400px;
-  color: #000000;
+  color: #333333;
   background-color: transparent;
   border: none;
 }
@@ -2154,7 +2154,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
 .sapUiUx3ShellPaneEntry {
   font-size: 14px;
   font-weight: bold;
-  color: #999999;
+  color: #cccccc;
   /*#999999*/
   cursor: pointer;
   display: inline-block;
@@ -2530,7 +2530,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
 .sapUiUx3TIIdentifier {
   font-size: 16px;
   font-weight: bold;
-  color: #000000;
+  color: #333333;
   height: 27px;
   width: 100%;
   text-transform: uppercase;
@@ -2538,7 +2538,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
 .sapUiUx3TITitle {
   font-weight: bold;
   padding-right: 10px;
-  color: #000000;
+  color: #333333;
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -2589,7 +2589,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
 .sapUiUx3TIHeaderGroupTitle {
   font-weight: bold;
   font-size: 12px;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
   padding-top: 7px;
   text-overflow: ellipsis;
@@ -2642,7 +2642,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
   margin: 10px 20px 0px 20px;
   font-weight: bold;
   font-size: 14px;
-  color: #000000;
+  color: #333333;
   padding-bottom: 8px;
   text-transform: uppercase;
   border-bottom: 2px solid #000000;
@@ -2779,7 +2779,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
 .sapUiUx3TVIdentifier {
   font-size: 16px;
   font-weight: bold;
-  color: #000000;
+  color: #333333;
   height: 27px;
   width: 100%;
   text-transform: uppercase;
@@ -2787,7 +2787,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
 .sapUiUx3TVTitle {
   font-weight: bold;
   padding-right: 10px;
-  color: #000000;
+  color: #333333;
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -2840,7 +2840,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
 .sapUiUx3TVHeaderGroupTitle {
   font-weight: bold;
   font-size: 12px;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
   padding-top: 7px;
   text-overflow: ellipsis;
@@ -2891,7 +2891,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
   margin: 10px 20px 0px 20px;
   font-weight: bold;
   font-size: 14px;
-  color: #000000;
+  color: #333333;
   padding-bottom: 8px;
   text-transform: uppercase;
   border-bottom: 2px solid #000000;
@@ -2942,7 +2942,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
   padding: 10px 22px;
   min-width: 50px;
   min-height: 20px;
-  color: #000000;
+  color: #333333;
   background-color: #fafafa;
   border: 1px solid #000000;
   font-family: Arial, Helvetica, sans-serif;
@@ -3015,7 +3015,7 @@ html[dir=rtl] .sapUiUx3TPBtnRow {
 }
 /* Control Adaptations */
 .sapUiUx3TP .sapUiMlt {
-  color: #000000;
+  color: #333333;
 }
 .sapUiUx3TP .sapUiMlt .sapUiTPInverted {
   color: #ffffff;
@@ -3023,12 +3023,12 @@ html[dir=rtl] .sapUiUx3TPBtnRow {
 /* But do not adapt inside children with a special CSS class "sapUiUx3TPResetColors".
    This class is used to allow controls with regular design inside a ToolPopup. */
 .sapUiUx3TP .sapUiUx3TPResetColors {
-  color: #000000;
+  color: #333333;
   background-color: #fafafa;
 }
 .sapUiUx3TP .sapUiUx3TPResetColors .sapUiLbl,
 .sapUiUx3TP .sapUiUx3TPResetColors .sapUiMlt {
-  color: #000000;
+  color: #333333;
 }
 .sapUiUx3TPButtonRowHidden {
   display: none;
@@ -3551,7 +3551,7 @@ html[data-sap-ui-browser="ie10"] .sapUiUx3ExactLstLb > ul > .sapUiLbxISel {
   background-image: url("img-RTL/exact/close_down.png");
 }
 .sapUiUx3ExactLstCollapsed > .sapUiUx3ExactLstHead {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e5e5e5;
 }
 /* Content */
 .sapUiUx3ExactLstTop > .sapUiUx3ExactLstCntnt {
@@ -3960,7 +3960,7 @@ html[data-sap-ui-browser^="ie"] .sapUiFeedChunk button {
   margin: 13px 1px 13px 13px;
 }
 .sapUiFeederEmptyText {
-  color: #707070;
+  color: #757575;
   font-style: italic;
 }
 html[data-sap-ui-browser="ie10"] .sapUiFeeder .sapUiBtnS.sapUiBtnIconOnly > span.sapUiBtnIco,
@@ -4032,11 +4032,11 @@ html[data-sap-ui-browser="ie9"] .sapUiFeeder .sapUiBtnS.sapUiBtnIconOnly > span.
 }
 .sapUiUx3NavBarArrow {
   display: none;
-  border-color: #000000 transparent #427cac;
+  border-color: #333333 transparent #427cac;
 }
 .sapUiUx3NavBarToplevel .sapUiUx3NavBarArrow {
   display: none;
-  border-color: #000000 transparent #eff4f9;
+  border-color: #333333 transparent #eff4f9;
 }
 /* standard design arrows */
 .sapUiUx3NavBarBack,
@@ -4090,10 +4090,10 @@ html[data-sap-ui-browser="ie9"] .sapUiFeeder .sapUiBtnS.sapUiBtnIconOnly > span.
   text-transform: uppercase;
 }
 .sapUiUx3NavBarArrow {
-  border-color: #000000 transparent #427cac;
+  border-color: #333333 transparent #427cac;
 }
 .sapUiUx3NavBarToplevel .sapUiUx3NavBarArrow {
-  border-color: #000000 transparent #eff4f9;
+  border-color: #333333 transparent #eff4f9;
 }
 /* standard design arrows */
 .sapUiUx3NavBarBack,
@@ -4262,7 +4262,7 @@ html[dir="rtl"] .sapUiUx3NavBarToplevel.sapUiUx3NavBarScrollForward > .sapUiUx3N
   color: #666666;
 }
 .sapUiUx3QVTitle1 {
-  color: #000000;
+  color: #333333;
 }
 .sapUiUx3QV a,
 .sapUiUx3QV a:link,
@@ -4851,7 +4851,7 @@ html[data-sap-ui-browser="ie9"] .sapUiUx3ShellBg {
 .sapUiUx3TITitle {
   font-weight: bold;
   padding-right: 10px;
-  color: #000000;
+  color: #333333;
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -5036,7 +5036,7 @@ html[data-sap-ui-browser="ie9"] .sapUiUx3ShellBg {
   color: #777777;
 }
 .sapUiUx3TVTitle {
-  color: #000000;
+  color: #333333;
 }
 .sapUiUx3TVHRGrey {
   background-color: #787878;
