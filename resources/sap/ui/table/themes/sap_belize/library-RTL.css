@@ -880,8 +880,24 @@ html[data-sap-ui-browser^="ie"] .sapUiTableColHdrCnt {
 .sapUiAnalyticalTable .sapUiTableRowHdrScr {
   width: 25px;
 }
+.sapUiAnalyticalTable .sapUiTableGroupIcon:after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  top: 1px;
+  bottom: 1px;
+  box-shadow: inset -40px 0px 20px -20px #f2f2f2;
+}
+.sapUiAnalyticalTable .sapUiTableRowHvr .sapUiTableGroupIcon {
+  background-color: #f0f0f0;
+}
 .sapUiAnalyticalTable .sapUiTableGroupIcon {
-  padding-left: 10px;
+  padding-left: 40px;
+  background: #f2f2f2;
+  background-clip: content-box;
+}
+.sapUiAnalyticalTable .sapUiTableRowHvr .sapUiTableGroupIcon:after {
+  box-shadow: inset -40px 0px 20px -20px #f0f0f0;
 }
 .sapUiAnalyticalTable .sapUiTableRowHdrScr .sapUiTableRowHdr.sapUiTableGroupHeader::after {
   display: none;
@@ -1277,8 +1293,8 @@ html[data-sap-ui-browser^="ie"] .sapUiTableColHdrCnt {
   background-color: #e8eff6;
   border-left: 1px solid #dddddd;
 }
-/* Table Row Selected[+Hover] */
-.sapUiTableCtrl tr.sapUiTableRowSel.sapUiTableRowHvr > td {
+/* Table Row Selected + Hover */
+div.sapUiTable .sapUiTableCtrl .sapUiTableRowHvr.sapUiTableRowSel > td {
   /* data cells of row */
   background-color: #dde8f1;
 }
@@ -1586,10 +1602,10 @@ tr.sapUiTableRowHvr .sapUiLnk:hover,
 .sapUiTableCtrl tr.sapUiTableGroupHeader,
 .sapUiTableRowHdr.sapUiTableGroupHeader {
   background-color: #f2f2f2;
-  border-color: #cccccc;
+  border-color: #e5e5e5;
   color: #333333;
 }
-/* Hover State */
+/* Hover + Unselected State */
 div.sapUiTable tr.sapUiTableGroupHeader.sapUiTableRowHvr,
 div.sapUiTable .sapUiTableRowHdr.sapUiTableGroupHeader.sapUiTableRowHvr,
 div.sapUiTable .sapUiTableRowHdr div.sapUiTableRowHvr .sapUiTableGroupIcon,

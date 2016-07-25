@@ -3118,6 +3118,8 @@ html[data-sap-ui-browser^="ie"] .sapMFooter-CTX .sapUiFup:focus .sapMBtnInner.sa
   color: #333333;
   box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2), 0 0 0.125rem 0 rgba(0, 0, 0, 0.3);
   border-radius: 0.25rem;
+  border: none;
+  background: #ffffff;
 }
 .sapUiMnu.sapUiMnuScroll {
   overflow-x: none;
@@ -3178,7 +3180,7 @@ html[data-sap-ui-browser^="ie"] .sapMFooter-CTX .sapUiFup:focus .sapMBtnInner.sa
   max-height: 1rem;
 }
 .sapUiMnuDiv > hr {
-  border-color: rgba(63, 81, 97, 0.2);
+  color: rgba(63, 81, 97, 0.2);
 }
 .sapUiMnuItmTxt {
   padding-right: 2.5rem;
@@ -3222,6 +3224,13 @@ html[data-sap-ui-browser^="ie"] .sapMFooter-CTX .sapUiFup:focus .sapMBtnInner.sa
 }
 .sapUiMnuItmSbMnu > div:after {
   content: "\e1ed";
+  color: #878787;
+}
+.sapUiMnuItm.sapUiMnuItmHov .sapUiMnuItmSbMnu > div:after {
+  color: #878787;
+}
+.sapUiMnuItm.sapUiMnuItmHov:active .sapUiMnuItmSbMnu > div:after {
+  color: #ffffff;
 }
 .sapUiMnuItmSbMnu {
   right: 0;
@@ -3255,6 +3264,11 @@ html[data-sap-ui-browser^="ie"] .sapMFooter-CTX .sapUiFup:focus .sapMBtnInner.sa
 .sapUiMnu.sapUiMnuCozySupport.sapUiSizeCozy .sapUiMnuDiv > hr {
   left: 0rem;
   right: 0rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sapUiMnu.sapUiMnuCozySupport.sapUiSizeCozy .sapUiMnuDiv {
+  height: 1px;
 }
 .sapUiMnu.sapUiMnuCozySupport.sapUiSizeCozy .sapUiMnuItmTxt {
   padding-right: 4rem;
@@ -3282,6 +3296,14 @@ html[data-sap-ui-browser^="ie"] .sapMFooter-CTX .sapUiFup:focus .sapMBtnInner.sa
 }
 .sapUiMnu.sapUiMnuCozySupport.sapUiSizeCozy .sapUiMnuItmSbMnu {
   width: 3rem;
+}
+html.sap-phone .sapMLIB .sapUiIcon,
+html.sap-tablet .sapMLIB .sapUiIcon {
+  color: #878787;
+}
+html.sap-phone .sapMLIB.sapMLIBActive .sapUiIcon::before,
+html.sap-tablet .sapMLIB.sapMLIBActive .sapUiIcon::before {
+  color: #ffffff;
 }
 /* ===================================== */
 /* CSS for control sap.ui.unified/Shell  */
