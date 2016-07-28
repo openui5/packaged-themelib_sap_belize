@@ -1065,9 +1065,6 @@ html.sapUiMedia-Std-Desktop .sapUiBLy {
 .sapUiBusy {
   display: none;
 }
-.sapUiBody.sapContrast,
-.sapUiBody .sapContrast,
-.sapUiBody.sapContrastPlus,
-.sapUiBody .sapContrastPlus {
+#CSS_SCOPE_ROOT {
   color: #ffffff;
 }
