@@ -3305,6 +3305,32 @@ html.sap-phone .sapMLIB.sapMLIBActive .sapUiIcon::before,
 html.sap-tablet .sapMLIB.sapMLIBActive .sapUiIcon::before {
   color: #ffffff;
 }
+html.sap-phone .sapMRespMenuDialog .sapMList .sapMLIBContent .sapMSLITitleOnly,
+html.sap-tablet .sapMRespMenuDialog .sapMList .sapMLIBContent .sapMSLITitleOnly {
+  font-size: 0.875rem;
+}
+html.sap-phone .sapMRespMenuDialog .sapMPage .sapMBar-CTX.sapMHeader-CTX,
+html.sap-tablet .sapMRespMenuDialog .sapMPage .sapMBar-CTX.sapMHeader-CTX {
+  background-color: #ffffff;
+  box-shadow: inset 0 -1px #ebebeb;
+}
+/* Compact size */
+.sapUiSizeCompact .sapUiMnuItmR,
+.sapUiSizeCompact .sapUiMnuNoIco .sapUiMnuItmL {
+  width: 12px;
+}
+.sapUiSizeCompact .sapUiMnuNoIco.sapUiMnuNoSbMnu > .sapUiMnuItm > .sapUiMnuItmTxt {
+  padding-left: 12px;
+}
+.sapUiSizeCompact .sapUiMnuDiv {
+  height: 1px;
+}
+.sapUiSizeCompact .sapUiMnuDiv > hr {
+  right: 0rem;
+  left: 0rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* ===================================== */
 /* CSS for control sap.ui.unified/Shell  */
 /* Belize theme                          */

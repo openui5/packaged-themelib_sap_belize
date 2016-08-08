@@ -3310,6 +3310,32 @@ html.sap-phone .sapMLIB.sapMLIBActive .sapUiIcon::before,
 html.sap-tablet .sapMLIB.sapMLIBActive .sapUiIcon::before {
   color: #2f3c48;
 }
+html.sap-phone .sapMRespMenuDialog .sapMList .sapMLIBContent .sapMSLITitleOnly,
+html.sap-tablet .sapMRespMenuDialog .sapMList .sapMLIBContent .sapMSLITitleOnly {
+  font-size: 0.875rem;
+}
+html.sap-phone .sapMRespMenuDialog .sapMPage .sapMBar-CTX.sapMHeader-CTX,
+html.sap-tablet .sapMRespMenuDialog .sapMPage .sapMBar-CTX.sapMHeader-CTX {
+  background-color: #3f5161;
+  box-shadow: inset 0 -1px #2f3c48;
+}
+/* Compact size */
+.sapUiSizeCompact .sapUiMnuItmR,
+.sapUiSizeCompact .sapUiMnuNoIco .sapUiMnuItmL {
+  width: 12px;
+}
+.sapUiSizeCompact .sapUiMnuNoIco.sapUiMnuNoSbMnu > .sapUiMnuItm > .sapUiMnuItmTxt {
+  padding-left: 12px;
+}
+.sapUiSizeCompact .sapUiMnuDiv {
+  height: 1px;
+}
+.sapUiSizeCompact .sapUiMnuDiv > hr {
+  right: 0rem;
+  left: 0rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* ===================================== */
 /* CSS for control sap.ui.unified/Shell  */
 /* Belize theme                          */
@@ -3438,9 +3464,167 @@ html.sapUiMedia-Std-Desktop .sapUiUfdShellOvrlyHeadClose:hover {
 html.sapUiMedia-Std-Desktop .sapUiUfdShellOvrlyHeadClose:active:hover {
   background-color: #91c8f6;
 }
+/* ======================================== */
+/* CSS for control sap.ui.unified/Calendar  */
+/* Belize_Plus theme                        */
+/* ======================================== */
+.sapUiCalItemType01 > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #ffb914;
+}
+.sapUiCalItemType01.sapUiCalItemSel:not(:focus) > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #ffb914, inset 0 -0.1875rem #617d96;
+}
+.sapUiCalItemType01.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #ffb914;
+}
+.sapUiCalItemType01.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #ffb914, inset 0 -0.25rem #617d96;
+}
+.sapUiCalItemType02 > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #f58c4b;
+}
+.sapUiCalItemType02.sapUiCalItemSel:not(:focus) > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #f58c4b, inset 0 -0.1875rem #617d96;
+}
+.sapUiCalItemType02.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #f58c4b;
+}
+.sapUiCalItemType02.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #f58c4b, inset 0 -0.25rem #617d96;
+}
+.sapUiCalItemType03 > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #d88b8b;
+}
+.sapUiCalItemType03.sapUiCalItemSel:not(:focus) > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #d88b8b, inset 0 -0.1875rem #617d96;
+}
+.sapUiCalItemType03.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #d88b8b;
+}
+.sapUiCalItemType03.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #d88b8b, inset 0 -0.25rem #617d96;
+}
+.sapUiCalItemType04 > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #bd8969;
+}
+.sapUiCalItemType04.sapUiCalItemSel:not(:focus) > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #bd8969, inset 0 -0.1875rem #617d96;
+}
+.sapUiCalItemType04.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #bd8969;
+}
+.sapUiCalItemType04.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #bd8969, inset 0 -0.25rem #617d96;
+}
+.sapUiCalItemType05 > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #de54c1;
+}
+.sapUiCalItemType05.sapUiCalItemSel:not(:focus) > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #de54c1, inset 0 -0.1875rem #617d96;
+}
+.sapUiCalItemType05.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #de54c1;
+}
+.sapUiCalItemType05.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #de54c1, inset 0 -0.25rem #617d96;
+}
+.sapUiCalItemType06 > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #00a4eb;
+}
+.sapUiCalItemType06.sapUiCalItemSel:not(:focus) > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #00a4eb, inset 0 -0.1875rem #617d96;
+}
+.sapUiCalItemType06.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #00a4eb;
+}
+.sapUiCalItemType06.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #00a4eb, inset 0 -0.25rem #617d96;
+}
+.sapUiCalItemType07 > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #21c4c4;
+}
+.sapUiCalItemType07.sapUiCalItemSel:not(:focus) > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #21c4c4, inset 0 -0.1875rem #617d96;
+}
+.sapUiCalItemType07.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #21c4c4;
+}
+.sapUiCalItemType07.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #21c4c4, inset 0 -0.25rem #617d96;
+}
+.sapUiCalItemType08 > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #afd645;
+}
+.sapUiCalItemType08.sapUiCalItemSel:not(:focus) > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #afd645, inset 0 -0.1875rem #617d96;
+}
+.sapUiCalItemType08.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #afd645;
+}
+.sapUiCalItemType08.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #afd645, inset 0 -0.25rem #617d96;
+}
+.sapUiCalItemType09 > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #38c3ff;
+}
+.sapUiCalItemType09.sapUiCalItemSel:not(:focus) > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #38c3ff, inset 0 -0.1875rem #617d96;
+}
+.sapUiCalItemType09.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #38c3ff;
+}
+.sapUiCalItemType09.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #38c3ff, inset 0 -0.25rem #617d96;
+}
+.sapUiCalItemType10 > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #b47ea9;
+}
+.sapUiCalItemType10.sapUiCalItemSel:not(:focus) > .sapUiCalItemText {
+  box-shadow: inset 0 -0.125rem 0 #b47ea9, inset 0 -0.1875rem #617d96;
+}
+.sapUiCalItemType10.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #b47ea9;
+}
+.sapUiCalItemType10.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+  box-shadow: inset -0.0625rem 0.0625rem 0 0 #617d96, inset 0.0625rem -0.0625rem 0 0 #617d96, inset 0 -0.1875rem 0 #b47ea9, inset 0 -0.25rem #617d96;
+}
+/* ============================================== */
+/* CSS for control sap.ui.unified/CalendarLegend  */
+/* Belize_Plus theme                              */
+/* ============================================== */
+.sapUiCalLegDayType01 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
+  background: #ffb914;
+}
+.sapUiCalLegDayType02 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
+  background: #f58c4b;
+}
+.sapUiCalLegDayType03 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
+  background: #d88b8b;
+}
+.sapUiCalLegDayType04 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
+  background: #bd8969;
+}
+.sapUiCalLegDayType05 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
+  background: #de54c1;
+}
+.sapUiCalLegDayType06 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
+  background: #00a4eb;
+}
+.sapUiCalLegDayType07 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
+  background: #21c4c4;
+}
+.sapUiCalLegDayType08 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
+  background: #afd645;
+}
+.sapUiCalLegDayType09 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
+  background: #38c3ff;
+}
+.sapUiCalLegDayType10 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
+  background: #b47ea9;
+}
 /* =========================================== */
 /* CSS for control sap.ui.unified/CalendarRow  */
-/* Belize_Plus theme                                */
+/* Belize_Plus theme                           */
 /* =========================================== */
 .sapUiCalendarAppType01.sapUiCalendarApp,
 .sapUiCalendarAppType01.sapUiCalendarApp:active {
