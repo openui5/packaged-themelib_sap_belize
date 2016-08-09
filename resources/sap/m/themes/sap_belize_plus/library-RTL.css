@@ -1156,6 +1156,9 @@ html.sap-desktop .sapMDialog {
   */
   position: relative;
 }
+.sapUiPopupWithPadding.sapMDialogWithScrollCont .sapMDialogScrollCont {
+  height: 100%;
+}
 .sapMDialogWithScrollCont .sapMDialogScrollCont {
   height: 100%;
   padding: 0;
@@ -4592,6 +4595,9 @@ html[data-sap-ui-animation='on'] .sapMNavItem.sapMNavItemDooring {
 .sapMNLG.sapMLIB {
   padding-bottom: 0;
 }
+.sapMNLG .sapMLIB.sapMNLB:first-of-type {
+  margin-top: 0;
+}
 .sapMNLG-Header > .sapMNLB-Priority {
   padding-top: 1rem;
   border-radius: 0 0.1875rem 0 0;
@@ -5930,10 +5936,10 @@ html[data-sap-ui-browser^="ed"] .sapMObjLAttrDiv > .sapMObjectAttributeActive.sa
   padding-bottom: 1px;
 }
 .sapMObjectMarker.sapMObjectMarkerIcon.sapMObjectMarkerText .sapUiIcon {
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
 }
 .sapMListTbl .sapMObjectMarkerIcon .sapMText {
-  padding-top: 0px;
+  padding-top: 0;
 }
 .sapMListTbl .sapMObjectMarkerIcon .sapUiIcon:before {
   vertical-align: inherit;
@@ -9427,7 +9433,7 @@ html.sap-phone .sapMTabStripSelectListItemCloseBtn .sapMBtnInner {
 /* CSS for control sap.m/Tile control     */
 /* ====================================== */
 .sapMTile {
-  border: 1px solid #3f5161;
+  border: 1px solid transparent;
   display: inline-block;
   -webkit-transition-property: transform3d;
   -webkit-transition-duration: 0.2s;
@@ -9439,7 +9445,7 @@ html.sap-phone .sapMTabStripSelectListItemCloseBtn .sapMBtnInner {
   height: 14rem;
   margin: 0.5rem;
   -webkit-touch-callout: none;
-  background-color: #ffffff;
+  background-color: #3f5161;
 }
 .sapMTile * {
   /* FIXME!!! (star rule with any-parent selector...) */
@@ -9449,7 +9455,7 @@ html.sap-phone .sapMTabStripSelectListItemCloseBtn .sapMBtnInner {
   -ms-user-select: none;
 }
 .sapMTCEditable .sapMTile {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(63, 81, 97, 0.5);
 }
 html[data-sap-ui-browser*='ie'] .sapMTile {
   transition-property: transform;
@@ -12594,9 +12600,10 @@ clicking the icon does not remove the facet button in ie9
 /* ================================== */
 .sapMFCCTxt .sapMText {
   font-size: 0.75rem;
+  color: #fafafa;
 }
 .sapMFCSbh {
-  color: #666666;
+  color: #dddddd;
   font-size: 0.75rem;
 }
 .sapMFCValue {
@@ -12899,7 +12906,7 @@ html.sap-phone .sapMFeedListItemTimestamp {
 /* Belize theme                       */
 /* ================================== */
 .sapMGTHdrTxt > .sapMText {
-  color: #333333;
+  color: #fafafa;
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
@@ -12918,7 +12925,7 @@ html.sap-phone .sapMFeedListItemTimestamp {
 .sapMGT {
   border: none;
   box-shadow: 0 0 0.125rem 0 rgba(255, 255, 255, 0.3);
-  background: #ffffff;
+  background: #3f5161;
 }
 .sapMGenericTileFtrFldTxt {
   font-family: Arial, Helvetica, sans-serif;
@@ -12966,7 +12973,7 @@ html.sap-desktop .sapMGT:hover .sapMGTWithImageHoverOverlay:not(.sapMGTWithImage
   background: rgba(239, 244, 249, 0.18);
 }
 html.sap-desktop .sapMGT:focus .sapMGTFocusDiv {
-  border: 1px solid #ffffff;
+  border: 1px solid #3f5161;
 }
 /* This part is used to achieve dotted white black interlace border*/
 html.sap-desktop .sapMGT:focus .sapMGTFocusDiv:after {
@@ -12984,7 +12991,7 @@ html.sap-desktop .sapMGT:focus:not([tabindex]) {
   border-color: transparent;
 }
 .sapMGTOverlay {
-  background-color: #ffffff;
+  background-color: #3f5161;
 }
 /* BREAKPOINT FOR SMALL PHONES */
 @media screen and (max-width: 374px) {
@@ -13200,7 +13207,7 @@ html.sap-desktop .sapMImageContent:focus:not([tabindex]) {
 }
 .sapMImageContentImageIcon.sapUiIcon {
   font-size: 1.75rem;
-  color: #ffffff;
+  color: #83c0f6;
   padding-bottom: 0.35rem;
 }
 /* BREAKPOINT FOR SMALL PHONES */
@@ -13461,7 +13468,7 @@ html[dir=rtl] .sapMILI-CTX .sapMInputBasePlaceholder {
   height: 1.5rem;
   padding: 0;
 }
-.sapUiSizeCondensed .sapUiTableCell .sapMInputBaseInner {
+.sapUiSizeCondensed .sapUiTableCell .sapMInputBaseInner:not(.sapMInputBaseStateInner) {
   border-color: transparent;
 }
 .sapUiSizeCondensed .sapUiTableCell .sapMInputBaseInner {
@@ -14850,7 +14857,7 @@ html.sap-tablet .sapUiSizeCompact .sapMMultiInputMultiModeBorder {
 .sapMInputFocused:not(.sapMMultiInputNotEditable) .sapMMultiInputBorder {
   border-color: #91c8f6;
 }
-.sapMMultiInputBorder:hover {
+.sapMInput:not(.sapMInputBaseDisabled) .sapMMultiInputBorder:hover {
   border-color: #91c8f6;
 }
 .sapMMultiInputShadowDiv {
@@ -15019,7 +15026,7 @@ html.sap-desktop .sapMLIB.sapMNLI:focus {
   color: #2f3c48;
 }
 .sapMNwC {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(63, 81, 97, 0.6);
 }
 .sapMNwCSbh {
   color: #dddddd;
@@ -15053,7 +15060,7 @@ html.sap-desktop .sapMLIB.sapMNLI:focus {
 .sapMNCIconImage {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
-  color: #ffffff;
+  color: #83c0f6;
   float: none;
 }
 .sapMNCScale {
@@ -17533,7 +17540,7 @@ html.sap-desktop .sapMSliderHandle:focus {
   box-shadow: 0 0 0.125rem 0 rgba(255, 255, 255, 0.3);
 }
 html.sap-desktop .sapMST:focus .sapMSTFocusDiv {
-  border: 1px solid #ffffff;
+  border: 1px solid #3f5161;
 }
 /* This part is used to achieve dotted white black interlace border*/
 html.sap-desktop .sapMST:focus .sapMSTFocusDiv:after {
@@ -17772,10 +17779,10 @@ html[data-sap-ui-browser*='ie1'] .sapMSLIDiv {
   color: #91c8f6;
 }
 .sapMStdIconMonitor {
-  color: #666666;
+  color: #ffffff;
 }
 .sapMStdIconCreate {
-  color: #666666;
+  color: #ffffff;
   opacity: .3;
 }
 .sapMStdTileNum,
@@ -17784,10 +17791,10 @@ html[data-sap-ui-browser*='ie1'] .sapMSLIDiv {
   font-family: 'Arial Narrow', HelveticaNeue-CondensedBold, Arial, sans-serif;
   font-stretch: condensed;
   /* for Firefox */
-  color: #666666;
+  color: #ffffff;
 }
 .sapMStdTileNumUnit {
-  color: #666666;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .sapMStdTileTitle {
@@ -17803,13 +17810,13 @@ html[data-sap-ui-browser*='ie1'] .sapMSLIDiv {
   color: #abe2ab;
 }
 .sapMStdTileMonitorType {
-  background-color: #f2f2f2;
+  background-color: #354452;
 }
 .sapMTCEditable .sapMStdTileMonitorType {
-  background-color: rgba(242, 242, 242, 0.5);
+  background-color: rgba(53, 68, 82, 0.5);
 }
 .sapMStdTileMonitorType .sapMStdTileTitle {
-  color: #666666;
+  color: #ffffff;
 }
 .sapMTileActive-CTX .sapMStdTileMonitorType {
   background-color: transparent;
@@ -18456,15 +18463,15 @@ html.sap-phone .sapMTSSlt.sapMSltPressed.sapMSltIconOnly:not(.sapMSltDisabled) {
 /* Belize theme                */
 /* =========================== */
 .sapMTile {
-  border: 1px solid #3f5161;
+  border: 1px solid transparent;
   border-radius: 2px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
   /*margin:0.6em;*/
   /* in case of some behavior problems uncomment this line, it was comment because the margin causes the blurring of the focus rectangle in IE9*/
-  background-color: #ffffff;
+  background-color: #3f5161;
 }
 .sapMTCEditable .sapMTile {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(63, 81, 97, 0.5);
 }
 .sapMTile:focus {
   outline: 1px dotted #ffffff;
@@ -18511,7 +18518,7 @@ html.sap-phone .sapMTSSlt.sapMSltPressed.sapMSltIconOnly:not(.sapMSltDisabled) {
   box-shadow: 0px 0px 1px 1px #ffffff;
 }
 .sapMTC .sapMTCBlind {
-  background-color: #ffffff;
+  background-color: #3f5161;
   box-shadow: 0px 0px 5px 5px #ffffff;
 }
 .sapMTC .sapMTCPager SPAN.sapMTCActive {
