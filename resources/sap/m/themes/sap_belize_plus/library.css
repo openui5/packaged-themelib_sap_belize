@@ -1850,7 +1850,8 @@ html[data-sap-ui-animation='on'] .sapMDynamicPage .sapMDynamicPageActualFooterCo
 /* ============================================= */
 /* CSS for control sap.m/FacetFilter.control */
 /* ============================================= */
-.sapUiSizeCompact .sapMFF {
+.sapMFF > .sapMTB-Info-CTX.sapMTB,
+.sapMFF {
   height: 2rem;
 }
 .sapUiSizeCompact .sapMFFArrowScroll {
@@ -4213,6 +4214,12 @@ html.sap-desktop .sapMMultiInputBorder {
 }
 .sapMMultiInputMultiModeInputContainer {
   position: static;
+}
+html.sap-desktop .sapMMultiInput.sapMFocus .sapMInputBaseInner:focus {
+  outline: none;
+}
+.sapMMultiInput .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):hover {
+  background: transparent;
 }
 /* ============================================= */
 /* CSS for control sap.m/NavContainer.control */
@@ -7300,6 +7307,11 @@ html.sap-phone .sapMQuickViewPage .sapUiHLayout {
   outline: none;
   text-overflow: ellipsis;
   position: relative;
+  white-space: nowrap;
+  max-width: 100%;
+}
+.sapMRb > .sapMLabel {
+  max-width: calc(100% - 2.8125rem);
 }
 .sapMILI-CTX .sapMRb {
   float: right;
@@ -7342,7 +7354,7 @@ html.sap-phone .sapMQuickViewPage .sapUiHLayout {
   pointer-events: none;
 }
 .sapMRbHasLabel.sapMRb:focus:before {
-  right: -0.0625rem;
+  right: 0;
 }
 .sapMRbDis:focus:before {
   display: none;
@@ -8772,7 +8784,7 @@ html.sap-phone .sapMStdTileNumS {
 .sapMStepInput .sapMStepInputBtnWrapper.sapMStepInputBtnIncrease {
   right: 0;
 }
-.sapMStepInput-CTX .sapMInput .sapMInputBaseInner {
+.sapMStepInput-CTX .sapMInput .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner) {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -8780,10 +8792,6 @@ html.sap-phone .sapMStdTileNumS {
 }
 .sapMStepInput-CTX .sapMInputBaseWidthPadding {
   padding: 0;
-}
-.sapMStepInput-CTX.sapMStepInputDisabled .sapMInput .sapMInputBaseInner {
-  padding-left: 0;
-  padding-right: 0;
 }
 .sapMStepInput-CTX .sapMBtn {
   padding: 0;
@@ -8805,7 +8813,7 @@ html.sap-phone .sapMStdTileNumS {
 .sapMStepInput-CTX.sapMStepInputWarning .sapMBtn .sapMBtnInner {
   width: 2.25rem;
 }
-.sapUiSizeCompact .sapMStepInput-CTX .sapMInput .sapMInputBaseInner {
+.sapUiSizeCompact .sapMStepInput-CTX .sapMInput .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner) {
   padding: 0 1.75rem;
 }
 .sapUiSizeCompact .sapMStepInput-CTX .sapMInputBaseWidthPadding {
@@ -12990,12 +12998,25 @@ html.sap-phone .sapMFFRefresh .sapMBtnTransparent > .sapMBtnIcon {
 }
 .sapMFF .sapMFFLRemoveIcon {
   color: #cae4fb;
-  font-size: 1rem;
-  line-height: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  font-size: 0.875rem;
+  line-height: 2rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  padding-left: 0.65rem;
+  padding-right: 0.65rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+.sapMFF .sapMFFLRemoveIcon:hover {
+  background-color: rgba(79, 102, 122, 0.5);
+  border-radius: 0.2rem;
+}
+.sapUiSizeCompact .sapMFF .sapMFFLRemoveIcon {
+  line-height: 1.5rem;
+  padding-bottom: 0.05rem;
+  padding-top: 0.05rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 /*
 We need to toggle separate classes to show/hide the remove icon, otherwise
@@ -13572,8 +13593,6 @@ html.sap-desktop .sapMGT:focus:not([tabindex]) {
   text-overflow: ellipsis;
 }
 .sapMITBTextOnly .sapMITBFilter .sapMITBCount {
-  color: #fafafa;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.5);
   font-size: 0.875rem;
   max-width: none;
   position: relative;
@@ -15354,6 +15373,16 @@ html.sap-desktop li.sapMMultiComboBoxItemRangeSelection {
 .sapMMultiInput:not(.sapMMultiInputNotEditable) .sapMInputValHelp > .sapMInputValHelpInner:focus {
   background-color: rgba(79, 102, 122, 0.5);
 }
+.sapMInputFocused:not(.sapMMultiInputNotEditable) .sapMMultiInputBorder::before {
+  border: 1px dotted #ffffff;
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  pointer-events: none;
+}
 .sapMMultiInput:not(.sapMMultiInputNotEditable) .sapMInputValHelp > .sapMInputValHelpInner:active {
   background-color: #91c8f6;
   color: #2f3c48;
@@ -16354,6 +16383,10 @@ html.sap-desktop .sapUiFioriObjectPage > section {
   max-width: 1rem;
   margin: 0.5rem;
 }
+.sapMPage .sapContrast.sapMPageFooter,
+.sapMPage .sapContrast .sapMPageFooter {
+  position: absolute;
+}
 /* ================================== */
 /* Theme CSS for control sap.m/Panel  */
 /* Belize theme                       */
@@ -16966,7 +16999,7 @@ html[data-sap-ui-browser^="ie"] .sapMRbB .sapMRbBInn {
   height: 2rem;
 }
 .sapUiSizeCompact .sapMRbHasLabel.sapMRb:focus:before {
-  right: -0.0625rem;
+  right: 0;
 }
 /* Compact size */
 .sapUiSizeCondensed.sapUiTable .sapMRb,
@@ -19115,6 +19148,9 @@ html.sap-phone .sapMSltPicker .sapMTabStripSelectListItemCloseBtn .sapMBtnIcon {
   -webkit-overflow-scrolling: touch;
   /* IOS only */
 }
+.sapMInputBase.sapMTextArea.sapMInputBaseState > .sapMTextAreaInner {
+  padding: 0.5625rem 0.6875rem;
+}
 /**** Compact Size ****/
 .sapUiSizeCompact .sapMInputBase.sapMTextArea {
   min-height: 1.625rem;
@@ -19123,6 +19159,9 @@ html.sap-phone .sapMSltPicker .sapMTabStripSelectListItemCloseBtn .sapMBtnIcon {
 .sapUiSizeCompact .sapMInputBase.sapMTextArea > .sapMTextAreaInner {
   padding: 0.1875rem 0.5rem;
   height: auto;
+}
+.sapUiSizeCompact .sapMInputBase.sapMTextArea.sapMInputBaseState > .sapMTextAreaInner {
+  padding: 0.125rem 0.4375rem;
 }
 /* =========================== */
 /* CSS for control sap.m/Tile  */
@@ -19599,16 +19638,16 @@ html.sap-desktop .sapMToken.sapMTokenSelected:hover,
 .sapMTB-Info-CTX.sapMTBActive:active {
   background: #427cac;
 }
-html.sap-desktop .sapMTBActive:focus {
+html.sap-desktop .sapMTB-Info-CTX.sapMTBActive:focus {
   outline: 1px dotted #000000;
   outline-offset: -0.125rem;
 }
 /* IE ignores outline-offset. Use an overlay: */
-html[data-sap-ui-browser^="ie"].sap-desktop .sapMTBActive:focus {
+html[data-sap-ui-browser^="ie"].sap-desktop .sapMTB-Info-CTX.sapMTBActive:focus {
   outline: none;
   position: relative;
 }
-html[data-sap-ui-browser^="ie"].sap-desktop .sapMTBActive:focus:before {
+html[data-sap-ui-browser^="ie"].sap-desktop .sapMTB-Info-CTX.sapMTBActive:focus:before {
   content: " ";
   box-sizing: border-box;
   width: calc(100% - 0.0625rem);
@@ -19618,9 +19657,6 @@ html[data-sap-ui-browser^="ie"].sap-desktop .sapMTBActive:focus:before {
   top: 0;
   border: 0.0625rem dotted #000000;
   pointer-events: none;
-}
-html.sap-desktop .sapMTB-Info-CTX.sapMTBActive:focus {
-  outline-color: #000000;
 }
 /********** COMPACT DESIGN ************/
 /* toolbar has 2rem height in compact mode */
@@ -19985,7 +20021,19 @@ img.sapMFeedInImage {
 .sapMITBFilter .sapMITBText {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
+.sapContrastPlus.sapMITBFilter .sapMITBText,
+.sapContrastPlus .sapMITBFilter .sapMITBText {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
 .sapMITBFilter .sapMITBCount {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+.sapContrastPlus.sapMITBFilter .sapMITBCount,
+.sapContrastPlus .sapMITBFilter .sapMITBCount {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+.sapContrastPlus.sapMITBTextOnly .sapMITBFilter .sapMITBCount,
+.sapContrastPlus .sapMITBTextOnly .sapMITBFilter .sapMITBCount {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 .sapMITBSepIcon::before,
@@ -19998,14 +20046,30 @@ img.sapMFeedInImage {
 .sapMITBTextOnly .sapMITBFilterDefault > .sapMITBText {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
+.sapContrastPlus.sapMITBTextOnly .sapMITBFilterDefault > .sapMITBText,
+.sapContrastPlus .sapMITBTextOnly .sapMITBFilterDefault > .sapMITBText {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
 .sapMITBTextOnly .sapMITBFilterDefault:hover > .sapMITBText {
   color: #ffffff;
 }
 .sapMITBTextOnly .sapMITBFilterDefault.sapMITBSelected > .sapMITBText {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
+.sapContrastPlus.sapMITBTextOnly .sapMITBFilterDefault.sapMITBSelected > .sapMITBText,
+.sapContrastPlus .sapMITBTextOnly .sapMITBFilterDefault.sapMITBSelected > .sapMITBText {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
 .sapMITBTextOnly .sapMITBFilterDefault.sapMITBSelected:hover > .sapMITBText {
   color: #c0e0fa;
+}
+.sapContrastPlus.sapMITBAll .sapMITBText,
+.sapContrastPlus .sapMITBAll .sapMITBText {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+.sapContrastPlus.sapMITBAll .sapMITBCount,
+.sapContrastPlus .sapMITBAll .sapMITBCount {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 /* ========================================== */
 /* CSS for control sap.m/ImageContent.control */

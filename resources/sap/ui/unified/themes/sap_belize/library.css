@@ -3297,12 +3297,12 @@ html[data-sap-ui-browser^="ie"] .sapMFooter-CTX .sapUiFup:focus .sapMBtnInner.sa
 .sapUiMnu.sapUiMnuCozySupport.sapUiSizeCozy .sapUiMnuItmSbMnu {
   width: 3rem;
 }
-html.sap-phone .sapMLIB .sapUiIcon,
-html.sap-tablet .sapMLIB .sapUiIcon {
+html.sap-phone .sapMMenuLIImgThumbIcon,
+html.sap-tablet .sapMMenuLIImgThumbIcon {
   color: #878787;
 }
-html.sap-phone .sapMLIB.sapMLIBActive .sapUiIcon::before,
-html.sap-tablet .sapMLIB.sapMLIBActive .sapUiIcon::before {
+html.sap-phone .sapMLIB.sapMLIBActive .sapMMenuLIImgThumbIcon::before,
+html.sap-tablet .sapMLIB.sapMLIBActive .sapMMenuLIImgThumbIcon::before {
   color: #ffffff;
 }
 html.sap-phone .sapMRespMenuDialog .sapMList .sapMLIBContent .sapMSLITitleOnly,
