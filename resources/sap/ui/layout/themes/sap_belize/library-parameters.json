@@ -731,6 +731,6 @@
     "sapUiAccent6": "#0092d1",
     "sapUiAccent7": "#1a9898",
     "sapUiAccent8": "#759421",
-    "sapUiFormContainerExpImageURL": "sap-icon://expand-group",
-    "sapUiFormContainerColImageURL": "sap-icon://collapse-group"
+    "sapUiFormContainerExpImageURL": "url(\"sap-icon://expand-group\")",
+    "sapUiFormContainerColImageURL": "url(\"sap-icon://collapse-group\")"
 }
