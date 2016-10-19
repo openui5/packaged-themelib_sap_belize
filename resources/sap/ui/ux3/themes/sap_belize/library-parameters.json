@@ -675,7 +675,7 @@
     "sapUiMarginMedium": "2rem",
     "sapUiMarginLarge": "3rem",
     "sapUiEscapedEmptyString": "",
-    "sapUiFeedPersonPlaceholder": "/img/feed/person_placeholder_48.png",
+    "sapUiFeedPersonPlaceholder": "url(\"../base/img/feed/person_placeholder_48.png\")",
     "sapBackgroundColorDefault": "#fafafa",
     "sapPrimary1": "#3f5161",
     "sapPrimary2": "#427cac",
@@ -724,6 +724,6 @@
     "sapUiAccent6": "#0092d1",
     "sapUiAccent7": "#1a9898",
     "sapUiAccent8": "#759421",
-    "sapUiFeedToolsIconUrl": "/img/feed/Action_Menu_regular.png",
-    "sapUiFeedToolsIconHoverUrl": "/img/feed/Action_Menu_hover.png"
+    "sapUiFeedToolsIconUrl": "url(\"img/feed/Action_Menu_regular.png\")",
+    "sapUiFeedToolsIconHoverUrl": "url(\"img/feed/Action_Menu_hover.png\")"
 }
