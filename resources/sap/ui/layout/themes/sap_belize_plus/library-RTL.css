@@ -278,14 +278,11 @@
   -webkit-overflow-scrolling: touch;
   overflow: auto;
 }
-.sapUiFixFlexInnerScrolling > .sapUiFixFlexFlexible .sapUiFixFlexFlexibleContainer {
+.sapUiFixFlexInnerScrolling > .sapUiFixFlexFlexible .sapUiFixFlexFlexibleContainerGrowing {
   overflow-x: hidden;
   overflow-y: visible;
-  position: static;
   width: 100%;
-}
-.sapUiFixFlexInnerScrolling > .sapUiFixFlexFlexible .sapUiFixFlexFlexibleContainerHeight {
-  height: 100%;
+  position: static;
 }
 .sapUiFixFlexInnerScrolling.sapUiFixFlexRow > .sapUiFixFlexFlexible {
   overflow-y: hidden;
@@ -3353,25 +3350,15 @@ html[data-sap-ui-browser^=ie].sap-phone .sapUiLoSplitterV > .sapUiLoSplitterBar:
   display: -ms-flexbox;
   display: flex;
 }
-.sapUiBlockLayoutSizeL .sapUiBlockLayoutRow .sapUiBlockLayoutCell:first-child .sapUiBlockCellContent,
-.sapUiBlockLayoutSizeXL .sapUiBlockLayoutRow .sapUiBlockLayoutCell:first-child .sapUiBlockCellContent,
-.sapUiBlockLayoutSizeM .sapUiBlockLayoutRow .sapUiBlockLayoutCell:first-child .sapUiBlockCellContent {
-  padding-right: 2rem;
-}
-.sapUiBlockLayoutSizeL .sapUiBlockLayoutRow .sapUiBlockLayoutCell:last-child .sapUiBlockCellContent,
-.sapUiBlockLayoutSizeXL .sapUiBlockLayoutRow .sapUiBlockLayoutCell:last-child .sapUiBlockCellContent,
-.sapUiBlockLayoutSizeM .sapUiBlockLayoutRow .sapUiBlockLayoutCell:last-child .sapUiBlockCellContent {
-  padding-left: 2rem;
-}
 .sapUiBlockLayoutSizeL .sapUiBlockSmallCell,
 .sapUiBlockLayoutSizeXL .sapUiBlockSmallCell,
 .sapUiBlockLayoutSizeM .sapUiBlockSmallCell {
   -webkit-flex-shrink: 1;
   -webkit-flex-grow: 1;
-  -webkit-flex-basis: 0%;
+  -webkit-flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 0%;
+  flex-basis: 0;
   -ms-flex-positive: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0;
@@ -3381,17 +3368,17 @@ html[data-sap-ui-browser^=ie].sap-phone .sapUiLoSplitterV > .sapUiLoSplitterBar:
 .sapUiBlockLayoutSizeM .sapUiBlockMediumCell {
   -webkit-flex-grow: 2;
   -webkit-flex-shrink: 1;
-  -webkit-flex-basis: 0%;
+  -webkit-flex-basis: 0;
   flex-grow: 2;
   flex-shrink: 1;
-  flex-basis: 0%;
+  flex-basis: 0;
   -ms-flex-positive: 2;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0;
 }
 .sapUiBlockLayoutSizeL .sapUiBlockScrollingNarrowCells .sapUiBlockScrollableCell,
 .sapUiBlockLayoutSizeXL .sapUiBlockScrollingNarrowCells .sapUiBlockScrollableCell {
-  width: 20%;
+  width: 25%;
 }
 .sapUiBlockLayoutSizeS .sapUiBlockRowSCase {
   display: -webkit-box;
@@ -3401,9 +3388,6 @@ html[data-sap-ui-browser^=ie].sap-phone .sapUiLoSplitterV > .sapUiLoSplitterBar:
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-.sapUiBlockLayoutSizeS .sapUiBlockLayoutCell:not(.sapUiBlockScrollableCell) .sapUiBlockCellContent {
-  padding: 1rem 2rem;
 }
 .sapUiBlockLayoutSizeS .sapUiBlockSmallCell {
   width: 100%;
@@ -3455,7 +3439,6 @@ html[data-sap-ui-browser^=ie].sap-phone .sapUiLoSplitterV > .sapUiLoSplitterBar:
   box-sizing: border-box;
 }
 .sapUiBlockCellTitle {
-  color: #a9a9a9;
   font-weight: normal;
   font-size: 20px;
   margin-bottom: 1rem;
@@ -4008,7 +3991,7 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
   font-weight: normal;
   font-size: 0.875rem;
   color: #fafafa;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem;
 }
 .sapUiBlockCellContent > .sapUiIcon {
   font-size: 2.25rem;
@@ -4017,13 +4000,16 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
   font-size: 1.25rem;
 }
 .sapUiBlockLayoutSizeM .sapUiBlockCellContent {
-  padding: 2rem 2rem 3rem 2rem;
+  padding: 2rem;
 }
 .sapUiBlockLayoutSizeM .sapUiBlockCellContent > .sapUiIcon {
   font-size: 3rem;
 }
 .sapUiBlockLayoutSizeL .sapUiBlockCellContent {
-  padding: 3rem 3rem 4rem 3rem;
+  padding: 3rem;
+  font-size: 1.125rem;
+}
+.sapUiBlockLayoutSizeL .sapUiBlockCellContent > .sapMText {
   font-size: 1.125rem;
 }
 .sapUiBlockLayoutSizeL .sapUiBlockCellContent > .sapUiIcon {
@@ -4033,8 +4019,11 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
   font-size: 1.75rem;
 }
 .sapUiBlockLayoutSizeXL .sapUiBlockCellContent {
-  padding: 4rem 4rem 5rem 4rem;
+  padding: 4rem;
   font-size: 1.5rem;
+}
+.sapUiBlockLayoutSizeXL .sapUiBlockCellContent > .sapMText {
+  font-size: 1.125rem;
 }
 .sapUiBlockLayoutSizeXL .sapUiBlockCellContent > .sapUiIcon {
   font-size: 4.5rem;
@@ -4043,11 +4032,6 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
   font-size: 2.25rem;
 }
 /* ============ Background type: Light ============== */
-.sapUiBlockLayoutBackgroundLight .sapUiBlockCellContent,
-.sapUiBlockLayoutBackgroundLight .sapUiBlockCellTitle {
-  font-family: "72-Web", Arial, Helvetica, sans-serif;
-  color: #fafafa;
-}
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell:nth-child(2n),
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell:nth-child(2n) {
   background-color: #3f5161;
@@ -4081,11 +4065,6 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
   background-color: #313f4b;
 }
 /* ============ Background type: Mixed ============== */
-.sapUiBlockLayoutBackgroundMixed .sapUiBlockCellContent,
-.sapUiBlockLayoutBackgroundMixed .sapUiBlockCellTitle {
-  font-family: "72-Web", Arial, Helvetica, sans-serif;
-  color: #fafafa;
-}
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell:nth-child(2n),
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell:nth-child(2n) {
   background-color: #3f5161;
@@ -4212,30 +4191,39 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
 }
 /* ============ Background type: Dashboard ============== */
 .sapUiBlockLayoutBackgroundDashboard .sapUiBlockLayoutCell {
-  background-color: #ffffff;
   font-weight: normal;
   color: #fafafa;
+}
+.sapUiBlockLayoutBackgroundDashboard .sapUiBlockCellContent {
+  background-color: #ffffff;
   margin: 0.25rem;
 }
-.sapUiBlockLayoutBackgroundDashboard .sapUiBlockLayoutCell:first-child {
+.sapUiBlockLayoutBackgroundDashboard .sapUiBlockScrollingNarrowCells .sapUiBlockScrollableCell .sapUiBlockCellContent {
+  margin-bottom: 0;
+}
+.sapUiBlockLayoutBackgroundDashboard .sapUiBlockScrollingNarrowCells + .sapUiBlockHorizontalCellsRow .sapUiBlockCellContent {
+  margin-top: 0.375rem;
+}
+.sapUiBlockLayoutBackgroundDashboard:not(.sapUiBlockLayoutSizeS) .sapUiBlockLayoutCell:first-child .sapUiBlockCellContent {
   margin-right: 0.5rem;
 }
-.sapUiBlockLayoutBackgroundDashboard .sapUiBlockLayoutCell:last-child {
+.sapUiBlockLayoutBackgroundDashboard:not(.sapUiBlockLayoutSizeS) .sapUiBlockLayoutCell:last-child .sapUiBlockCellContent {
   margin-left: 0.5rem;
 }
-.sapUiBlockLayoutBackgroundDashboard .sapUiBlockLayoutRow:first-child .sapUiBlockLayoutCell {
+.sapUiBlockLayoutBackgroundDashboard:not(.sapUiBlockLayoutSizeS) .sapUiBlockLayoutRow:first-child .sapUiBlockCellContent {
   margin-top: 0.5rem;
 }
-.sapUiBlockLayoutBackgroundDashboard .sapUiBlockLayoutRow:last-child .sapUiBlockLayoutCell {
+.sapUiBlockLayoutBackgroundDashboard:not(.sapUiBlockLayoutSizeS) .sapUiBlockLayoutRow:last-child .sapUiBlockCellContent {
   margin-bottom: 0.5rem;
 }
-.sapUiBlockLayoutBackgroundDashboard.sapUiBlockLayoutSizeS .sapUiBlockLayoutCell {
-  margin: 0 0.5rem 0.5rem 0.5rem;
+.sapUiBlockLayoutBackgroundDashboard.sapUiBlockLayoutSizeS .sapUiBlockCellContent {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
-.sapUiBlockLayoutBackgroundDashboard.sapUiBlockLayoutSizeS .sapUiBlockLayoutRow:first-child .sapUiBlockLayoutCell:first-child {
+.sapUiBlockLayoutBackgroundDashboard.sapUiBlockLayoutSizeS .sapUiBlockLayoutRow:first-child .sapUiBlockLayoutCell:first-child .sapUiBlockCellContent {
   margin-top: 0.5rem;
 }
-.sapUiBlockLayoutBackgroundDashboard.sapUiBlockLayoutSizeS .sapUiBlockLayoutRow:last-child .sapUiBlockLayoutCell:last-child {
+.sapUiBlockLayoutBackgroundDashboard.sapUiBlockLayoutSizeS .sapUiBlockLayoutRow:last-child .sapUiBlockLayoutCell:last-child .sapUiBlockCellContent {
   margin-bottom: 0.5rem;
 }
 /* ======================================== */
