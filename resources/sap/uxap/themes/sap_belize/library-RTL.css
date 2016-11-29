@@ -1270,6 +1270,9 @@ html[data-sap-ui-browser^="ie"][data-sap-ui-os^="win8"] .sapMShell .sapUxAPObjec
   margin-right: 0;
   margin-bottom: 0;
 }
+.sapUxAPObjectPageSectionTitleUppercase {
+  text-transform: uppercase;
+}
 .sapUxAPObjectPageSectionHeader {
   box-sizing: border-box;
   height: 3rem;
@@ -1337,6 +1340,7 @@ html[data-sap-ui-browser^="ie"][data-sap-ui-os^="win8"] .sapMShell .sapUxAPObjec
   line-height: 3rem;
 }
 .sapUxAPObjectPageSubSectionHeaderActions {
+  padding-left: 0.5rem;
   float: left;
   height: 3rem;
 }
@@ -1715,6 +1719,9 @@ html[data-sap-ui-browser^="cr4"].sap-phone .sapUxAPHierarchicalSelect .sapMSltLa
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.sapUxAPObjectPageHeader .sapUxAPObjectPageHeaderLockBtn .sapMBtnTransparent:not(.sapMBtnActive) > .sapMBtnIcon {
+  color: #678bc7;
+}
 .sapUxAPObjectPageHeaderIdentifier {
   background: #eff4f9;
 }
@@ -1750,8 +1757,7 @@ html.sapUiMedia-Std-Phone .sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageH
 html.sapUiMedia-Std-Phone .sapUxAPObjectPageHeaderIdentifierTitle {
   font-size: 1.125rem;
 }
-.sapUxAPObjectPageHeaderChangesBtn .sapMBtnTransparent > .sapMBtnIcon,
-.sapUxAPObjectPageHeaderLockBtn .sapMBtnTransparent > .sapMBtnIcon {
+.sapUxAPObjectPageHeaderChangesBtn .sapMBtnTransparent > .sapMBtnIcon {
   color: rgba(52, 97, 135, 0.05);
 }
 html.sapUiMedia-Std-Phone .sapUiSizeCompact.sapUxAPObjectPageHeaderChangesBtn .sapMBtn,
