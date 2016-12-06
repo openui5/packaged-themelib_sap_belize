@@ -1162,6 +1162,7 @@ html[data-sap-ui-browser="ff3"] .sapUiDlgGrip {
 /* success state */
 .sapUiIpeSucc,
 .sapUiIpeUndo.sapUiIpeSucc {
+  border-color: #abe2ab;
   background-color: #495e70;
 }
 /* invalid state */
@@ -1173,6 +1174,7 @@ html[data-sap-ui-browser="ff3"] .sapUiDlgGrip {
 /* warning state */
 .sapUiIpeWarn,
 .sapUiIpeUndo.sapUiIpeWarn {
+  border-color: #fabd64;
   background-color: #495e70;
 }
 /* Content area if revert button is available*/
@@ -3234,7 +3236,7 @@ html[data-sap-ui-browser*="ie"] .sapUiPanelTb {
 }
 .sapUiProgIndBarPos {
   position: relative;
-  background-color: #495e70;
+  background-color: #174417;
   color: #ffffff;
   border-radius: 3px;
   box-sizing: border-box;
@@ -3244,7 +3246,7 @@ html[data-sap-ui-browser*="ie"] .sapUiPanelTb {
 }
 .sapUiProgIndBarNeg {
   position: relative;
-  background-color: #495e70;
+  background-color: #550000;
   color: #ffffff;
   border-radius: 3px;
   box-sizing: border-box;
@@ -3254,7 +3256,7 @@ html[data-sap-ui-browser*="ie"] .sapUiPanelTb {
 }
 .sapUiProgIndBarCrit {
   position: relative;
-  background-color: #495e70;
+  background-color: #5c3803;
   color: #ffffff;
   border-radius: 3px;
   box-sizing: border-box;
@@ -4351,6 +4353,9 @@ html[data-sap-ui-os^='mac'] .sapUiTfDsbl .sapUiTfInner.sapUiTf {
 .sapUiTfBrd.sapUiTfWarn {
   border-color: #fabd64;
 }
+.sapUiTfBrd.sapUiTfSucc {
+  border-color: #abe2ab;
+}
 .sapUiTfErr.sapUiTfStd {
   background-color: #495e70;
 }
@@ -4969,6 +4974,26 @@ html[dir=rtl] .sapUiTreeTitle {
 }
 .sapUiTableCell > .sapUiLnk {
   vertical-align: middle;
+}
+.sapUiTableCell > .sapUiLnk:focus {
+  outline-offset: -1px;
+}
+html[data-sap-ui-browser^="ie"] .sapUiTableCell > .sapUiLnk:focus,
+html[data-sap-ui-browser^="ed"] .sapUiTableCell > .sapUiLnk:focus {
+  outline: none;
+  position: relative;
+}
+html[data-sap-ui-browser^="ie"] .sapUiTableCell > .sapUiLnk:focus:before,
+html[data-sap-ui-browser^="ed"] .sapUiTableCell > .sapUiLnk:focus:before {
+  content: " ";
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px dashed #ffffff;
+  pointer-events: none;
 }
 .sapUiAnalyticalTable .sapUiTableCell > .sapUiTv {
   font-size: 0.875rem;
