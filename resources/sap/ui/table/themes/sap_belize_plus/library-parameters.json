@@ -665,6 +665,8 @@
     "sapUiMarginLarge": "3rem",
     "sapUiEscapedEmptyString": "",
     "sapUiTableRowHeight": "28px",
+    "sapUiTableCompactRowHeight": "32px",
+    "sapUiTableCondensedRowHeight": "25px",
     "sapUiTableColHdrHeight": "32px",
     "sapUiTableRowHdrWidth": "25px",
     "sapUiTableToolbarDesign": "Transparent",
@@ -720,10 +722,8 @@
     "sapUiAccent6": "#0092d1",
     "sapUiAccent7": "#1a9898",
     "sapUiAccent8": "#759421",
-    "sapUiTableCompactRowHeight": "32px",
     "sapUiTableCompactColHdrHeight": "32px",
     "sapUiTableCompactRowHdrWidth": "32px",
-    "sapUiTableCondensedRowHeight": "25px",
     "sapUiTableCondensedColHdrHeight": "25px",
     "sapUiTableCondensedRowHdrWidth": "25px"
 }
