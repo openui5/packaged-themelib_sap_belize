@@ -3,6 +3,13 @@
 /* Belize theme                       */
 /* ================================== */
 
+.sapMGT.sapMGTBackgroundImage {
+	.sapMGTContent {
+		border-bottom-left-radius: 0.125rem;
+		border-bottom-right-radius: 0.125rem;
+	}
+}
+
 /************************ LINE MODE COZY ********************/
 
 .sapMGT.sapMGTLineMode {
@@ -211,5 +218,9 @@ html.sap-desktop .sapMGT:focus:not([tabindex]) {
 @media screen and (max-width: 374px) {
 	.sapMGTHdrTxt > .sapMText {
 		font-size: @sapMFontHeader6Size;
+	}
+
+	.sapMGTSubHdrTxt {
+		font-size: @sapMFontSmallSize;
 	}
 }

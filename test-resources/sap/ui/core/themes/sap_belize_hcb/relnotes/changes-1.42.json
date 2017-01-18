@@ -370,5 +370,134 @@
         "references": []
       }
     ]
+  },
+  "1.42.7": {
+    "date": "December 2016",
+    "notes": [
+      {
+        "id": "e1aa21b97a2b5c7e95e56bd7140ab70361320520",
+        "type": "FIX",
+        "text": " sap.m.Button, sap.m.ToggleButton: Css selectors fixed in Belize",
+        "references": []
+      },
+      {
+        "id": "de125d754e1582e1d5f41c9484bcecc9e6eb0cf7",
+        "type": "FIX",
+        "text": " sap.m.GenericTile: Line height increased to fit Devanagari script",
+        "references": []
+      },
+      {
+        "id": "b0894cbcfd2f2e8bbe6fd4ad5e6d90a6d1843868",
+        "type": "FIX",
+        "text": " sap.m.MessageToast - width property is no longer restricted to a maximum of 15rems",
+        "references": []
+      },
+      {
+        "id": "f5494d110618aed7c10e5d844c9090ab4b151130",
+        "type": "FIX",
+        "text": " sap.m.MultiInput: SetEditable no longer modifies its tokens",
+        "references": []
+      },
+      {
+        "id": "9384b997158e188499ea44c5d08a751be1b034ad",
+        "type": "FIX",
+        "text": " sap.m.MultiInput: Token selection corrected",
+        "references": []
+      },
+      {
+        "id": "7de30f514a4b07c1609c63d18935fa92005749c0",
+        "type": "FIX",
+        "text": " sap.m.Panel: corrected focus for IE",
+        "references": []
+      },
+      {
+        "id": "520ec412486bb014eb354bee561ae36ead785b5e",
+        "type": "FIX",
+        "text": " sap.m.TileContainer: Arrows\u0027 click behaviour in firefox is now handled properly",
+        "references": []
+      },
+      {
+        "id": "6f15b1384bda273af5b230dbb671b61841791212",
+        "type": "FIX",
+        "text": " sap.m.TimePicker: Correctly displayed in Belize",
+        "references": []
+      }
+    ]
+  },
+  "1.42.8": {
+    "date": "January 2017",
+    "notes": [
+      {
+        "id": "b1ecb6034502dc94ab7a1b0039e8c34636cf506d",
+        "type": "FIX",
+        "text": " sap.m.Button: Emphasized button has correct contrast ratio",
+        "references": []
+      },
+      {
+        "id": "7bc40ec7c72e6d458276e3acc984c50985dcfc31",
+        "type": "FIX",
+        "text": " sap.m.Carousel: Focus outline corrected",
+        "references": []
+      },
+      {
+        "id": "9dc12b9e2c4aec24763719fb50188e5390fde146",
+        "type": "FIX",
+        "text": " sap.m.Link: Dashed focus outline in IE",
+        "references": []
+      },
+      {
+        "id": "4e3056e81114955ffa2b6abbfecec567b101afce",
+        "type": "FIX",
+        "text": " sap.m.MultiInput: Layout no longer breaks on resize",
+        "references": []
+      },
+      {
+        "id": "311c70d6d8210e18bbba1a107e32b83e3e111fa1",
+        "type": "FIX",
+        "text": " sap.m.NotificationListGroup: Focus outline in IE corrected",
+        "references": []
+      },
+      {
+        "id": "88a820535b761e7c2f5dc1b5bd69af01965bf172",
+        "type": "FIX",
+        "text": " sap.m.Page: rendering performance",
+        "references": []
+      },
+      {
+        "id": "31e7d7b9fcef5191a2b5504f9c85b9210ee1f6f2",
+        "type": "FIX",
+        "text": " sap.tnt.NavigationList: Focus contrast ratio in IE is now correct",
+        "references": []
+      }
+    ]
+  },
+  "1.42.9": {
+    "date": "January 2017",
+    "notes": [
+      {
+        "id": "095a84c5ca5c013a687fd328c371acfd3a48dfa6",
+        "type": "FIX",
+        "text": " sap.m.ObjectAttribute: Focus clear visible on IE",
+        "references": []
+      },
+      {
+        "id": "818e9d512ce8ffc00a07f30bd6a2dfc648ebd392",
+        "type": "FIX",
+        "text": " sap.m.PlanningCalendar: Appointments focus corrected for Belize on IE",
+        "references": []
+      },
+      {
+        "id": "7268d0ac3000449918cdc03a1b4e5bcf730efdb2",
+        "type": "FIX",
+        "text": " sap.m.SegmentedButton: Focus contrast ratio in IE/Edge is now correct",
+        "references": []
+      },
+      {
+        "id": "44af00b34db944714b5d94c5d8469a292782eb76",
+        "type": "FIX",
+        "text": " sap.ui.unified.Calendar: Focus has sufficient contrast ratio in IE",
+        "references": []
+      }
+    ]
   }
 }
