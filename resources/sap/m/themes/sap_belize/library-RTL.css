@@ -5457,6 +5457,7 @@ html[dir=rtl] .sapMNCValueScr {
 .sapMObjectAttributeActive {
   pointer-events: none;
 }
+.sapMListTbl .sapMObjectAttributeActive .sapMText,
 .sapMObjectAttributeActive .sapMText {
   color: #0070b1;
   cursor: pointer;
@@ -5478,6 +5479,10 @@ html[dir=rtl] .sapMNCValueScr {
 }
 .sapMOH .sapMObjectAttributeText > .sapMText {
   vertical-align: bottom;
+}
+html[data-sap-ui-browser^="ie"] .sapMObjectAttributeDiv,
+html[data-sap-ui-browser^="ed"] .sapMObjectAttributeDiv {
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
 }
 /* ============================================= */
 /* CSS for control sap.m/ObjectHeaderItem.control */
@@ -7811,6 +7816,15 @@ html.sap-phone .sapMQuickViewPage .sapUiHLayout {
 .sapMRbG .sapMRbHasLabel .sapMRbBOut {
   margin: 0.8125rem;
 }
+/* Read only */
+.sapMRbGRo .sapMRb .sapMRbBOut {
+  background-color: rgba(242, 242, 242, 0.5);
+  border-color: #cccccc;
+}
+.sapMRbGRo .sapMRb.sapMRbSel .sapMRbBInn {
+  background-color: #878787;
+}
+/* Right to left */
 .sapMRbG[dir=rtl] .sapMRbB {
   left: 0;
 }
@@ -7818,6 +7832,7 @@ html.sap-phone .sapMQuickViewPage .sapUiHLayout {
   padding-right: 0;
   padding-left: 3rem;
 }
+/* Compact Size */
 .sapUiSizeCompact .sapMRbG .sapMRbHasLabel .sapMRbB {
   width: 2rem;
 }
@@ -8123,6 +8138,25 @@ html[data-sap-ui-os^="iOS"] .sapMBar .sapMSegB {
 /* Android size compact fix */
 html[data-sap-ui-os^="Android"] .sapUiSizeCompact .sapMSegBBtn .sapUiIcon {
   line-height: 1.6rem;
+}
+/* IE ignores outline-offset. Use an overlay: */
+html[data-sap-ui-browser^="ie"].sap-desktop .sapMSegB .sapMSegBBtnFocusable.sapMSegBBtnSel:focus,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapMSegB .sapMSegBBtnFocusable.sapMSegBBtnSel:focus {
+  outline: none;
+  position: relative;
+}
+html[data-sap-ui-browser^="ie"].sap-desktop .sapMSegB .sapMSegBBtnFocusable.sapMSegBBtnSel:focus:before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapMSegB .sapMSegBBtnFocusable.sapMSegBBtnSel:focus:before {
+  content: " ";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1px;
+  margin-right: 1px;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  pointer-events: none;
 }
 /* ====================================================== */
 /* CSS for control sap.m/Select.control                   */
@@ -9799,6 +9833,10 @@ html.sap-phone .sapMTabStrip .sapMTSTouchArea {
 html.sap-phone .sapMTabStrip .sapMSltWithArrow {
   visibility: visible;
 }
+html[data-sap-ui-browser^="ie"] .sapMTabStrip .sapMTSTabsContainer .sapMTSTabs .sapMTabStripItem:focus::before,
+html[data-sap-ui-browser^="ed"] .sapMTabStrip .sapMTSTabsContainer .sapMTSTabs .sapMTabStripItem:focus::before {
+  border-style: dashed;
+}
 /* ====================================================== */
 /* CSS for control sap.m.TabStripSelect.control           */
 /* ====================================================== */
@@ -10072,6 +10110,10 @@ html.sap-phone .sapMTabStripSelectListItemCloseBtn .sapMBtnInner {
   word-wrap: break-word;
   /* works only if browser knows the width */
   cursor: text;
+}
+html[data-sap-ui-browser="sf10"] .sapUiVltCell .sapMText,
+html[data-sap-ui-browser="sf10"] .sapuiVltCell .sapMText {
+  display: block;
 }
 .sapMTextNoWrap,
 .sapMTextMaxLine {
@@ -11042,6 +11084,7 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapMToken:focus .sapMTokenText:befo
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  pointer-events: none;
   line-height: 1.625rem;
   max-width: calc(100% - 1.875rem);
   box-sizing: border-box;
@@ -16259,6 +16302,10 @@ html.sap-desktop .sapMObjectAttributeActive:focus > .sapMText {
   outline: 1px dotted #000000;
   outline-offset: -1px;
 }
+html[data-sap-ui-browser^="ie"] .sapMObjectAttributeActive:focus > .sapMText,
+html[data-sap-ui-browser^="ed"] .sapMObjectAttributeActive:focus > .sapMText {
+  outline-style: dashed;
+}
 /*=========================================== */
 /* Custom design for Responsive Object Header */
 /*=========================================== */
@@ -16564,7 +16611,7 @@ html[data-sap-ui-browser^="ie"] .sapMOHR .sapMObjStatusMarker .sapUiIcon:focus {
   outline: none;
 }
 html[data-sap-ui-browser^="ie"] .sapMOHR .sapMObjectAttributeDiv {
-  padding: 0.125rem 0.125rem 0 0.125rem;
+  padding: 0.125rem 0.125rem 0.125rem 0.125rem;
 }
 html[data-sap-ui-browser^="ie"] .sapMOHR .sapMOHRStatus {
   padding: 0.125rem 0.125rem 0.5rem 0.125rem;
@@ -17989,9 +18036,10 @@ html.sap-desktop .sapMSegBBtnFocusable.sapMSegBBtnSel:focus {
   outline-offset: -3px;
   outline-color: #ffffff;
 }
-html[data-sap-ui-browser^="ie"].sap-desktop .sapMSegBBtnFocusable.sapMSegBBtnSel:focus,
-html[data-sap-ui-browser^="ed"].sap-desktop .sapMSegBBtnFocusable.sapMSegBBtnSel:focus {
-  outline-color: #000000;
+/* IE/Edge */
+html[data-sap-ui-browser^="ie"].sap-desktop .sapMSegB .sapMSegBBtnFocusable.sapMSegBBtnSel:focus:before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapMSegB .sapMSegBBtnFocusable.sapMSegBBtnSel:focus:before {
+  border: 1px dashed #ffffff;
 }
 .sapMSegB.sapMSegBIcons .sapMSegBBtn:not(.sapMSegBBtnMixed) {
   padding: 0;
