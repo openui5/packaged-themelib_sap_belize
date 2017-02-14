@@ -2687,9 +2687,6 @@ html[dir=rtl] .sapMGTLineMode .sapMGTSubHdrTxt {
   bottom: 1px;
   border-radius: 0.25rem;
 }
-.sapMGenericTileLoading {
-  height: 100%;
-}
 .sapMGenericTileFtrFld {
   right: 0.4375rem;
   left: 0.4375rem;
@@ -5455,6 +5452,7 @@ html.sap-desktop .sapMMultiComboBoxBorder {
   -ms-flex: 1;
   margin-left: 2.5rem;
   min-width: 4.5rem;
+  height: 100%;
 }
 .sapMMultiComboBoxInputContainer .sapMMultiComboBoxInputInner {
   font-size: 0.875rem;
@@ -8087,8 +8085,14 @@ html[data-sap-ui-browser^="ff"].sap-desktop .sapMPage > .sapMTitle {
   opacity: 0.9;
 }
 .sapMPageFloatingFooter.sapMPageWithFooter > section {
-  padding-bottom: 4rem;
   bottom: 0;
+}
+.sapMPageFloatingFooter.sapMPageWithFooter > section:after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 100%;
+  margin-bottom: 4rem;
 }
 .sapUiSizeCompact .sapMPageWithFooter.sapMPageFloatingFooter > section {
   bottom: 0;
@@ -10353,6 +10357,21 @@ html.sap-desktop .sapMST:not(:hover).sapMST:not(:focus) .sapMSTBulleted {
 }
 .sapUiSizeCompact .sapMSBTextIE.sapMSBText {
   padding-left: 2rem;
+}
+.sapMSB:focus .sapMSBInner::after {
+  top: 0.3125rem;
+  bottom: 0.3125rem;
+  right: 0.0625rem;
+  left: 0.0625rem;
+  border: 0.0625rem dotted #000000;
+}
+.sapUiSizeCompact .sapMSB:focus .sapMSBInner::after {
+  top: 0.25rem;
+  bottom: 0.25rem;
+}
+html[data-sap-ui-browser^="ie"] .sapMSB:focus .sapMSBInner::after,
+html[data-sap-ui-browser^="ed"] .sapMSB:focus .sapMSBInner::after {
+  border-style: dashed;
 }
 /* ============================================= */
 /* CSS for control sap.m/SplitContainer.control */
@@ -19195,6 +19214,14 @@ html.sap-desktop .sapMST:focus .sapMSTFocusDiv:after {
   -webkit-background-clip: padding-box;
   -ms-background-clip: padding-box;
   -moz-background-clip: padding-box;
+}
+/* ================================== */
+/* CSS for control sap.m/SplitButton  */
+/* Belize theme                       */
+/* ================================== */
+.sapMIBar-CTX.sapMFooter-CTX .sapMSB.sapMSBEmphasized:focus .sapMSBInner::after,
+.sapMSB.sapMSBEmphasized:focus .sapMSBInner::after {
+  border-color: #000000;
 }
 /* ====================================== */
 /* CSS for controlsap.m/StandardListItem  */
