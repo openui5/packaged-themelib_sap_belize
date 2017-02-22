@@ -3,6 +3,11 @@
 /* Belize theme                               */
 /* ========================================== */
 
+
+.sapUiSizeCompact .sapUxAPObjectPageHeaderIdentifierActions {  // desktop requires different padding
+	padding-top: 0.75rem;
+}
+
 .sapUxAPObjectPageHeader {
 	.sapMBar {
 		background-color: @sapUiObjectHeaderBackground;
@@ -17,32 +22,32 @@
 }
 
 .sapUxAPObjectPageHeaderIdentifier {
-	background: @sapUiObjectHeaderBackground;
-
 	.sapUxAPObjectPageHeaderIdentifierTitle {
 		color: @sapUiGroupTitleTextColor;
 	}
 
 	.sapUxAPObjectPageHeaderIdentifierDescription {
-		font-size: @sapMFontMediumSize;
 		color: @sapUiContentLabelColor;
 	}
 
 	.sapUxAPObjectPageHeaderIdentifierActions {
 		&.sapUxAPObjectPageHeaderIdentifierActionsForce, .sapUxAPObjectPageHeaderStickied & {
-			display: inline-block;
 			right: 1.25rem;
 		}
 	}
 }
 
+.sapUiSizeCompact .sapUxAPObjectPageHeaderIdentifierContainer /* desktop-specific padding */{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
 .sapUxAPObjectPageHeaderIdentifierContainer .sapMBreadcrumbs {
-	margin-top: 0.1875rem;
 	line-height:  1.25rem;
 }
 
-html.sapUiMedia-StdExt-LargeDesktop .sapUxAPObjectPageHeaderIdentifier,
-html .sapUiContainer-ExtraWide .sapUxAPObjectPageHeaderIdentifier {
+html.sapUiMedia-StdExt-LargeDesktop .sapUiSizeCompact .sapUxAPObjectPageHeaderIdentifier,
+html .sapUiSizeCompact .sapUiContainer-ExtraWide .sapUxAPObjectPageHeaderIdentifier {
 	.sapUxAPObjectPageHeaderIdentifierActions {
 		&.sapUxAPObjectPageHeaderIdentifierActionsForce, .sapUxAPObjectPageHeaderStickied & {
 			right: 2.25rem;
@@ -68,11 +73,6 @@ html .sapUiContainer-Narrow .sapUxAPObjectPageHeaderIdentifier {
 	}
 }
 
-html.sapUiMedia-Std-Phone .sapUxAPObjectPageHeaderIdentifierTitle,
-html .sapUiContainer-Narrow .sapUxAPObjectPageHeaderIdentifierTitle {
-	font-size: @sapMFontHeader4Size;
-}
-
 .sapUxAPObjectPageHeaderChangesBtn .sapMBtnTransparent > .sapMBtnIcon {
 	color:  fade(@sapUiContentIconColor, 5);
 }
@@ -90,17 +90,13 @@ html .sapUiContainer-Narrow .sapUiSizeCompact.sapUxAPObjectPageHeaderLockBtn .sa
 }
 
 .sapUxAPObjectPageHeaderPlaceholder {
-	background-color: fade(@sapUiContentIconColor, 30);
+	background-color: @sapUiContentImagePlaceholderBackground;
 }
 
 .sapUxAPObjectPageHeaderPlaceholder > .sapUiIcon {
-	color: fade(@sapUiContentIconColor, 5);
+	color: @sapUiContentImagePlaceholderForegroundColor;
 }
 
 .sapUxAPObjectPageHeaderObjectImageContainer .sapUiIcon {
 	color: @sapUiContentIconColor;
-}
-
-.sapUxAPObjectPageHeaderSeparator {
-	background-color: @sapUiToolbarSeparatorColor;
 }

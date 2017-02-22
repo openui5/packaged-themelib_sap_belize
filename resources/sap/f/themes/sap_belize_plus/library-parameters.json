@@ -542,9 +542,6 @@
     "sapUiToggleButtonPressedTextColor": "#2f3c48",
     "sapUiToggleButtonPressedHoverBackground": "#91c8f6",
     "sapUiToggleButtonPressedHoverBorderColor": "#91c8f6",
-    "sapUiToggleButtonPressedDisabledBackground": "#62b1f2",
-    "sapUiToggleButtonPressedDisabledBorderColor": "#4ba5f0",
-    "sapUiToggleButtonPressedDisabledTextColor": "#f2f8fe",
     "sapUiSegmentedButtonBackground": "#435667",
     "sapUiSegmentedButtonBorderColor": "#8199ad",
     "sapUiSegmentedButtonTextColor": "#cae4fb",
@@ -688,6 +685,9 @@
     "sapUiButtonAcceptDisabledBackground": "#435667",
     "sapUiButtonRejectDisabledBorderColor": "#ff8888",
     "sapUiButtonRejectDisabledBackground": "#435667",
+    "sapUiToggleButtonPressedDisabledBackground": "#62b1f2",
+    "sapUiToggleButtonPressedDisabledBorderColor": "#4ba5f0",
+    "sapUiToggleButtonPressedDisabledTextColor": "#f2f8fe",
     "sapUiPositiveBG": "#abe2ab",
     "sapUiShadowTint": "#000000",
     "sapUiShadow": "5px 5px 10px rgba(0, 0, 0, 0.5)",
@@ -735,5 +735,8 @@
     "sapUiPrimary4": "#ffffff",
     "sapUiPrimary5": "#fafafa",
     "sapUiPrimary6": "#bfbfbf",
-    "sapUiPrimary7": "#333333"
+    "sapUiPrimary7": "#333333",
+    "_sap_f_Avatar_Color": "#ffffff",
+    "_sap_f_FlexibleColumnLayout_ButtonBackground": "#45596a",
+    "_sap_f_FlexibleColumnLayout_ButtonHoverBackground": "#4f667a"
 }
