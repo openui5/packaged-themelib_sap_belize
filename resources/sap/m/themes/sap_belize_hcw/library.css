@@ -2833,7 +2833,8 @@ html[data-sap-ui-browser*='ff'] .sapMGT:not(.sapMGTHeaderMode) .sapMGTHdrContent
 .sapMHdrCntr.Vertical {
   max-height: 100%;
 }
-.sapMHdrCntrBtn {
+/* initial condition for hide and display arrow button container*/
+.sapMHdrCntrBtnCntr {
   display: none;
 }
 .sapMHdrCntrBtnCntr.Horizontal {
@@ -5439,10 +5440,15 @@ html.sap-desktop .sapMMultiComboBoxBorder {
 }
 .sapMMultiComboBoxBorder.sapMMultiComboBoxBorder .sapMTokenizer {
   flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
 }
-.sapMMultiComboBoxBorder.sapMMultiComboBoxBorder .sapMTokenizer:not(.sapMTokenizerEmpty) .sapMTokenizerScrollContainer {
-  padding-left: 0.375rem;
+.sapMMultiComboBoxBorder.sapMMultiComboBoxBorder .sapMTokenizer .sapMToken:first-child {
+  margin-left: 0.375rem;
+}
+.sapUiSizeCompact .sapMMultiComboBoxBorder .sapMTokenizer .sapMToken:first-child {
+  margin-left: 0.25rem;
+}
+.sapMMultiComboBoxHasToken .sapMInputBaseInner {
+  padding-left: 0;
 }
 /* ------------------------------ */
 /*             InputDiv           */
@@ -5451,7 +5457,7 @@ html.sap-desktop .sapMMultiComboBoxBorder {
   flex: 1;
   -ms-flex: 1;
   margin-right: 2.5rem;
-  min-width: 4.5rem;
+  min-width: 3rem;
   height: 100%;
 }
 .sapMMultiComboBoxInputContainer .sapMMultiComboBoxInputInner {
@@ -5463,7 +5469,10 @@ html.sap-desktop .sapMMultiComboBoxBorder {
 }
 .sapUiSizeCompact .sapMMultiComboBoxInputContainer {
   margin-right: 2rem;
-  min-width: 3.5rem;
+  min-width: 2rem;
+}
+.sapUiSizeCompact .sapMComboBoxTextFieldInnerWidthExtraPadding:not(.sapMComboBoxTextFieldInnerReadonly) {
+  padding-right: 0.5rem;
 }
 /* Keep placeholder invisible, when at least one token is chosen */
 /* Webkit */
@@ -6651,7 +6660,7 @@ html[dir=rtl] .sapMNCValueScr {
 }
 html[data-sap-ui-browser^="ie"] .sapMObjectAttributeDiv,
 html[data-sap-ui-browser^="ed"] .sapMObjectAttributeDiv {
-  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  padding: 0.125rem 0.125rem 0.125rem 0.125rem;
 }
 /* ============================================= */
 /* CSS for control sap.m/ObjectHeaderItem.control */
@@ -9629,6 +9638,10 @@ input.sapMSFI[type="search"]:focus {
   box-sizing: border-box;
   display: inline-block;
 }
+.sapMBar .sapMSegB {
+  margin-top: 0.250rem;
+  margin-bottom: 0.250rem;
+}
 .sapMSegBBtn:focus {
   outline: none;
 }
@@ -9713,6 +9726,11 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapMSegB .sapMSegBBtnFocusable.sapM
   width: calc(100% - 2px);
   height: calc(100% - 2px);
   pointer-events: none;
+}
+/* Compact size */
+.sapUiSizeCompact .sapMBar .sapMSegB {
+  margin-top: 0.1875rem;
+  margin-bottom: 0.1875rem;
 }
 /* ====================================================== */
 /* CSS for control sap.m/Select.control                   */
@@ -18522,9 +18540,6 @@ html.sap-desktop .sapMFocus > .sapMSFF {
   border-top-right-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem;
 }
-.sapMBar .sapMSegB {
-  margin: 0.250rem 0;
-}
 html.sap-desktop .sapMSegBBtnFocusable:hover {
   background: #ec8b46;
 }
@@ -20500,6 +20515,7 @@ html.sap-desktop .sapMToggleBtnPressed.sapMBtnTransparent > .sapMBtnIcon {
 /************************************/
 /* hover and down on toggled button part 1*/
 .sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive),
+.sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive),
 .sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover,
 .sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover {
   background-color: #ec8b46;
@@ -20508,6 +20524,7 @@ html.sap-desktop .sapMToggleBtnPressed.sapMBtnTransparent > .sapMBtnIcon {
   text-shadow: none;
 }
 .sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnReject,
+.sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnReject,
 .sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnReject,
 .sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnReject {
   background-color: #a20000;
@@ -20515,6 +20532,7 @@ html.sap-desktop .sapMToggleBtnPressed.sapMBtnTransparent > .sapMBtnIcon {
   color: #000000;
 }
 .sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnAccept,
+.sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnAccept,
 .sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnAccept,
 .sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnAccept {
   background-color: #246a24;
