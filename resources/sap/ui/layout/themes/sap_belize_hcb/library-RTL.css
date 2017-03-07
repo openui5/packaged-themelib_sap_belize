@@ -3934,6 +3934,9 @@ html[data-sap-ui-browser^=ie].sap-phone .sapUiLoSplitterV > .sapUiLoSplitterBar:
 .sapUiLoSplitterV > .sapUiLoSplitterOverlay > .sapUiLoSplitterOverlayBar > .sapUiIcon.sapUiLoSplitterBarIcon::after {
   content: "\e1fb";
 }
+.sapUiLoSplitterBarIcon.sapUiIcon {
+  cursor: col-resize;
+}
 /* ================================================= */
 /* CSS for control sap.ui.layout/ResponsiveSplitter  */
 /* Belize High Contrast Black theme                  */
