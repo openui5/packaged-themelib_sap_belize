@@ -1678,7 +1678,10 @@ html[data-sap-ui-animation="off"].sapUiMedia-Std-Desktop .sapUxAPAnchorBar.sapUx
   background-color: #496b8a;
 }
 .sapMPopover.sapUxAPAnchorBarPopover .sapMBtn.sapUxAPAnchorBarButton:hover {
-  background-color: #4e7395;
+  background-color: #45596a;
+}
+.sapMPopover.sapUxAPAnchorBarPopover .sapMBtn.sapUxAPAnchorBarButton:hover > .sapMBtnActive:hover {
+  background-color: #427cac;
 }
 .sapMPopover.sapUxAPAnchorBarPopover .sapMBtn.sapUxAPAnchorBarButton > .sapMBtnText:not(.sapMBtnActive) {
   color: #dddddd;
@@ -2019,14 +2022,11 @@ html.sapUiMedia-Std-Tablet .sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageHe
 .sapUshellShell .sapUxAPAnchorBar.sapMTB {
   opacity: 0.6;
 }
-.sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnContent,
-.sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnIcon {
-  color: #ffffff;
-}
-/* hover + keyboard behavior */
-.sapUxAPAnchorBar .sapUxAPAnchorBarButton .sapMBtnInner.sapMBtnTransparent.sapMBtnHoverable:hover .sapMBtnContent,
-.sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapMBtn:hover > .sapMBtnHoverable .sapMBtnContent,
-.sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapMBtn:hover > .sapMBtnHoverable .sapMBtnIcon {
+.sapContrastPlus .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnContent,
+.sapContrastPlus .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnIcon,
+.sapContrastPlus .sapUxAPAnchorBar .sapUxAPAnchorBarButton .sapMBtnInner.sapMBtnTransparent.sapMBtnHoverable:hover .sapMBtnContent,
+.sapContrastPlus .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapMBtn:hover > .sapMBtnHoverable .sapMBtnContent,
+.sapContrastPlus .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapMBtn:hover > .sapMBtnHoverable .sapMBtnIcon {
   color: #ffffff;
 }
 /* ========================================== */

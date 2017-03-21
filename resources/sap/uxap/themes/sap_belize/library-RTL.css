@@ -1673,7 +1673,10 @@ html[data-sap-ui-animation="off"].sapUiMedia-Std-Desktop .sapUxAPAnchorBar.sapUx
   background-color: #e8eff6;
 }
 .sapMPopover.sapUxAPAnchorBarPopover .sapMBtn.sapUxAPAnchorBarButton:hover {
-  background-color: #dde8f1;
+  background-color: #f0f0f0;
+}
+.sapMPopover.sapUxAPAnchorBarPopover .sapMBtn.sapUxAPAnchorBarButton:hover > .sapMBtnActive:hover {
+  background-color: #427cac;
 }
 .sapMPopover.sapUxAPAnchorBarPopover .sapMBtn.sapUxAPAnchorBarButton > .sapMBtnText:not(.sapMBtnActive) {
   color: #666666;

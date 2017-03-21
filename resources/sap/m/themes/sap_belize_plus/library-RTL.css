@@ -1643,7 +1643,7 @@ html[data-sap-ui-animation='off'] .sapMCrslInner {
 .sapMCbBg.sapMCbMarkChecked:before {
   content: "\e05b";
   font-family: "SAP-icons";
-  display: block;
+  display: inline-block;
 }
 .sapMCbBg > input {
   right: 0;
@@ -6204,6 +6204,9 @@ html.sap-desktop .sapMLnk:focus:not(.sapMLnkDsbl) {
 .sapUiSizeCompact .sapUiFormEdit .sapMLnk {
   line-height: 2rem;
 }
+.sapMLnk:-webkit-any-link:focus {
+  outline: none;
+}
 /* =============================== */
 /* CSS for control sap.m/ListBase  */
 /* Base theme                      */
@@ -8987,6 +8990,10 @@ html.sap-desktop .sapMObjectAttributeActive:focus {
 .sapMOH .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
   text-decoration: none;
 }
+html[data-sap-ui-browser^="ie"] .sapMObjectAttributeDiv,
+html[data-sap-ui-browser^="ed"] .sapMObjectAttributeDiv {
+  padding: 0.125rem 0.125rem 0.125rem 0.125rem;
+}
 /* =================================== */
 /* CSS for control sap.m/ObjectHeader  */
 /* Base theme                          */
@@ -9964,31 +9971,17 @@ html.sap-desktop .sapMOHRTitleArrow .sapUiIcon:hover {
   float: left;
   padding-right: 1rem;
 }
-.sapMObjLNumber {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  vertical-align: top;
-  text-align: right;
+.sapMObjLNumberDiv .sapMObjectNumber.sapMObjectNumberStatusNone {
+  color: #fafafa;
+}
+.sapMObjLNumberDiv .sapMObjectNumber .sapMObjectNumberText {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.375rem;
   font-weight: normal;
-  color: #fafafa;
 }
-html[dir=rtl] .sapMObjLNumber {
-  text-align: left;
-}
-.sapMObjLNumberUnit {
-  font-weight: normal;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: right;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.75rem;
-}
-html[dir=rtl] .sapMObjLNumberUnit {
-  text-align: left;
+.sapMObjLNumberDiv .sapMObjectNumber .sapMObjectNumberUnit {
+  padding: 0;
+  display: block;
 }
 .sapMObjLBottomRow {
   margin-top: .25rem;
@@ -10109,18 +10102,6 @@ html[data-sap-ui-browser^="ed"] .sapMObjLAttrDiv > .sapMObjectAttributeActive.sa
 }
 .sapMObjLAttrDiv.sapMObjAttrWithMarker {
   padding-top: 0.1875rem;
-}
-.sapMObjLNumberStateNone {
-  color: #fafafa;
-}
-.sapMObjLNumberStateError {
-  color: #ff8888;
-}
-.sapMObjLNumberStateWarning {
-  color: #fabd64;
-}
-.sapMObjLNumberStateSuccess {
-  color: #abe2ab;
 }
 /* =================================== */
 /* CSS for control sap.m/ObjectMarker  */
@@ -11973,10 +11954,6 @@ html.sap-tablet .sapMQuickViewPage .sapMLnk:focus {
   border-color: #91c8f6;
   background-color: #495e70;
 }
-/* IE cannot handle more than 2 decimal places, and therefore the radio button dot is misaligned when using em */
-html[data-sap-ui-browser^="ie"] .sapMRbB .sapMRbBInn {
-  margin: 3px;
-}
 .sapMRbSel .sapMRbBInn {
   background-color: #91c8f6;
 }
@@ -12009,7 +11986,7 @@ html[data-sap-ui-browser^="ie"] .sapMRbB .sapMRbBInn {
 .sapUiSizeCompact .sapMRbB .sapMRbBInn {
   height: 0.25rem;
   width: 0.25rem;
-  margin: 0.150rem;
+  margin: 0.15rem;
 }
 .sapUiSizeCompact .sapMRbBLabel {
   line-height: 2rem;
@@ -12165,16 +12142,19 @@ html[data-sap-ui-browser^="ie"] .sapMRbB .sapMRbBInn {
   position: absolute;
 }
 .sapMSliderLabels {
-  position: relative;
-  top: 1rem;
+  margin: 0.875rem -0.875rem 0 -0.875rem;
+  height: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
 .sapMSliderRangeLabel {
+  display: block;
+  width: 1.75rem;
   font-size: 0.75rem;
   align-self: flex-end;
+  text-align: center;
 }
 .sapMSliderTooltipContainer {
   display: flex;
@@ -12232,9 +12212,6 @@ html[data-sap-ui-browser^="ie"] .sapMRbB .sapMRbBInn {
 .sapMSliderHandleTooltipsShow .sapMSliderHandleTooltip {
   visibility: visible;
 }
-.sapMSliderLabels {
-  height: 1rem;
-}
 /* overlap */
 .sapMSliderHandle.sapMSliderHandleOverlap {
   background-color: #91c8f6;
@@ -12244,6 +12221,15 @@ html[data-sap-ui-browser^="ie"] .sapMRbB .sapMRbBInn {
 .sapMSliderInner > .sapMSliderHandle.sapMSliderHandlePressed {
   background: #91c8f6;
   border: 0.125rem solid #91c8f6;
+}
+/* ============ */
+/* compact size */
+/* ============ */
+.sapUiSizeCompact .sapMSliderLabels {
+  margin: 0.5rem -0.6875rem 0 -0.6875rem;
+}
+.sapUiSizeCompact .sapMSliderRangeLabel {
+  width: 1.375rem;
 }
 /* ====================================== */
 /* CSS for control sap.m/RatingIndicator  */
@@ -13593,7 +13579,7 @@ html.sap-desktop .sapMShellHeaderText {
   vertical-align: top;
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
+  height: 3.3125rem;
   padding: 1.406rem 1.0625rem;
   /* IE Windows 8 */
   /* This elements receives events when not panning in vertial direction */
@@ -13690,7 +13676,7 @@ html.sap-desktop .sapMShellHeaderText {
   /* slider handle */
 }
 .sapUiSizeCompact .sapMSlider {
-  height: 2rem;
+  height: 2.5625rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -15071,7 +15057,7 @@ tr.sapMListTblHeaderNone > th {
   display: block;
 }
 .sapMListTblSubCntRow {
-  display: block;
+  display: flex;
   overflow: hidden;
 }
 .sapMListTblSubCntSpr,
@@ -17394,7 +17380,7 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapMToken:focus .sapMTokenText:befo
   box-sizing: border-box;
 }
 .sapUiSizeCompact .sapMTokenText {
-  max-width: calc(100% - 1.25rem);
+  max-width: calc(100% - 1.125rem);
 }
 .sapMTokenReadOnly .sapMTokenText,
 .sapMTokenizerReadonly .sapMTokenText {
@@ -17421,7 +17407,7 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapMTokenIcon {
   padding: 0 0.25rem;
 }
 .sapUiSizeCompact .sapMTokenText {
-  line-height: 1.25rem;
+  line-height: 1.125rem;
 }
 .sapUiSizeCompact .sapMTokenIcon {
   font-size: 0.75rem;
@@ -19818,6 +19804,10 @@ html.sap-desktop .sapMObjectAttributeActive:focus > .sapMText {
   outline: 1px dotted #ffffff;
   outline-offset: -1px;
 }
+html[data-sap-ui-browser^="ie"] .sapMObjectAttributeActive:focus > .sapMText,
+html[data-sap-ui-browser^="ed"] .sapMObjectAttributeActive:focus > .sapMText {
+  outline-style: dashed;
+}
 /*=========================================== */
 /* Custom design for Responsive Object Header */
 /*=========================================== */
@@ -19894,7 +19884,7 @@ html[data-sap-ui-browser^="ie"] .sapMOH .sapMOHIntro {
   padding: 0.125rem 0.25rem 0.125rem 0.125rem;
 }
 html[data-sap-ui-browser^="ie"] .sapMOH .sapMObjectAttributeDiv {
-  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  padding: 0.125rem 0.125rem 0.125rem 0.125rem;
 }
 html[data-sap-ui-browser^="ie"] .sapMOH .sapMObjStatusMarker .sapUiIcon:focus {
   outline: none;
