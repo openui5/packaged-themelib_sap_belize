@@ -5467,14 +5467,14 @@ html.sap-desktop .sapMMultiComboBoxBorder {
   font-size: 0.875rem;
   font-family: "72-Web", Arial, Helvetica, sans-serif;
 }
-.sapMMultiComboBoxInputContainer .sapMComboBoxTextFieldInnerWidthExtraPadding:not(.sapMComboBoxTextFieldInnerReadonly) {
+.sapMMultiComboBoxInputContainer .sapMMultiComboBoxInputInner:not(.sapMComboBoxTextFieldInnerReadonly) {
   padding-left: 0.75rem;
 }
 .sapUiSizeCompact .sapMMultiComboBoxInputContainer {
   margin-left: 2rem;
   min-width: 2rem;
 }
-.sapUiSizeCompact .sapMComboBoxTextFieldInnerWidthExtraPadding:not(.sapMComboBoxTextFieldInnerReadonly) {
+.sapUiSizeCompact .sapMMultiComboBoxInputInner:not(.sapMComboBoxTextFieldInnerReadonly) {
   padding-left: 0.5rem;
 }
 /* Keep placeholder invisible, when at least one token is chosen */
@@ -5537,6 +5537,10 @@ html.sap-desktop li.sapMMultiComboBoxItemRangeSelection {
   flex-grow: 1;
   flex-shrink: 10000;
   position: relative;
+}
+/* Workaround for missing disabled state of sap.m.Tokenizer */
+.sapMMultiInput.sapMInputBaseDisabled {
+  pointer-events: none;
 }
 .sapMMultiInput .sapMInputBaseInner {
   border: 0;
@@ -7676,9 +7680,8 @@ html[data-sap-ui-os^="Android"] .sapMObjectNumberUnit {
 /* =================================== */
 .sapMObjStatus {
   font-size: 0.875rem;
-}
-.sapMObjStatus {
   color: #d3d7d9;
+  display: inline-block;
 }
 .sapMObjStatus > .sapMObjStatusTitle {
   color: #dddddd;
@@ -8422,25 +8425,28 @@ html[data-sap-ui-animation='on'][data-sap-ui-browser^="ie"] .sapMPanelContent {
 .sapMPlanCal > .sapMList > table > tbody > .sapMListTblSubRow > td {
   padding: 0;
 }
+.sapMPlanCal .sapMListTblSubCntRow {
+  display: block;
+}
 .sapMPlanCal > .sapMList > table > tbody > tr > td > .sapMListTblSubCnt > .sapMListTblSubCntRow > .sapMListTblSubCntVal {
   margin: 0;
 }
 .sapMPlanCal.sapMPlanCalNoHead > .sapMList > .sapMListInfoTBar,
-html.sapUiMedia-Std-Phone .sapMPlanCal > .sapMList > .sapMListInfoTBar,
-html.sapUiMedia-Std-Tablet .sapMPlanCal > .sapMList > .sapMListInfoTBar {
+.sapMSize0.sapMPlanCal > .sapMList > .sapMListInfoTBar,
+.sapMSize1.sapMPlanCal > .sapMList > .sapMListInfoTBar {
   display: block;
 }
 .sapMPlanCal.sapMPlanCalNoHead > .sapMList > .sapMListInfoTBar > .sapMPlanCalHead,
 .sapMPlanCal.sapMPlanCalNoHead > .sapMList > .sapMListInfoTBar > .sapUiCalInt,
-html.sapUiMedia-Std-Phone .sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapMPlanCalHead,
-html.sapUiMedia-Std-Phone .sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapUiCalInt,
-html.sapUiMedia-Std-Tablet .sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapMPlanCalHead,
-html.sapUiMedia-Std-Tablet .sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapUiCalInt {
+.sapMSize0.sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapMPlanCalHead,
+.sapMSize0.sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapUiCalInt,
+.sapMSize1.sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapMPlanCalHead,
+.sapMSize1.sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapUiCalInt {
   width: 100%;
 }
 .sapMPlanCal.sapMPlanCalNoHead > .sapMList > .sapMListInfoTBar > .sapMPlanCalHead,
-html.sapUiMedia-Std-Phone .sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapMPlanCalHead,
-html.sapUiMedia-Std-Tablet .sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapMPlanCalHead {
+.sapMSize0.sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapMPlanCalHead,
+.sapMSize1.sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapMPlanCalHead {
   height: auto;
 }
 .sapMPlanCal.sapMPlanCalNoHead.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapUiCalInt {
@@ -8458,19 +8464,24 @@ html.sapUiMedia-Std-Tablet .sapMPlanCal > .sapMList > .sapMListInfoTBar > .sapMP
   width: 2.25rem;
   margin-right: 0.25rem;
 }
-html.sapUiMedia-Std-Phone .sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapMCb,
-html.sapUiMedia-Std-Tablet .sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapMCb {
+.sapMSize0.sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapMCb,
+.sapMSize1.sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapMCb {
   width: auto;
   margin-right: 0;
 }
-html.sapUiMedia-Std-Phone .sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapMCb > .sapMCbLabel,
-html.sapUiMedia-Std-Tablet .sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapMCb > .sapMCbLabel {
+.sapMSize0.sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapMCb > .sapMCbLabel,
+.sapMSize1.sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapMCb > .sapMCbLabel {
   visibility: visible;
 }
-html.sapUiMedia-Std-Phone .sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapUiCalInt,
-html.sapUiMedia-Std-Tablet .sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapUiCalInt {
+.sapMSize0.sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapUiCalInt,
+.sapMSize1.sapMPlanCal.sapMPlanCalMultiSel > .sapMList > .sapMListInfoTBar > .sapUiCalInt {
   width: 100%;
   display: block;
+}
+.sapMPlanCal .sapMListBGTransparent .sapMLIB:not(.sapMLIBActive):not(.sapMLIBSelected):not(:hover),
+.sapMPlanCal .sapMListBGTranslucent .sapMLIB:not(.sapMLIBActive):not(.sapMLIBSelected):not(:hover),
+.sapMPlanCal .sapMListBGSolid .sapMLIB:not(.sapMLIBActive):not(.sapMLIBSelected):not(:hover) {
+  background: transparent;
 }
 /* ============================================= */
 /* CSS for controlsap.m/Popover.control */
@@ -9004,7 +9015,7 @@ html.sap-phone .sapMQuickViewPage .sapUiHLayout {
 }
 /* IE cannot handle more than 2 decimal places, and therefore the radio button dot is misaligned when using em */
 html[data-sap-ui-browser^="ie"] .sapMRbB .sapMRbBInn {
-  margin: 3px;
+  margin: 2px;
 }
 .sapMRbSel .sapMRbBInn {
   background-color: #91c8f6;
@@ -9038,7 +9049,7 @@ html[data-sap-ui-browser^="ie"] .sapMRbB .sapMRbBInn {
 .sapUiSizeCompact .sapMRbB .sapMRbBInn {
   height: 0.25rem;
   width: 0.25rem;
-  margin: 0.150rem;
+  margin: 0.15rem;
 }
 .sapUiSizeCompact .sapMRbBLabel {
   line-height: 2rem;
@@ -11194,14 +11205,13 @@ tr.sapMListTblHeaderNone > th {
   display: block;
 }
 .sapMListTblSubCntRow {
-  display: flex;
   overflow: hidden;
 }
 .sapMListTblSubCntSpr,
 .sapMListTblSubCntHdr,
 .sapMListTblSubCntVal {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .sapMListTblSubCntValBlock {
   display: block;
@@ -16471,12 +16481,17 @@ html.sap-phone .sapMListInsetBG > .sapMListSwp {
   padding: 0.375rem 2rem 0.875rem 2rem;
   text-align: center;
 }
+/* Growing feature */
 .sapMGrowingList > .sapMCLI.sapMLIB:not(.sapMLIBActive) {
-  background: #394958;
+  background: #2f3c48;
   border-color: #475b6d;
 }
 .sapMGrowingList > .sapMCLI.sapMLIBHoverable:hover {
-  background: #45596a;
+  background: #394958;
+}
+.sapMGrowingListDescription,
+.sapMGrowingListTriggerText > .sapMSLITitle {
+  text-shadow: 0 1px rgba(0, 0, 0, 0.5);
 }
 /* Compact size */
 .sapUiSizeCompact .sapMListNoData {
@@ -17767,34 +17782,34 @@ html.sap-desktop .sapUiFioriObjectPage > section {
 /* CSS for control sap.m/PlanningCalendar  */
 /* Belize theme                            */
 /* ======================================= */
-/* show every second row in a other color */
-.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(even):not(.sapMListTblSubRow),
-html.sapUiMedia-Std-Phone .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3),
-html.sapUiMedia-Std-Tablet .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3),
+/* show every second row in an other color */
+.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr.sapMLIB:nth-child(even):not(.sapMListTblSubRow),
+.sapMSize0.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr.sapMLIB:nth-child(4n+3),
+.sapMSize1.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr.sapMLIB:nth-child(4n+3),
 .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr.sapMListTblSubRow:nth-child(4n) {
   background-color: #3b4c5b;
 }
 .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(even):not(.sapMListTblSubRow).sapMLIBHoverable:hover,
-html.sapUiMedia-Std-Phone .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBHoverable:hover,
-html.sapUiMedia-Std-Phone .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBHoverable:hover + .sapMListTblSubRow,
-html.sapUiMedia-Std-Tablet .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBHoverable:hover,
-html.sapUiMedia-Std-Tablet .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBHoverable:hover + .sapMListTblSubRow,
+.sapMSize0.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBHoverable:hover,
+.sapMSize0.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBHoverable:hover + .sapMListTblSubRow,
+.sapMSize1.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBHoverable:hover,
+.sapMSize1.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBHoverable:hover + .sapMListTblSubRow,
 .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr.sapMListTblSubRow:nth-child(4n).sapMLIBHoverable:hover {
   background-color: #45596a;
 }
 .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(even):not(.sapMListTblSubRow).sapMLIBSelected,
-html.sapUiMedia-Std-Phone .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected,
-html.sapUiMedia-Std-Phone .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected + .sapMListTblSubRow,
-html.sapUiMedia-Std-Tablet .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected,
-html.sapUiMedia-Std-Tablet .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected + .sapMListTblSubRow,
+.sapMSize0.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected,
+.sapMSize0.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected + .sapMListTblSubRow,
+.sapMSize1.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected,
+.sapMSize1.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected + .sapMListTblSubRow,
 .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr.sapMListTblSubRow:nth-child(4n).sapMLIBSelected {
   background-color: #456684;
 }
 .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(even):not(.sapMListTblSubRow).sapMLIBSelected.sapMLIBHoverable:hover,
-html.sapUiMedia-Std-Phone .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected.sapMLIBHoverable:hover,
-html.sapUiMedia-Std-Phone .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected.sapMLIBHoverable:hover + .sapMListTblSubRow,
-html.sapUiMedia-Std-Tablet .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected.sapMLIBHoverable:hover,
-html.sapUiMedia-Std-Tablet .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected.sapMLIBHoverable:hover + .sapMListTblSubRow,
+.sapMSize0.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected.sapMLIBHoverable:hover,
+.sapMSize0.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected.sapMLIBHoverable:hover + .sapMListTblSubRow,
+.sapMSize1.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected.sapMLIBHoverable:hover,
+.sapMSize1.sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr:nth-child(4n+3).sapMLIBSelected.sapMLIBHoverable:hover + .sapMListTblSubRow,
 .sapMPlanCal:not(.sapMPlanCalSuppressAlternatingRowColors) > .sapMList > table > tbody > tr.sapMListTblSubRow:nth-child(4n).sapMLIBSelected.sapMLIBHoverable:hover {
   background-color: #42617d;
 }
@@ -20997,21 +21012,6 @@ img.sapMFeedInImage {
 /* ============================= */
 .sapContrastPlus .sapMLnk,
 .sapContrastPlus.sapMLnk {
-  text-shadow: 0 1px rgba(0, 0, 0, 0.5);
-}
-/* =============================== */
-/* CSS for control sap.m/ListBase  */
-/* Belize plus theme               */
-/* =============================== */
-.sapMGrowingList > .sapMCLI.sapMLIB:not(.sapMLIBActive) {
-  background: #45596a;
-  border-color: #536b80;
-}
-.sapMGrowingList > .sapMCLI.sapMLIBHoverable:hover {
-  background: #4b6074;
-}
-.sapMGrowingListDescription,
-.sapMGrowingListTriggerText > .sapMSLITitle {
   text-shadow: 0 1px rgba(0, 0, 0, 0.5);
 }
 /* ================================== */
