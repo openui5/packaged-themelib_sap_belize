@@ -21,6 +21,7 @@ Common Compact/Cozy
 /* BAR */
 .sapUxAPAnchorBar {
   height: 3rem;
+  margin-bottom: 0.125rem;
 }
 .sapUxAPAnchorBar.sapMTB {
   padding-left: 0;
@@ -1582,8 +1583,13 @@ html[data-sap-ui-browser^="ie"] .sapUxAPObjectPageSubSection:focus:before,
 .sapUxAPAnchorBar .sapUxAPAnchorBarButton .sapMBtnInner {
   border-radius: 0;
 }
+.sapUxAPAnchorBarPopover .sapUxAPAnchorBarButton .sapMBtnInner.sapMBtnHoverable:hover,
+.sapUxAPAnchorBarPopover .sapUxAPAnchorBarButton.sapMBtn:hover > .sapMBtnHoverable,
 .sapUxAPObjectPageNavigation > .sapMTB.sapMTB-Transparent-CTX > .anchorBarArrow .sapMBtn:hover > .sapMBtnHoverable {
   background: #7a5100;
+}
+.sapMPopover.sapUxAPAnchorBarPopover .sapMBtn.sapUxAPAnchorBarButton:hover > .sapMBtnActive:hover {
+  background-color: #7a5100;
 }
 .sapMTB-Transparent-CTX .sapUxAPAnchorBarButton .sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive),
 .sapUxAPAnchorBar .sapUxAPAnchorBarButton .sapMBtnInner.sapMBtnTransparent.sapMBtnHoverable:hover,

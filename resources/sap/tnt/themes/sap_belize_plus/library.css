@@ -155,7 +155,7 @@
 .sapTntNavLIItem:focus {
   outline: none;
 }
-.sapTntNavLI li:focus::before,
+.sapTntNavLI li:focus > .sapTntNavLIItem::before,
 .sapTntNavLIItem:focus::before {
   border: 1px dotted #ffffff;
   position: absolute;
@@ -167,8 +167,8 @@
   z-index: 2;
   pointer-events: none;
 }
-html[data-sap-ui-browser^="ie"].sap-desktop .sapTntNavLI li:focus::before,
-html[data-sap-ui-browser^="ed"].sap-desktop .sapTntNavLI li:focus::before,
+html[data-sap-ui-browser^="ie"].sap-desktop .sapTntNavLI li:focus > .sapTntNavLIItem::before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapTntNavLI li:focus > .sapTntNavLIItem::before,
 html[data-sap-ui-browser^="ie"].sap-desktop .sapTntNavLIItem:focus::before,
 html[data-sap-ui-browser^="ed"].sap-desktop .sapTntNavLIItem:focus::before {
   border: 1px dashed #ffffff;
@@ -274,6 +274,7 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapTntNavLIItem:focus::before {
 .sapTntSideNavigationVerticalScrolling {
   overflow-y: auto;
   overflow-x: hidden;
+  height: 10rem;
 }
 /* Styles for layout with arrows
    ========================================================================== */

@@ -26,6 +26,7 @@ Common Compact/Cozy
 /* BAR */
 .sapUxAPAnchorBar {
   height: 3rem;
+  margin-bottom: 0.125rem;
 }
 .sapUxAPAnchorBar.sapMTB {
   padding-right: 0;
@@ -1674,9 +1675,6 @@ html[data-sap-ui-animation="off"].sapUiMedia-Std-Desktop .sapUxAPAnchorBar.sapUx
 .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapMBtn:hover > .sapMBtnHoverable .sapMBtnIcon {
   color: #c7c7c7;
 }
-.sapMPopover.sapUxAPAnchorBarPopover .sapMBtn.sapUxAPAnchorBarButton:focus {
-  background-color: #496b8a;
-}
 .sapMPopover.sapUxAPAnchorBarPopover .sapMBtn.sapUxAPAnchorBarButton:hover {
   background-color: #45596a;
 }
@@ -1788,6 +1786,7 @@ html.sap-phone .sapUxAPHierarchicalSelect .sapMSltArrow {
 html.sapUiMedia-Std-Phone .sapMSlt.sapUxAPHierarchicalSelect,
 html.sap-phone .sapMSlt.sapUxAPHierarchicalSelect {
   box-shadow: inset 0 -0.125rem #4f667a, 0 0.125rem 0 0 #3f5161;
+  background-color: transparent;
 }
 /* styling needed to achieve underline of the select label on phone on Android 4.4.2
 (this is specific for webview (Fiori client) and Chrome browser) */
