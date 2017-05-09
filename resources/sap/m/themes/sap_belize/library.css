@@ -4406,6 +4406,8 @@ html[dir=rtl][data-sap-ui-browser^=ed] .sapUiFormResLayout .sapUiRFLRow:first-ch
   font-size: 0.875rem;
   font-family: "72-Web", Arial, Helvetica, sans-serif;
   color: #ffffff;
+  padding-right: 0.125rem;
+  /* prevents truncation of the last letter */
 }
 .sapMIBar-CTX.sapMTB-Info-CTX .sapMLabel {
   color: #ffffff;
@@ -8355,6 +8357,10 @@ html.sap-desktop .sapUiFioriObjectPage > section > .sapMPanel {
 html[data-sap-ui-animation='on'][data-sap-ui-browser^="ie"] .sapMPanelContent {
   transform: translate(0, 0);
 }
+/* workaround for drawing issue in Edge - ensures that the content will be redrawn */
+html[data-sap-ui-animation='on'][data-sap-ui-browser^="ed"] .sapMPanelContent {
+  transform: translate(0, 0);
+}
 /* ================================================= */
 /* CSS for control sap.m/PlanningCalendar.control    */
 /* ================================================= */
@@ -10494,6 +10500,11 @@ html[data-sap-ui-browser^="ie9"] .sapMSplitContainerHideMode > .sapMSplitContain
   -webkit-transition: all 300ms;
   -moz-transform: translate3d(-330px, 0, 0);
   -moz-transition: all 300ms;
+}
+.sapMSplitContainerPortrait.sapMSplitContainerShowHide > .sapMSplitContainerMasterHidden.sapMSplitContainerNoTransition,
+.sapMSplitContainerHideMode > .sapMSplitContainerMasterHidden.sapMSplitContainerNoTransition {
+  transition: none;
+  -webkit-transition: none;
 }
 .sapMSplitContainerPortrait.sapMSplitContainerStretchCompress > .sapMSplitContainerMaster {
   width: 320px !important;
@@ -20546,31 +20557,22 @@ html.sap-desktop .sapMToggleBtnPressed.sapMBtnTransparent > .sapMBtnIcon {
 .sapMBtn:focus > .sapMToggleBtnPressed > .sapMBtnFocusDiv {
   border-color: #ffffff;
 }
-/************************************/
-/* Bar context                      */
-/************************************/
 /* hover and down on toggled button part 1*/
-.sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive),
-.sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive),
-.sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover,
-.sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover {
+.sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive),
+.sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover {
   background-color: #427cac;
   border-color: #2d5475;
   color: #ffffff;
   text-shadow: none;
 }
-.sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnReject,
-.sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnReject,
-.sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnReject,
-.sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnReject {
+.sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnReject,
+.sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnReject {
   background-color: #a20000;
   border-color: #a20000;
   color: #ffffff;
 }
-.sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnAccept,
-.sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnAccept,
-.sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnAccept,
-.sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnAccept {
+.sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnAccept,
+.sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnAccept {
   background-color: #246a24;
   border-color: #246a24;
   color: #ffffff;
@@ -28319,41 +28321,29 @@ html.sap-desktop .sapContrast.sapMToggleBtnPressed.sapMBtnTransparent > .sapMBtn
   border-color: #000000;
 }
 
-.sapContrast.sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive),
-.sapContrast .sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive),
-.sapContrast.sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive),
-.sapContrast .sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive),
-.sapContrast.sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover,
-.sapContrast .sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover,
-.sapContrast.sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover,
-.sapContrast .sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover {
+.sapContrast.sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive),
+.sapContrast .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive),
+.sapContrast.sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover,
+.sapContrast .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover {
   background-color: #91c8f6;
   border-color: #4aa5f0;
   color: #2f3c48;
   text-shadow: none;
 }
 
-.sapContrast.sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnReject,
-.sapContrast .sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnReject,
-.sapContrast.sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnReject,
-.sapContrast .sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnReject,
-.sapContrast.sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnReject,
-.sapContrast .sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnReject,
-.sapContrast.sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnReject,
-.sapContrast .sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnReject {
+.sapContrast.sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnReject,
+.sapContrast .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnReject,
+.sapContrast.sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnReject,
+.sapContrast .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnReject {
   background-color: #ff6e6e;
   border-color: #ff6e6e;
   color: #2f3c48;
 }
 
-.sapContrast.sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnAccept,
-.sapContrast .sapMFooter-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnAccept,
-.sapContrast.sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnAccept,
-.sapContrast .sapMIBar-CTX .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnAccept,
-.sapContrast.sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnAccept,
-.sapContrast .sapMBarChild .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnAccept,
-.sapContrast.sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnAccept,
-.sapContrast .sapMIBar-CTX .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnAccept {
+.sapContrast.sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnAccept,
+.sapContrast .sapMBtn:hover > .sapMBtnHoverable.sapMToggleBtnPressed:not(.sapMBtnActive).sapMBtnAccept,
+.sapContrast.sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnAccept,
+.sapContrast .sapMBtn .sapMBtnHoverable.sapMToggleBtnPressed:hover.sapMBtnAccept {
   background-color: #98db98;
   border-color: #98db98;
   color: #2f3c48;
