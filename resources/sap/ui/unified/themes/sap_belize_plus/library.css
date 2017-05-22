@@ -1943,7 +1943,7 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapUiCalHead > .sapUiCalHeadB:focus
   left: 2px;
   right: 2px;
   bottom: 2px;
-  border: 1px dotted #000000;
+  border: 1px dashed #000000;
   content: "";
 }
 html[data-sap-ui-browser^="ie"].sap-desktop .sapUiCalHead > .sapUiCalHeadB:focus:active:after,
@@ -4168,7 +4168,7 @@ html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus .sapUiCalHead > .sa
 html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapUiCalHead > .sapUiCalHeadB:focus:after,
 html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus .sapUiCalHead > .sapUiCalHeadB:focus:after,
 html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus.sapUiCalHead > .sapUiCalHeadB:focus:after {
-  border: 1px dotted #ffffff;
+  border: 1px dashed #ffffff;
 }
 
 html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus .sapUiCalHead > .sapUiCalHeadB:focus:active:after,

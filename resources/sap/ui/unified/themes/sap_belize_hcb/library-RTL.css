@@ -1948,7 +1948,7 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapUiCalHead > .sapUiCalHeadB:focus
   right: 2px;
   left: 2px;
   bottom: 2px;
-  border: 1px dotted #ffffff;
+  border: 1px dashed #ffffff;
   content: "";
 }
 html[data-sap-ui-browser^="ie"].sap-desktop .sapUiCalHead > .sapUiCalHeadB:focus:active:after,
