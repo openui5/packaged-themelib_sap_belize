@@ -1565,9 +1565,6 @@ Common compact/cozy
   box-shadow: inset 0 -0.125rem #d1e0ee, 0 0.125rem 0 0 #eff4f9;
   background: #eff4f9;
 }
-.sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageStickyAnchorBar {
-  border-bottom: 0.125rem solid transparent;
-}
 /* L fullscreen paddings */
 html.sapUiMedia-Std-Desktop .sapUxAPAnchorBar.sapMTB,
 html.sapUiMedia-Std-Desktop .sapMSplitContainer.sapMSplitContainerHideMode .sapMSplitContainerDetail .sapUxAPAnchorBar.sapMTB {
@@ -2242,11 +2239,6 @@ html[data-sap-ui-browser^="ie"] .sapContrast.sapUxAPObjectPageSubSection:focus:b
   border: none;
   box-shadow: inset 0 -0.125rem #4f667a, 0 0.125rem 0 0 #3f5161;
   background: #3f5161;
-}
-
-.sapContrast.sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageStickyAnchorBar,
-.sapContrast .sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageStickyAnchorBar {
-  border-bottom: 0.125rem solid transparent;
 }
 
 .sapContrast.sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnContent,
