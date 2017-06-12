@@ -62,8 +62,10 @@
   background-color: #CCCCCC;
   opacity: 0.6;
   filter: alpha(opacity=60);
-  /* the left, right, top, bottom is set in Popup.js because window scroll
-	 position has to be considered */
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
   position: fixed;
   outline: 0 none;
 }
@@ -350,6 +352,12 @@
 }
 .sapUiIconPointer {
   cursor: pointer;
+}
+.sapUiIcon:focus {
+  outline-width: 1px;
+  outline-style: dashed;
+  /* keep the outline within the area of the icon */
+  outline-offset: -1px;
 }
 .sapUiIcon:before {
   content: attr(data-sap-ui-icon-content);
@@ -966,12 +974,6 @@ html.sap-tablet:not(.sap-desktop) .sapUiSelectable {
 .sapUiBLy {
   background-color: #000000;
   opacity: 0.6;
-  /* 	this overwrites the default position: fixed which extends the window when something rendered outside */
-  position: absolute;
-}
-html.sapUiMedia-Std-Desktop .sapUiBLy {
-  position: fixed;
-  /* otherwise UX3 shell would not work... */
 }
 .sapUiSearchHighlightBG {
   background-color: #fffcb5;
@@ -1141,7 +1143,7 @@ html.sap-desktop ::-webkit-scrollbar-corner {
 /* Belize theme                      */
 /* ================================= */
 .sapUiIcon:focus {
-  outline: 1px dashed #000000;
+  outline-color: #000000;
 }
 .sapMTB-Info-CTX > .sapUiIcon {
   width: 1rem;
@@ -1585,7 +1587,7 @@ html.sap-desktop .sapContrastPlus ::-webkit-scrollbar-corner {
 
 .sapContrastPlus.sapUiIcon:focus,
 .sapContrastPlus .sapUiIcon:focus {
-  outline: 1px dashed #ffffff;
+  outline-color: #ffffff;
 }
 
 .sapContrastPlus.sapMTB-Info-CTX > .sapUiIcon,

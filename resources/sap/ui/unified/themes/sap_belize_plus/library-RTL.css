@@ -1664,8 +1664,8 @@ html.sap-phone .sapMRespMenuDialog .sapMList .sapMLIBContent .sapMSLITitleOnly,
 html.sap-tablet .sapMRespMenuDialog .sapMList .sapMLIBContent .sapMSLITitleOnly {
   font-size: 0.875rem;
 }
-html.sap-phone .sapMRespMenuDialog .sapMPage .sapMBar-CTX.sapMHeader-CTX,
-html.sap-tablet .sapMRespMenuDialog .sapMPage .sapMBar-CTX.sapMHeader-CTX {
+html.sap-phone .sapMRespMenuDialog .sapMPage .sapMHeader-CTX,
+html.sap-tablet .sapMRespMenuDialog .sapMPage .sapMHeader-CTX {
   background-color: #ffffff;
   box-shadow: inset 0 -1px #ebebeb;
 }
@@ -2527,7 +2527,7 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapUiCalHead > .sapUiCalHeadB:focus
   right: 2px;
   left: 2px;
   bottom: 2px;
-  border: 1px dotted #000000;
+  border: 1px dashed #000000;
   content: "";
 }
 html[data-sap-ui-browser^="ie"].sap-desktop .sapUiCalHead > .sapUiCalHeadB:focus:active:after,
@@ -4064,10 +4064,10 @@ html.sap-tablet .sapContrastPlus.sapMLIB.sapMLIBActive .sapMMenuLIImgThumbIcon::
   color: #2f3c48;
 }
 
-html.sap-phone .sapContrastPlus .sapMRespMenuDialog .sapMPage .sapMBar-CTX.sapMHeader-CTX,
-html.sap-phone .sapContrastPlus.sapMRespMenuDialog .sapMPage .sapMBar-CTX.sapMHeader-CTX,
-html.sap-tablet .sapContrastPlus .sapMRespMenuDialog .sapMPage .sapMBar-CTX.sapMHeader-CTX,
-html.sap-tablet .sapContrastPlus.sapMRespMenuDialog .sapMPage .sapMBar-CTX.sapMHeader-CTX {
+html.sap-phone .sapContrastPlus .sapMRespMenuDialog .sapMPage .sapMHeader-CTX,
+html.sap-phone .sapContrastPlus.sapMRespMenuDialog .sapMPage .sapMHeader-CTX,
+html.sap-tablet .sapContrastPlus .sapMRespMenuDialog .sapMPage .sapMHeader-CTX,
+html.sap-tablet .sapContrastPlus.sapMRespMenuDialog .sapMPage .sapMHeader-CTX {
   background-color: #3f5161;
   box-shadow: inset 0 -1px #2f3c48;
 }
@@ -4354,7 +4354,7 @@ html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus .sapUiCalHead > .sa
 html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapUiCalHead > .sapUiCalHeadB:focus:after,
 html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus .sapUiCalHead > .sapUiCalHeadB:focus:after,
 html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus.sapUiCalHead > .sapUiCalHeadB:focus:after {
-  border: 1px dotted #ffffff;
+  border: 1px dashed #ffffff;
 }
 
 html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus .sapUiCalHead > .sapUiCalHeadB:focus:active:after,
