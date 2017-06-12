@@ -1384,20 +1384,23 @@ html .sapUiContainer-Narrow .sapUxAPObjectPageSectionHeader {
   height: 2.5rem;
   line-height: 2rem;
 }
-/* IE does not support css outline-offset */
-html[data-sap-ui-browser^="ie"].sap-desktop .sapUxAPObjectPageSection:focus {
+/* IE and Edge ignores outline-offset. Use an overlay: */
+html[data-sap-ui-browser^="ie"].sap-desktop .sapUxAPObjectPageSection:focus,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapUxAPObjectPageSection:focus {
   outline: none;
   position: relative;
 }
-html[data-sap-ui-browser^="ie"].sap-desktop .sapUxAPObjectPageSection:focus:before {
-  content: "";
+html[data-sap-ui-browser^="ie"].sap-desktop .sapUxAPObjectPageSection:focus:before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapUxAPObjectPageSection:focus:before {
+  content: " ";
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
-  border: 0.125rem dotted #000000;
+  border: 0.0625rem dashed #000000;
+  pointer-events: none;
 }
 /* ============================================== */
 /* CSS for control sap.uxap/ObjectPageSubSection  */
@@ -1531,14 +1534,14 @@ html .sapUiContainer-Medium .sapUxAPObjectPageSubSectionHeader {
 .sapUiSizeCompact .sapUxAPBlockContainerPhone {
   padding: 1rem 1rem 2rem 1rem;
 }
-/* IE ignores outline-offset. Use an overlay: */
-html[data-sap-ui-browser^="ie"] .sapUxAPObjectPageSubSection:focus,
-.sapUxAPObjectPageSubSectionHeaderTitle:focus {
+/* IE and Edge ignores outline-offset. Use an overlay: */
+html[data-sap-ui-browser^="ie"].sap-desktop .sapUxAPObjectPageSubSection:focus,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapUxAPObjectPageSubSection:focus {
   outline: none;
   position: relative;
 }
-html[data-sap-ui-browser^="ie"] .sapUxAPObjectPageSubSection:focus:before,
-.sapUxAPObjectPageSubSectionHeaderTitle:focus:before {
+html[data-sap-ui-browser^="ie"].sap-desktop .sapUxAPObjectPageSubSection:focus:before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapUxAPObjectPageSubSection:focus:before {
   content: " ";
   box-sizing: border-box;
   width: 100%;
@@ -1546,7 +1549,9 @@ html[data-sap-ui-browser^="ie"] .sapUxAPObjectPageSubSection:focus:before,
   position: absolute;
   right: 0;
   top: 0;
-  border: 0.0625rem dotted #000000;
+  left: 0;
+  bottom: 0;
+  border: 0.0625rem dashed #000000;
   pointer-events: none;
 }
 /* ===================================== */
@@ -2010,8 +2015,7 @@ html.sapUiMedia-Std-Tablet .sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageHe
 .sapUxAPObjectPageSubSectionHeaderTitleUppercase {
   text-transform: uppercase;
 }
-.sapUxAPObjectPageSubSection:focus,
-.sapUxAPObjectPageSubSectionHeaderTitle:focus {
+.sapUxAPObjectPageSubSection:focus {
   outline: 1px dotted #000000;
   outline-offset: -1px;
 }
@@ -2220,13 +2224,17 @@ html[data-sap-ui-browser^="cr4"] .sapContrastPlus.sapUxAPObjectPageHeaderContent
 }
 
 html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus .sapUxAPObjectPageSection:focus,
-html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapUxAPObjectPageSection:focus {
+html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapUxAPObjectPageSection:focus,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus .sapUxAPObjectPageSection:focus,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus.sapUxAPObjectPageSection:focus {
   outline: none;
 }
 
 html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus .sapUxAPObjectPageSection:focus:before,
-html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapUxAPObjectPageSection:focus:before {
-  border: 0.125rem dotted #ffffff;
+html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapUxAPObjectPageSection:focus:before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus .sapUxAPObjectPageSection:focus:before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus.sapUxAPObjectPageSection:focus:before {
+  border: 0.0625rem dashed #ffffff;
 }
 
 .sapContrastPlus.sapUxAPObjectPageSubSectionHeaderTitle,
@@ -2234,18 +2242,18 @@ html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapUxAPObjectPageSe
   color: #fafafa;
 }
 
-html[data-sap-ui-browser^="ie"] .sapContrastPlus .sapUxAPObjectPageSubSection:focus,
-html[data-sap-ui-browser^="ie"] .sapContrastPlus.sapUxAPObjectPageSubSection:focus,
-.sapContrastPlus.sapUxAPObjectPageSubSectionHeaderTitle:focus,
-.sapContrastPlus .sapUxAPObjectPageSubSectionHeaderTitle:focus {
+html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus .sapUxAPObjectPageSubSection:focus,
+html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapUxAPObjectPageSubSection:focus,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus .sapUxAPObjectPageSubSection:focus,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus.sapUxAPObjectPageSubSection:focus {
   outline: none;
 }
 
-html[data-sap-ui-browser^="ie"] .sapContrastPlus .sapUxAPObjectPageSubSection:focus:before,
-html[data-sap-ui-browser^="ie"] .sapContrastPlus.sapUxAPObjectPageSubSection:focus:before,
-.sapContrastPlus.sapUxAPObjectPageSubSectionHeaderTitle:focus:before,
-.sapContrastPlus .sapUxAPObjectPageSubSectionHeaderTitle:focus:before {
-  border: 0.0625rem dotted #ffffff;
+html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus .sapUxAPObjectPageSubSection:focus:before,
+html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapUxAPObjectPageSubSection:focus:before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus .sapUxAPObjectPageSubSection:focus:before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus.sapUxAPObjectPageSubSection:focus:before {
+  border: 0.0625rem dashed #ffffff;
 }
 
 .sapContrastPlus.sapUxAPAnchorBar.sapMTB,
@@ -2621,9 +2629,7 @@ html[data-sap-ui-browser^="cr4"].sap-phone .sapContrastPlus.sapUxAPHierarchicalS
 }
 
 .sapContrastPlus.sapUxAPObjectPageSubSection:focus,
-.sapContrastPlus .sapUxAPObjectPageSubSection:focus,
-.sapContrastPlus.sapUxAPObjectPageSubSectionHeaderTitle:focus,
-.sapContrastPlus .sapUxAPObjectPageSubSectionHeaderTitle:focus {
+.sapContrastPlus .sapUxAPObjectPageSubSection:focus {
   outline: 1px dotted #ffffff;
 }
 /* BAR */

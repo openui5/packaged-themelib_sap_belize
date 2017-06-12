@@ -368,6 +368,12 @@
 .sapUiIconPointer {
   cursor: pointer;
 }
+.sapUiIcon:focus {
+  outline-width: 1px;
+  outline-style: dashed;
+  /* keep the outline within the area of the icon */
+  outline-offset: -1px;
+}
 .sapUiIcon:before {
   content: attr(data-sap-ui-icon-content);
   speak: none;
@@ -1152,7 +1158,7 @@ html.sap-desktop ::-webkit-scrollbar-corner {
 /* Belize theme                      */
 /* ================================= */
 .sapUiIcon:focus {
-  outline: 1px dashed #000000;
+  outline-color: #000000;
 }
 .sapMTB-Info-CTX > .sapUiIcon {
   width: 1rem;
@@ -1604,7 +1610,7 @@ html.sap-desktop .sapContrastPlus ::-webkit-scrollbar-corner {
 
 .sapContrastPlus.sapUiIcon:focus,
 .sapContrastPlus .sapUiIcon:focus {
-  outline: 1px dashed #ffffff;
+  outline-color: #ffffff;
 }
 
 .sapContrastPlus.sapMTB-Info-CTX > .sapUiIcon,
