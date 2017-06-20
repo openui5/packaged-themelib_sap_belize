@@ -4234,6 +4234,7 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
 }
 .sapUiBlockLayoutBackgroundDashboard .sapUiBlockCellContent {
   background-color: #ffffff;
+  box-shadow: 0 0 0.125rem 0 rgba(0, 0, 0, 0.3);
   margin: 0.25rem;
 }
 .sapUiBlockLayoutBackgroundDashboard .sapUiBlockScrollingNarrowCells .sapUiBlockScrollableCell .sapUiBlockCellContent {
@@ -4940,7 +4941,8 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapContrastPlus.sapUiLoSplitterV > .s
 
 .sapContrastPlus.sapUiBlockLayoutBackgroundDashboard .sapUiBlockCellContent,
 .sapContrastPlus .sapUiBlockLayoutBackgroundDashboard .sapUiBlockCellContent {
-  background-color: #ffffff;
+  background-color: #3f5161;
+  box-shadow: 0 0 0.125rem 0 rgba(255, 255, 255, 0.3);
 }
 /* =========================== */
 

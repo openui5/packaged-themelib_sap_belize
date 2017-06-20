@@ -4239,6 +4239,7 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
 }
 .sapUiBlockLayoutBackgroundDashboard .sapUiBlockCellContent {
   background-color: #ffffff;
+  box-shadow: 0 0 0.125rem 0 rgba(0, 0, 0, 0.3);
   margin: 0.25rem;
 }
 .sapUiBlockLayoutBackgroundDashboard .sapUiBlockScrollingNarrowCells .sapUiBlockScrollableCell .sapUiBlockCellContent {
