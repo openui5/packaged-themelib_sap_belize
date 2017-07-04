@@ -3012,7 +3012,6 @@ html[data-sap-ui-browser*='ie'] .sapMFeedIn .sapMBtnInner {
   visibility: hidden;
 }
 .sapMFeedListItem .sapMFeedListItemTextText a,
-.sapMFeedListItem .sapMFeedListItemTextText span,
 .sapMFeedListItem .sapMFeedListItemTextName a {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -3208,7 +3207,6 @@ html.sap-desktop .sapMFeedListItem .sapMLnk:focus {
   color: #666666;
 }
 .sapMFeedListItem .sapMFeedListItemTextText a,
-.sapMFeedListItem .sapMFeedListItemTextText span,
 .sapMFeedListItem .sapMFeedListItemTextName a {
   font-size: 0.875rem;
   color: #0070b1;
@@ -19041,8 +19039,8 @@ html[data-sap-ui-browser^='ie'].sap-desktop .sapMCrslNext .sapUiIcon:focus::afte
   color: #ee0000;
 }
 .sapUiForm .sapMCbBg {
-  /* In forms, align left with '0.0625rem' ( the focus width) */
-  right: 0.0625rem;
+  /* In forms, align left with '0.0625rem(1px)' ( the focus width) */
+  right: 1px;
 }
 .sapMCbBg.sapMCbMarkChecked:before {
   color: #427cac;
@@ -19130,8 +19128,8 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapMCb:not(.sapMCbBgDis).sapMCbHasL
 }
 /* Compact size */
 .sapUiSizeCompact .sapUiForm .sapMCbBg {
-  /* In forms, align left with '0.0625rem' ( the focus width) */
-  right: 0.0625rem;
+  /* In forms, align left with '0.0625rem(1px)' ( the focus width) */
+  right: 1px;
 }
 html.sap-desktop .sapUiSizeCompact .sapMCb:not(.sapMCbBgDis).sapMCbHasLabel:focus:before {
   top: 0.365rem;
@@ -22138,8 +22136,6 @@ html.sap-desktop .sapContrast.sapMFeedListItem .sapMLnk:focus {
 
 .sapContrast.sapMFeedListItem .sapMFeedListItemTextText a,
 .sapContrast .sapMFeedListItem .sapMFeedListItemTextText a,
-.sapContrast.sapMFeedListItem .sapMFeedListItemTextText span,
-.sapContrast .sapMFeedListItem .sapMFeedListItemTextText span,
 .sapContrast.sapMFeedListItem .sapMFeedListItemTextName a,
 .sapContrast .sapMFeedListItem .sapMFeedListItemTextName a {
   color: #7ed0ff;
