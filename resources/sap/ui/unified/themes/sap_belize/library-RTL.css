@@ -1585,8 +1585,6 @@ html[data-sap-ui-browser^="cr"] .sapUiFupInputMask > input {
 .sapMFooter-CTX .sapUiFup:hover .sapMBtnHoverable:not(.sapMBtnActive),
 .sapMTB-Transparent-CTX .sapUiFup:hover .sapMBtnInner.sapMBtnHoverable:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive) {
   background-color: rgba(179, 179, 179, 0.5);
-  color: #ffffff;
-  text-shadow: 0 0 0.125rem #ffffff;
 }
 .sapMFooter-CTX .sapUiFup:hover .sapMBtnHoverable.sapMBtnAccept:not(.sapMBtnActive) {
   background-color: #ebebeb;
@@ -4323,8 +4321,6 @@ html.sap-desktop .sapContrast.sapUiCalendarApp.sapUiCalendarAppSel:focus:not(:ac
 .sapContrast.sapMTB-Transparent-CTX .sapUiFup:hover .sapMBtnInner.sapMBtnHoverable:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive),
 .sapContrast .sapMTB-Transparent-CTX .sapUiFup:hover .sapMBtnInner.sapMBtnHoverable:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive) {
   background-color: rgba(99, 127, 153, 0.5);
-  color: #2f3c48;
-  text-shadow: 0 0 0.125rem #000000;
 }
 
 .sapContrast.sapMFooter-CTX .sapUiFup:hover .sapMBtnHoverable.sapMBtnAccept:not(.sapMBtnActive),
