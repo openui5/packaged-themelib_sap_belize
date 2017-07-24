@@ -916,7 +916,7 @@ span.sapMBtnInner.sapMBtnAccept {
   border-color: #2b7d2b;
   color: #2b7d2b;
 }
-span.sapMBtnInner.sapMBtnAccept > .sapMBtnIcon {
+:not(.sapMBtnDisabled) > span.sapMBtnInner.sapMBtnAccept > .sapMBtnIcon {
   color: #2b7d2b;
 }
 .sapMBtn:hover > .sapMBtnHoverable.sapMBtnAccept:not(.sapMBtnActive) {
@@ -935,7 +935,7 @@ span.sapMBtnInner.sapMBtnReject {
   border-color: #bb0000;
   color: #bb0000;
 }
-span.sapMBtnInner.sapMBtnReject > .sapMBtnIcon {
+:not(.sapMBtnDisabled) > span.sapMBtnInner.sapMBtnReject > .sapMBtnIcon {
   color: #bb0000;
 }
 .sapMBtn:hover > .sapMBtnHoverable.sapMBtnReject:not(.sapMBtnActive) {
@@ -955,7 +955,7 @@ span.sapMBtnInner.sapMBtnEmphasized {
   color: #ffffff;
   text-shadow: 0 0 0.125rem #000000;
 }
-span.sapMBtnInner.sapMBtnEmphasized > .sapMBtnIcon {
+:not(.sapMBtnDisabled) > span.sapMBtnInner.sapMBtnEmphasized > .sapMBtnIcon {
   color: #ffffff;
 }
 .sapMBtn:hover > .sapMBtnHoverable.sapMBtnEmphasized:not(.sapMBtnActive) {
@@ -1063,7 +1063,7 @@ html.sap-desktop .sapMFooter-CTX .sapMBtnInner :not(.sapMBtnDisabled) {
 /* Buttons in a Toolbar                             */
 /* ------------------------------------------------ */
 /* transparent Toolbar Context */
-.sapMTB-Transparent-CTX .sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive) {
+.sapMTB-Transparent-CTX :not(.sapMBtnDisabled) .sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive) {
   background-image: none;
   background: transparent;
   border-color: transparent;
@@ -2284,10 +2284,9 @@ html.sap-desktop .sapMDialog {
 .sapUiSizeCompact.sapMDialog > .sapMDialogTitle,
 .sapUiSizeCompact .sapMDialog > .sapMDialogTitle {
   height: 2.5rem;
-}
-.sapUiSizeCompact.sapMDialog > .sapMDialogTitle .sapMBarPH,
-.sapUiSizeCompact .sapMDialog > .sapMDialogTitle .sapMBarPH {
-  line-height: 2.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  box-sizing: border-box;
 }
 .sapUiSizeCompact.sapMDialog > .sapMDialogSection,
 .sapUiSizeCompact .sapMDialog > .sapMDialogSection {
@@ -4175,6 +4174,12 @@ html[data-sap-ui-browser*='ff'] .sapMGT:not(.sapMGTHeaderMode) .sapMGTHdrContent
 .sapMHdrCntrBtnCntr.Horizontal.sapMHdrCntrRight {
   left: 0.25rem;
 }
+.sapUiSizeCompact .sapMHdrCntrBtnCntr.Horizontal.sapMHdrCntrLeft {
+  right: 0rem;
+}
+.sapUiSizeCompact .sapMHdrCntrBtnCntr.Horizontal.sapMHdrCntrRight {
+  left: 0rem;
+}
 html.sap-phone .sapMHdrCntrBtnCntr.Horizontal,
 html.sap-tablet:not(.sap-desktop) .sapMHdrCntrBtnCntr.Horizontal {
   width: 1.5rem;
@@ -4218,6 +4223,7 @@ html.sap-tablet:not(.sap-desktop) .sapMHdrCntrBtnCntr.Vertical.sapMHdrCntrRight 
   min-width: 1.375rem;
 }
 .sapUiSizeCompact .sapMHdrCntrBtnCntr.Horizontal > .sapMHdrCntrBtn {
+  left: 0.25rem;
   margin-top: -1rem;
 }
 html.sap-phone .sapMHdrCntrBtnCntr.Horizontal > .sapMHdrCntrBtn,
@@ -11048,7 +11054,7 @@ html.sap-desktop .sapUiFioriObjectPage > section > .sapMPanel {
 }
 /* workaround for drawing issue in IE - ensures that the content will be redrawn */
 html[data-sap-ui-animation='on'][data-sap-ui-browser^="ie"] .sapMPanelContent {
-  transform: translate(0, 0);
+  transform: translate3d(0, 0, 0);
 }
 /* workaround for drawing issue in Edge - ensures that the content will be redrawn */
 html[data-sap-ui-animation='on'][data-sap-ui-browser^="ed"] .sapMPanelContent {
@@ -16499,7 +16505,18 @@ html.sap-phone .sapMTileContent {
   line-height: 1.1875rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
+}
+.sapMTileCntFooterTextColorNeutral {
   color: #666666;
+}
+.sapMTileCntFooterTextColorGood {
+  color: #2b7d2b;
+}
+.sapMTileCntFooterTextColorError {
+  color: #bb0000;
+}
+.sapMTileCntFooterTextColorCritical {
+  color: #e78c07;
 }
 html[dir=rtl] .sapMTileCntFtrTxt {
   text-align: left;
@@ -17986,11 +18003,6 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapMTokenizer:focus:before {
 .sapMUCObjectMarkerContainer {
   display: inline-block;
   position: absolute;
-}
-/*focus for the file name */
-.sapMUCItem .sapMUCTextContainer > .sapMUCFileName.sapMLnk:focus {
-  outline: 1px dotted;
-  outline-offset: 0.0625rem;
 }
 /*positioning of the Progress label */
 .sapMLabel.sapMUCProgress {
@@ -21322,7 +21334,7 @@ html.sap-desktop .sapContrast.sapMIBar.sapMFooter-CTX {
   color: #abe2ab;
 }
 
-.sapContrast span.sapMBtnInner.sapMBtnAccept > .sapMBtnIcon {
+.sapContrast :not(.sapMBtnDisabled) > span.sapMBtnInner.sapMBtnAccept > .sapMBtnIcon {
   color: #abe2ab;
 }
 
@@ -21345,7 +21357,7 @@ html.sap-desktop .sapContrast.sapMIBar.sapMFooter-CTX {
   color: #ff8888;
 }
 
-.sapContrast span.sapMBtnInner.sapMBtnReject > .sapMBtnIcon {
+.sapContrast :not(.sapMBtnDisabled) > span.sapMBtnInner.sapMBtnReject > .sapMBtnIcon {
   color: #ff8888;
 }
 
@@ -21369,7 +21381,7 @@ html.sap-desktop .sapContrast.sapMIBar.sapMFooter-CTX {
   text-shadow: 0 0 0.125rem #000000;
 }
 
-.sapContrast span.sapMBtnInner.sapMBtnEmphasized > .sapMBtnIcon {
+.sapContrast :not(.sapMBtnDisabled) > span.sapMBtnInner.sapMBtnEmphasized > .sapMBtnIcon {
   color: #ffffff;
 }
 
@@ -21506,8 +21518,8 @@ html.sap-desktop .sapContrast.sapMFooter-CTX .sapMBtnInner :not(.sapMBtnDisabled
   text-shadow: none;
 }
 
-.sapContrast.sapMTB-Transparent-CTX .sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive),
-.sapContrast .sapMTB-Transparent-CTX .sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive) {
+.sapContrast.sapMTB-Transparent-CTX :not(.sapMBtnDisabled) .sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive),
+.sapContrast .sapMTB-Transparent-CTX :not(.sapMBtnDisabled) .sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive) {
   background-image: none;
   background: transparent;
   border-color: transparent;
@@ -26335,9 +26347,24 @@ html.sap-phone .sapContrast.sapMTabStripSelectList .sapMSelectListItemBasePresse
   outline: 1px dotted #ffffff;
 }
 
-.sapContrast.sapMTileCntFtrTxt,
-.sapContrast .sapMTileCntFtrTxt {
+.sapContrast.sapMTileCntFooterTextColorNeutral,
+.sapContrast .sapMTileCntFooterTextColorNeutral {
   color: #dddddd;
+}
+
+.sapContrast.sapMTileCntFooterTextColorGood,
+.sapContrast .sapMTileCntFooterTextColorGood {
+  color: #abe2ab;
+}
+
+.sapContrast.sapMTileCntFooterTextColorError,
+.sapContrast .sapMTileCntFooterTextColorError {
+  color: #ff8888;
+}
+
+.sapContrast.sapMTileCntFooterTextColorCritical,
+.sapContrast .sapMTileCntFooterTextColorCritical {
+  color: #fabd64;
 }
 
 .sapContrast.sapMTileCntContent > .sapMNwC,
@@ -26936,11 +26963,6 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapContrast.sapMTokenizer:focus {
 .sapContrast.sapMImg.sapMUCItemImage,
 .sapContrast .sapMImg.sapMUCItemImage {
   background-size: cover;
-}
-
-.sapContrast.sapMUCItem .sapMUCTextContainer > .sapMUCFileName.sapMLnk:focus,
-.sapContrast .sapMUCItem .sapMUCTextContainer > .sapMUCFileName.sapMLnk:focus {
-  outline: 1px dotted;
 }
 
 .sapContrast.sapMUCNoDataPage,
