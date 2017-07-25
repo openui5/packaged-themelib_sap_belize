@@ -1597,10 +1597,9 @@ html.sap-desktop .sapMDialog {
 .sapUiSizeCompact.sapMDialog > .sapMDialogTitle,
 .sapUiSizeCompact .sapMDialog > .sapMDialogTitle {
   height: 2.5rem;
-}
-.sapUiSizeCompact.sapMDialog > .sapMDialogTitle .sapMBarPH,
-.sapUiSizeCompact .sapMDialog > .sapMDialogTitle .sapMBarPH {
-  line-height: 2.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  box-sizing: border-box;
 }
 .sapUiSizeCompact.sapMDialog > .sapMDialogSection,
 .sapUiSizeCompact .sapMDialog > .sapMDialogSection {
@@ -13416,11 +13415,6 @@ html[data-sap-ui-browser="ie9"] .sapMUCItemImage {
   display: inline-block;
   position: absolute;
 }
-/*focus for the file name */
-.sapMUCItem .sapMUCTextContainer > .sapMUCFileName.sapMLnk:focus {
-  outline: 1px dotted;
-  outline-offset: 0.0625rem;
-}
 /*positioning of the Progress label */
 .sapMLabel.sapMUCProgress {
   display: block;
@@ -20308,7 +20302,18 @@ html.sap-phone .sapMSltPicker .sapMTabStripSelectListItemCloseBtn .sapMBtnIcon {
 .sapMTileCntFtrTxt {
   font-family: "72-Web", Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
+}
+.sapMTileCntFooterTextColorNeutral {
   color: #666666;
+}
+.sapMTileCntFooterTextColorGood {
+  color: #2b7d2b;
+}
+.sapMTileCntFooterTextColorError {
+  color: #bb0000;
+}
+.sapMTileCntFooterTextColorCritical {
+  color: #e78c07;
 }
 .sapMTileCnt.News {
   background-color: rgba(41, 76, 106, 0.85);
@@ -23269,11 +23274,6 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapContrast.sapMTokenizer:focus {
 .sapContrast.sapMImg.sapMUCItemImage,
 .sapContrast .sapMImg.sapMUCItemImage {
   background-size: cover;
-}
-
-.sapContrast.sapMUCItem .sapMUCTextContainer > .sapMUCFileName.sapMLnk:focus,
-.sapContrast .sapMUCItem .sapMUCTextContainer > .sapMUCFileName.sapMLnk:focus {
-  outline: 1px dotted;
 }
 
 .sapContrast.sapMValueStateMessage,
@@ -28033,9 +28033,24 @@ html.sap-phone .sapContrast.sapMTabStripSelectList .sapMSelectListItemBasePresse
   outline: 1px dotted #ffffff;
 }
 
-.sapContrast.sapMTileCntFtrTxt,
-.sapContrast .sapMTileCntFtrTxt {
+.sapContrast.sapMTileCntFooterTextColorNeutral,
+.sapContrast .sapMTileCntFooterTextColorNeutral {
   color: #dddddd;
+}
+
+.sapContrast.sapMTileCntFooterTextColorGood,
+.sapContrast .sapMTileCntFooterTextColorGood {
+  color: #abe2ab;
+}
+
+.sapContrast.sapMTileCntFooterTextColorError,
+.sapContrast .sapMTileCntFooterTextColorError {
+  color: #ff8888;
+}
+
+.sapContrast.sapMTileCntFooterTextColorCritical,
+.sapContrast .sapMTileCntFooterTextColorCritical {
+  color: #fabd64;
 }
 
 .sapContrast.sapMTileCnt.News,

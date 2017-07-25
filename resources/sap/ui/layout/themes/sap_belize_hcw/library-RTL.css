@@ -4074,14 +4074,29 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
 .sapUiBlockLayoutSizeXL .sapUiBlockCellTitle {
   font-size: 2.25rem;
 }
+/**
+ * Mixin to set contrast containers for Light background
+ */
 /* ============ Background type: Light ============== */
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell:nth-child(2n),
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell:nth-child(2n) {
-  background-color: #ffffff;
+  background-color: #e6e6e6;
 }
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell:nth-child(2n+1),
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell:nth-child(2n+1) {
   background-color: #ffffff;
+}
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent {
+  background-color: #ffffff;
+}
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent {
+  background-color: #e6e6e6;
 }
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell:nth-child(2n),
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell:nth-child(2n) {
@@ -4089,6 +4104,18 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
 }
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell:nth-child(2n+1),
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell:nth-child(2n+1) {
+  background-color: #e6e6e6;
+}
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent {
+  background-color: #e6e6e6;
+}
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent {
   background-color: #ffffff;
 }
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2 .sapUiBlockLayoutCell:nth-child(2n),
@@ -4099,6 +4126,18 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4 .sapUiBlockLayoutCell:nth-child(2n+1) {
   background-color: #dbdbdb;
 }
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2 .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4 .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent {
+  background-color: #dbdbdb;
+}
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2 .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4 .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent {
+  background-color: #ededed;
+}
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2Inverted .sapUiBlockLayoutCell:nth-child(2n),
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell:nth-child(2n) {
   background-color: #dbdbdb;
@@ -4107,14 +4146,38 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
 .sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell:nth-child(2n+1) {
   background-color: #ededed;
 }
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent {
+  background-color: #ededed;
+}
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundLight .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent {
+  background-color: #dbdbdb;
+}
 /* ============ Background type: Mixed ============== */
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell:nth-child(2n),
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell:nth-child(2n) {
-  background-color: #ffffff;
+  background-color: #e6e6e6;
 }
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell:nth-child(2n+1),
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell:nth-child(2n+1) {
   background-color: #ffffff;
+}
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent {
+  background-color: #ffffff;
+}
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent {
+  background-color: #e6e6e6;
 }
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell:nth-child(2n),
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell:nth-child(2n) {
@@ -4122,6 +4185,18 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
 }
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell:nth-child(2n+1),
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell:nth-child(2n+1) {
+  background-color: #e6e6e6;
+}
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent {
+  background-color: #e6e6e6;
+}
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet1Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet3Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent {
   background-color: #ffffff;
 }
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2 .sapUiBlockLayoutCell:nth-child(2n),
@@ -4132,6 +4207,18 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4 .sapUiBlockLayoutCell:nth-child(2n+1) {
   background-color: #dbdbdb;
 }
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2 .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4 .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent {
+  background-color: #dbdbdb;
+}
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2 .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4 .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4 .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent {
+  background-color: #ededed;
+}
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2Inverted .sapUiBlockLayoutCell:nth-child(2n),
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell:nth-child(2n) {
   background-color: #dbdbdb;
@@ -4139,6 +4226,18 @@ html[data-sap-ui-browser^=ie].sap-desktop .sapUiLoSplitterV > .sapUiLoSplitterBa
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2Inverted .sapUiBlockLayoutCell:nth-child(2n+1),
 .sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell:nth-child(2n+1) {
   background-color: #ededed;
+}
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n) .sapUiBlockCellContent {
+  background-color: #ededed;
+}
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell.sapContrast:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet2Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent,
+.sapUiBlockLayoutBackgroundMixed .sapUiBlockLayoutRow.sapUiBlockLayoutBackgroundColorSet4Inverted .sapUiBlockLayoutCell.sapContrastPlus:nth-child(2n+1) .sapUiBlockCellContent {
+  background-color: #dbdbdb;
 }
 .sapUiBlockLayoutBackgroundMixed.sapUiBlockLayoutSizeL .sapUiBlockLayoutRow .sapContrast.sapUiBlockLayoutCell,
 .sapUiBlockLayoutBackgroundMixed.sapUiBlockLayoutSizeXL .sapUiBlockLayoutRow .sapContrast.sapUiBlockLayoutCell,
