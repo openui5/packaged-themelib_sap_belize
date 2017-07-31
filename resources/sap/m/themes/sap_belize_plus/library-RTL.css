@@ -10784,11 +10784,6 @@ html[data-sap-ui-browser="ie9"] .sapMUCItemImage {
   opacity: 100;
   margin-right: 0.1rem;
 }
-/*focus for the file name */
-.sapMUCItem .sapMUCTextContainer > .sapMUCFileName.sapMLnk:focus {
-  outline: 1px dotted;
-  outline-offset: 0.0625rem;
-}
 /*positioning of the Progress label */
 .sapMLabel.sapMUCProgress {
   display: block;
@@ -20629,11 +20624,6 @@ html[dir=rtl] .sapContrastPlus.sapMTC .sapMTCEdgeRight {
 .sapContrastPlus.sapMImg.sapMUCItemImage,
 .sapContrastPlus .sapMImg.sapMUCItemImage {
   background-size: cover;
-}
-
-.sapContrastPlus.sapMUCItem .sapMUCTextContainer > .sapMUCFileName.sapMLnk:focus,
-.sapContrastPlus .sapMUCItem .sapMUCTextContainer > .sapMUCFileName.sapMLnk:focus {
-  outline: 1px dotted;
 }
 
 .sapContrastPlus.sapMVSDUpperList,
