@@ -809,5 +809,6 @@
     "sapUiHcNegativeColor": "#ff5e5e",
     "sapUiHcCriticalColor": "#ffab1d",
     "sapUiHcPositiveColor": "#99cc99",
-    "sapUiHcNeutralColor": "#ffffff"
+    "sapUiHcNeutralColor": "#ffffff",
+    "_sap_m_TileContent_NewsFooterTextColor": "#ffffff"
 }
