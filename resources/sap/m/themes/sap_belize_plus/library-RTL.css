@@ -9036,12 +9036,8 @@ html.sap-desktop .sapMObjectAttributeActive:focus {
 .sapUxAPObjectPageHeaderContentItem .sapMObjectAttributeText {
   line-height: normal;
 }
-html[data-sap-ui-browser^='ie'] .sapMObjectAttributeDiv,
-html[data-sap-ui-browser^='ie'] .sapMObjectAttributeDiv {
-  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
-}
-html[data-sap-ui-browser^='ie'] .sapMObjectAttributeActive:focus .sapMObjectAttributeText,
-html[data-sap-ui-browser^='ie'] .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
+html[data-sap-ui-browser^='ie'] .sapMObjectAttributeActive:focus .sapMObjectAttributeText::after,
+html[data-sap-ui-browser^='ie'] .sapMObjectAttributeActive:focus .sapMObjectAttributeText::after {
   outline-style: dashed;
 }
 /*=========================================== */
@@ -9121,10 +9117,6 @@ html[data-sap-ui-browser^='ie'] .sapMObjectAttributeActive:focus .sapMObjectAttr
 .sapMOH .sapMObjectAttributeActive .sapMObjectAttributeText:hover,
 .sapMOH .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
   text-decoration: none;
-}
-html[data-sap-ui-browser^="ie"] .sapMObjectAttributeDiv,
-html[data-sap-ui-browser^="ed"] .sapMObjectAttributeDiv {
-  padding: 0.125rem 0.125rem 0.125rem 0.125rem;
 }
 /* =================================== */
 /* CSS for control sap.m/ObjectHeader  */
@@ -20192,13 +20184,21 @@ div.sapMComboBoxBasePicker .sapMComboBoxBasePickerValueState.sapMComboBoxBasePic
 /* CSS for control sap.m/ObjectAttribute  */
 /* Belize theme                           */
 /* ====================================== */
-html.sap-desktop .sapMObjectAttributeActive:focus > .sapMText {
+.sapMObjectAttributeActive:focus .sapMObjectAttributeText {
+  position: relative;
+}
+.sapMObjectAttributeActive:focus .sapMObjectAttributeText::after {
+  pointer-events: none;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
   outline: 1px dotted #000000;
-  outline-offset: -1px;
 }
 .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
-  outline: 1px dotted #000000;
-  outline-offset: -1px;
   text-decoration: none;
 }
 .sapMObjectAttributeActive .sapMObjectAttributeText:active,
@@ -20217,20 +20217,12 @@ html[data-sap-ui-browser^="ed"] .sapMObjectAttributeActive:focus > .sapMText {
 .sapMOHR .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
   text-decoration: underline;
 }
-.sapMOHR .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
-  outline: 1px dotted #000000;
-  outline-offset: -1px;
-}
 /*=========================================== */
 /* Custom design for Static Object Header     */
 /*=========================================== */
 .sapMOH .sapMObjectAttributeActive .sapMObjectAttributeText:active,
 .sapMOH .sapMObjectAttributeActive .sapMObjectAttributeText:hover {
   text-decoration: underline;
-}
-.sapMOH .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
-  outline: 1px dotted #000000;
-  outline-offset: -1px;
 }
 .sapMOHR .sapMObjectAttributeActive .sapMObjectAttributeText,
 .sapMOH .sapMObjectAttributeActive .sapMObjectAttributeText {
@@ -28503,14 +28495,13 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus.sapMITBItem:focus.s
   outline: 1px dotted #ffffff;
 }
 
-html.sap-desktop .sapContrastPlus .sapMObjectAttributeActive:focus > .sapMText,
-html.sap-desktop .sapContrastPlus.sapMObjectAttributeActive:focus > .sapMText {
+.sapContrastPlus.sapMObjectAttributeActive:focus .sapMObjectAttributeText::after,
+.sapContrastPlus .sapMObjectAttributeActive:focus .sapMObjectAttributeText::after {
   outline: 1px dotted #ffffff;
 }
 
 .sapContrastPlus.sapMObjectAttributeActive:focus .sapMObjectAttributeText,
 .sapContrastPlus .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
-  outline: 1px dotted #ffffff;
   text-decoration: none;
 }
 
@@ -28530,21 +28521,11 @@ html.sap-desktop .sapContrastPlus.sapMObjectAttributeActive:focus > .sapMText {
   text-decoration: underline;
 }
 
-.sapContrastPlus.sapMOHR .sapMObjectAttributeActive:focus .sapMObjectAttributeText,
-.sapContrastPlus .sapMOHR .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
-  outline: 1px dotted #ffffff;
-}
-
 .sapContrastPlus.sapMOH .sapMObjectAttributeActive .sapMObjectAttributeText:active,
 .sapContrastPlus .sapMOH .sapMObjectAttributeActive .sapMObjectAttributeText:active,
 .sapContrastPlus.sapMOH .sapMObjectAttributeActive .sapMObjectAttributeText:hover,
 .sapContrastPlus .sapMOH .sapMObjectAttributeActive .sapMObjectAttributeText:hover {
   text-decoration: underline;
-}
-
-.sapContrastPlus.sapMOH .sapMObjectAttributeActive:focus .sapMObjectAttributeText,
-.sapContrastPlus .sapMOH .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
-  outline: 1px dotted #ffffff;
 }
 
 .sapContrastPlus.sapMOHR .sapMObjectAttributeActive .sapMObjectAttributeText,
@@ -29712,6 +29693,19 @@ html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapMTB-Info-CTX.sap
 /* Belize Plus theme            */
 
 /* ============================ */
+
+/* ============================== */
+
+/* CSS for control sap.m/Toolbar  */
+
+/* Belize Plus theme              */
+
+/* ============================== */
+
+.sapContrastPlus .sapMTB.sapMTB-Transparent-CTX,
+.sapContrastPlus.sapMTB.sapMTB-Transparent-CTX {
+  background: #3f5161;
+}
 
 /* ========================================= */
 
