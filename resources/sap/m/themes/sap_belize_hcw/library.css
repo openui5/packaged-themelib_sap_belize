@@ -6692,10 +6692,6 @@ html[dir=rtl] .sapMNCValueScr {
 .sapMOH .sapMObjectAttributeText > .sapMText {
   vertical-align: bottom;
 }
-html[data-sap-ui-browser^="ie"] .sapMObjectAttributeDiv,
-html[data-sap-ui-browser^="ed"] .sapMObjectAttributeDiv {
-  padding: 0.125rem 0.125rem 0.125rem 0.125rem;
-}
 /* ============================================= */
 /* CSS for control sap.m/ObjectHeaderItem.control */
 /* ============================================= */
@@ -17294,13 +17290,22 @@ html.sap-desktop .sapMLIB.sapMNLI:focus {
 html.sap-desktop .sapMObjectAttributeActive:focus {
   outline: none;
 }
-html.sap-desktop .sapMObjectAttributeActive:focus > .sapMText {
-  outline: 1px dotted #000000;
-  outline-offset: -1px;
+.sapMObjectAttributeActive:focus .sapMObjectAttributeText {
+  position: relative;
 }
-html[data-sap-ui-browser^="ie"] .sapMObjectAttributeActive:focus > .sapMText,
-html[data-sap-ui-browser^="ed"] .sapMObjectAttributeActive:focus > .sapMText {
-  outline-style: dashed;
+.sapMObjectAttributeActive:focus .sapMObjectAttributeText::after {
+  pointer-events: none;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  outline: 1px dotted #000000;
+}
+.sapMObjectAttributeActive:focus .sapMObjectAttributeText {
+  text-decoration: none;
 }
 /*=========================================== */
 /* Custom design for Responsive Object Header */
@@ -17347,10 +17352,6 @@ html[data-sap-ui-browser^="ed"] .sapMObjectAttributeActive:focus > .sapMText {
 .sapMOHR .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
   text-decoration: underline;
 }
-.sapMOHR .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
-  outline: 1px dotted #000000;
-  outline-offset: -1px;
-}
 .sapMOHR .sapMOHRAttr .sapMObjectAttributeDiv {
   display: block;
   white-space: nowrap;
@@ -17379,10 +17380,6 @@ html[data-sap-ui-browser^="ed"] .sapMObjectAttributeActive:focus > .sapMText {
 .sapMOH .sapMObjectAttributeActive .sapMObjectAttributeText:active,
 .sapMOH .sapMObjectAttributeActive .sapMObjectAttributeText:hover {
   text-decoration: underline;
-}
-.sapMOH .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
-  outline: 1px dotted #000000;
-  outline-offset: -1px;
 }
 /* ======================================= */
 /* CSS for control sap.m/ObjectHeaderItem  */
