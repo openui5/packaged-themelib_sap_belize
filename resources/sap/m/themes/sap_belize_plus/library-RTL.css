@@ -1608,6 +1608,9 @@ html[data-sap-ui-animation='off'] .sapMCrslInner {
 .sapMCb:not(.sapMCbBgDis).sapMCbHasLabel:focus:before {
   pointer-events: none;
 }
+html[dir="rtl"] .sapMCb {
+  text-align: right;
+}
 .sapMCb .sapMLabel {
   cursor: default;
 }
@@ -29548,6 +29551,13 @@ html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapMTB-Info-CTX.sap
 /* Belize Plus theme                 */
 
 /* ================================= */
+
+.sapContrastPlus .sapMITH.sapMITHBackgroundDesignTransparent,
+.sapContrastPlus.sapMITH.sapMITHBackgroundDesignTransparent,
+.sapContrastPlus .sapMITH.sapMITHBackgroundDesignTranslucent,
+.sapContrastPlus.sapMITH.sapMITHBackgroundDesignTranslucent {
+  background: #3f5161;
+}
 
 /* ============================= */
 
