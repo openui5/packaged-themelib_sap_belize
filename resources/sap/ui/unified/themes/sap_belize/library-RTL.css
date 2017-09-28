@@ -2077,6 +2077,7 @@ html.sap-tablet .sapMRespMenuDialog .sapMPage .sapMHeader-CTX {
   height: 100%;
   display: inline-block;
   vertical-align: top;
+  line-height: 2.5rem;
 }
 .sapUiUfdShellHeadEnd > .sapUiUfdShellIco {
   text-align: right;
@@ -3986,7 +3987,7 @@ html.sapUiMedia-Std-Desktop .sapUiUfdShellHeadUsrItm:hover:active > *,
   background-color: #000000;
 }
 .sapUiUfdShell .sapUiUfdShellBrand {
-  background: transparent;
+  background: #c9d8e7;
 }
 .sapUiUfdShell.sapUiUfdShellCurtainVisible .sapUiUfdShellHead,
 .sapUiUfdShell.sapUiUfdShellCurtainVisible .sapUiUfdShellHead > div {
@@ -6466,7 +6467,7 @@ html.sapUiMedia-Std-Desktop .sapContrast.sapUiUfdShellHeadUsrItm:hover:active > 
 
 .sapContrast.sapUiUfdShell .sapUiUfdShellBrand,
 .sapContrast .sapUiUfdShell .sapUiUfdShellBrand {
-  background: transparent;
+  background: #6586a3;
 }
 
 .sapContrast.sapUiUfdShell.sapUiUfdShellCurtainVisible .sapUiUfdShellHead,
