@@ -16249,6 +16249,10 @@ html.sap-desktop .sapMImageContent:focus:not([tabindex]) {
   right: -2.375rem;
   top: 0.125rem;
 }
+.sapMInputBaseState .sapMInputValHelp {
+  min-height: 2.25rem;
+  min-width: 2.25rem;
+}
 .sapMInputBaseState .sapMInputValHelp > .sapMInputValHelpInner {
   height: 2.25rem;
   width: 2.25rem;
@@ -16272,8 +16276,8 @@ div.sapMInputSuggestionPopup {
   right: -1.5rem;
 }
 .sapUiSizeCompact .sapMInputBaseState .sapMInputValHelp > .sapMInputValHelpInner {
-  height: 1.375rem;
-  width: 1.375rem;
+  height: 2.125rem;
+  width: 2.125rem;
   line-height: 1.375rem;
 }
 /* ================================ */
