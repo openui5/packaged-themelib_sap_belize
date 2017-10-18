@@ -397,18 +397,6 @@ html[data-sap-ui-browser^="ed"] .sapUiIcon:focus::after {
   border-width: 1px;
   border-style: dashed;
 }
-/*
- * The focus outline is defined with a extreme specific selector which can't be easily overwritten.
- * Therefore it's needed to provide a custom class 'sapUiIconNoOutline' to hide the outline in case
- * the outline isn't needed from the application or control
- */
-html:not([data-sap-ui-browser^="ie"]):not([data-sap-ui-browser^="ed"]) .sapUiIcon.sapUiIconNoOutline:focus {
-  outline: none;
-}
-html[data-sap-ui-browser^="ie"],
-html[data-sap-ui-browser^="ed"] .sapUiIcon.sapUiIconNoOutline:focus::after {
-  border: none;
-}
 .sapUiIcon::before {
   content: attr(data-sap-ui-icon-content);
   speak: none;
@@ -1296,18 +1284,6 @@ html[data-sap-ui-browser^="ie"] .sapContrastPlus.sapUiIcon:focus,
 html[data-sap-ui-browser^="ed"] .sapContrastPlus .sapUiIcon:focus,
 html[data-sap-ui-browser^="ed"] .sapContrastPlus.sapUiIcon:focus {
   outline: none;
-}
-
-html:not([data-sap-ui-browser^="ie"]):not([data-sap-ui-browser^="ed"]) .sapContrastPlus .sapUiIcon.sapUiIconNoOutline:focus,
-html:not([data-sap-ui-browser^="ie"]):not([data-sap-ui-browser^="ed"]) .sapContrastPlus.sapUiIcon.sapUiIconNoOutline:focus {
-  outline: none;
-}
-
-html[data-sap-ui-browser^="ie"].sapContrastPlus,
-html[data-sap-ui-browser^="ie"] .sapContrastPlus,
-html[data-sap-ui-browser^="ed"] .sapContrastPlus .sapUiIcon.sapUiIconNoOutline:focus::after,
-html[data-sap-ui-browser^="ed"] .sapContrastPlus.sapUiIcon.sapUiIconNoOutline:focus::after {
-  border: none;
 }
 
 .sapContrastPlus.sapUiIconColorDefault,
