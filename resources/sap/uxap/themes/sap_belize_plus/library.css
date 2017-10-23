@@ -2703,7 +2703,7 @@ html[data-sap-ui-browser^="cr4"].sap-phone .sapContrastPlus.sapUxAPHierarchicalS
 /* =================================== */
 
 .sapUshellShell .sapUxAPAnchorBar.sapMTB {
-  opacity: 0.6;
+  background: rgba(63, 81, 97, 0.4);
 }
 
 .sapContrastPlus .sapUxAPAnchorBar .sapUxAPAnchorBarButton.sapUxAPAnchorBarButtonSelected .sapMBtnContent,
@@ -2723,7 +2723,7 @@ html[data-sap-ui-browser^="cr4"].sap-phone .sapContrastPlus.sapUxAPHierarchicalS
 /* ========================================== */
 
 .sapUshellShell .sapUxAPObjectPageHeaderIdentifier {
-  opacity: 0.6;
+  background: rgba(63, 81, 97, 0.4);
 }
 
 /* ================================================= */
@@ -2736,7 +2736,7 @@ html[data-sap-ui-browser^="cr4"].sap-phone .sapContrastPlus.sapUxAPHierarchicalS
 
 .sapUshellShell .sapUxAPObjectPageHeaderContentDesign-Light,
 .sapUshellShell .sapUxAPObjectPageHeaderContentDesign-Dark {
-  opacity: 0.6;
+  background: rgba(63, 81, 97, 0.4);
 }
 
 /* =========================================== */
