@@ -5635,6 +5635,9 @@ html[data-sap-ui-browser^="sf"] .sapMInputBaseInner::selection,
 html[data-sap-ui-browser^="cr"] .sapMInputBaseInner::selection {
   background: rgba(66, 124, 172, 0.99);
 }
+html[data-sap-ui-browser^="ed"] .sapMInputBaseInner {
+  line-height: 0;
+}
 .sapMInputBaseWarningInner {
   background: #ffffff;
   border-color: #f9a429;
@@ -11027,29 +11030,14 @@ html.sap-desktop .sapUiFioriObjectPage > section {
 }
 .sapMPanelExpandableIcon {
   position: absolute;
-  width: 3rem;
-  line-height: 3rem;
+  width: 1.5rem;
+  line-height: 1.5rem;
   font-size: 1rem;
+  margin: 0 0.75rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   color: #346187;
-}
-.sapMPanelExpandableIcon:focus {
-  outline: none;
-}
-.sapMPanelExpandableIcon:focus::after {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  top: 0.75rem;
-  right: 0.75rem;
-  bottom: 0.75rem;
-  left: 0.75rem;
-  border: 1px dotted #000000;
-}
-html[data-sap-ui-browser^="ie"].sap-desktop .sapMPanelExpandableIcon:focus::after {
-  border-style: dashed;
 }
 .sapMPanelExpandableIconExpanded {
   display: inline-block;
@@ -19460,22 +19448,8 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapMITBItem:focus.sapMITBAll::after
 /* Belize theme                 */
 /* ============================ */
 /* Value Help */
-.sapMInputBaseState .sapMInputValHelp {
-  right: 0.125rem;
-  height: 2.25rem;
-  width: 2.25rem;
-}
 .sapMInputBaseState.sapMInputDescription.sapMInputVH > span > .sapMInputValHelp {
   left: -2.375rem;
-}
-.sapMInputBaseState .sapMInputValHelp {
-  min-height: 2.25rem;
-  min-width: 2.25rem;
-}
-.sapMInputBaseState .sapMInputValHelp > .sapMInputValHelpInner {
-  height: 2.25rem;
-  width: 2.25rem;
-  line-height: 2.25rem;
 }
 .sapMInputBaseState.sapMInputDescription.sapMInputVH > span > .sapMInputValHelp > .sapMInputValHelpInner {
   vertical-align: top;
@@ -19486,17 +19460,8 @@ div.sapMInputSuggestionPopup {
   box-shadow: 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.15);
 }
 /* Compact size */
-.sapUiSizeCompact .sapMInputBaseState .sapMInputValHelp {
-  height: 1.375rem;
-  width: 1.375rem;
-}
 .sapUiSizeCompact .sapMInputBaseState.sapMInputDescription.sapMInputVH > span > .sapMInputValHelp {
   left: -1.5rem;
-}
-.sapUiSizeCompact .sapMInputBaseState .sapMInputValHelp > .sapMInputValHelpInner {
-  height: 2.125rem;
-  width: 2.125rem;
-  line-height: 1.375rem;
 }
 /* ================================ */
 /* CSS for control sap.m/InputBase  */
@@ -24648,16 +24613,6 @@ html.sap-desktop .sapContrast.sapMP13nColumnsPanel .sapMLIBSelected:not(.sapMLIB
 .sapContrast.sapMPanelExpandableIcon,
 .sapContrast .sapMPanelExpandableIcon {
   color: #cae4fb;
-}
-
-.sapContrast.sapMPanelExpandableIcon:focus,
-.sapContrast .sapMPanelExpandableIcon:focus {
-  outline: none;
-}
-
-.sapContrast.sapMPanelExpandableIcon:focus::after,
-.sapContrast .sapMPanelExpandableIcon:focus::after {
-  border: 1px dotted #ffffff;
 }
 
 .sapContrast.sapMPanelWrappingDiv.sapMPanelWrappingDivExpanded,
