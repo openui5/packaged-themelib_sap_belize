@@ -1104,6 +1104,11 @@ html[data-sap-ui-browser^="ff"].sap-desktop .sapContrastPlus.sapFDynamicPageTitl
   color: #91c8f6;
 }
 
+.sapUshellShell .sapFDynamicPage.sapFDynamicPageTitleClickEnabled:not(.sapFDynamicPageHeaderPinned) .sapFDynamicPageTitle:hover,
+.sapUshellShell .sapFDynamicPage.sapFDynamicPageTitleClickEnabled:not(.sapFDynamicPageHeaderPinned).sapFDynamicPageTitleForceHovered .sapFDynamicPageTitle {
+  background-color: rgba(63, 81, 97, 0.75);
+}
+
 /* ======================================= */
 
 /* CSS for control sap.f/DynamicPageTitle  */
@@ -1113,7 +1118,7 @@ html[data-sap-ui-browser^="ff"].sap-desktop .sapContrastPlus.sapFDynamicPageTitl
 /* ======================================= */
 
 .sapUshellShell .sapFDynamicPageTitle {
-  opacity: 0.6;
+  background: rgba(63, 81, 97, 0.6);
 }
 
 /* ======================================== */
@@ -1125,7 +1130,7 @@ html[data-sap-ui-browser^="ff"].sap-desktop .sapContrastPlus.sapFDynamicPageTitl
 /* ======================================== */
 
 .sapUshellShell .sapFDynamicPageHeader {
-  opacity: 0.6;
+  background: rgba(63, 81, 97, 0.6);
 }
 
 /* =========================================== */
