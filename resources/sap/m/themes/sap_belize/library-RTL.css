@@ -6420,7 +6420,6 @@ html.sap-desktop .sapMLnk:focus:not(.sapMLnkDsbl) {
   touch-action: pan-y;
   -ms-touch-action: pan-y;
 }
-.sapMList:focus,
 .sapMListUl:focus {
   outline: none;
 }
@@ -23302,8 +23301,6 @@ html.sap-desktop .sapContrast.sapMLnk:focus:not(.sapMLnkDsbl) {
   outline: none;
 }
 
-.sapContrast.sapMList:focus,
-.sapContrast .sapMList:focus,
 .sapContrast.sapMListUl:focus,
 .sapContrast .sapMListUl:focus {
   outline: none;
