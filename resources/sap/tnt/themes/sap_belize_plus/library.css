@@ -608,6 +608,7 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
   background-color: #d1e0ee;
   border: 1px solid #d1e0ee;
 }
+.sapTntToolHeader .sapMITH,
 .sapTntToolHeaderPopover.sapMOTAPopover.sapMPopover {
   background-color: #d1e0ee;
 }
@@ -790,6 +791,8 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus.sapTntNavLIItem:foc
   border: 1px solid #2f3c48;
 }
 
+.sapContrastPlus.sapTntToolHeader .sapMITH,
+.sapContrastPlus .sapTntToolHeader .sapMITH,
 .sapContrastPlus.sapTntToolHeaderPopover.sapMOTAPopover.sapMPopover,
 .sapContrastPlus .sapTntToolHeaderPopover.sapMOTAPopover.sapMPopover {
   background-color: #2f3c48;
