@@ -1,11 +1,11 @@
 /*!
  * UI development toolkit for HTML5 (OpenUI5)
- * (c) Copyright 2009-2017 SAP SE or an SAP affiliate company.
+ * (c) Copyright 2009-2018 SAP SE or an SAP affiliate company.
  * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
  */
 /*!
  * UI development toolkit for HTML5 (OpenUI5)
- * (c) Copyright 2009-2017 SAP SE or an SAP affiliate company.
+ * (c) Copyright 2009-2018 SAP SE or an SAP affiliate company.
  * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
  */
 /* =========================== */
@@ -9148,6 +9148,9 @@ html[data-sap-ui-browser^='ie'] .sapMObjectAttributeActive:focus .sapMObjectAttr
 }
 .sapMOH {
   padding: 2rem;
+}
+.sapMOH .sapMOHTitleActive:focus {
+  outline: none;
 }
 html.sap-phone .sapMOH {
   padding: 2rem 1rem;
@@ -21268,7 +21271,7 @@ html[data-sap-ui-browser^="ie"].sap-desktop .sapMTB-Info-CTX.sapMTBActive:focus:
 }
 /*!
  * UI development toolkit for HTML5 (OpenUI5)
- * (c) Copyright 2009-2017 SAP SE or an SAP affiliate company.
+ * (c) Copyright 2009-2018 SAP SE or an SAP affiliate company.
  * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
  */
 
@@ -24353,6 +24356,11 @@ html.sap-desktop .sapContrast.sapMObjectAttributeActive:focus {
 .sapContrast.sapMOH .sapMObjectAttributeActive:focus .sapMObjectAttributeText,
 .sapContrast .sapMOH .sapMObjectAttributeActive:focus .sapMObjectAttributeText {
   text-decoration: none;
+}
+
+.sapContrast.sapMOH .sapMOHTitleActive:focus,
+.sapContrast .sapMOH .sapMOHTitleActive:focus {
+  outline: none;
 }
 
 .sapContrast.sapMOHIntro,
