@@ -690,9 +690,6 @@ html[dir='rtl'] .sapMBsyIndIcon {
 .sapMBtn .sapMBtnContent {
   display: block;
 }
-.sapMBtn .sapMBtnContent:focus {
-  outline: none;
-}
 /* --------------------- */
 /* Inner area            */
 /* --------------------- */
@@ -7940,6 +7937,8 @@ html.sap-tablet .sapMMultiInputMultiModeBorder .sapMInputBaseInner {
   display: inline-block;
   font-size: 0.875rem;
   line-height: 2.375rem;
+  width: 100%;
+  overflow: hidden;
 }
 .sapMMultiInputMultiModeBorder .sapMInputBaseInner {
   border: 1px;
@@ -19874,6 +19873,10 @@ div.sapMInputSuggestionPopup {
   left: 3px;
   bottom: 3px;
 }
+html[data-sap-ui-browser^="ie"].sap-desktop .sapMFocus .sapMInputDivWrapper:not(.sapMInputBaseDisabledInner)::before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapMFocus .sapMInputDivWrapper:not(.sapMInputBaseDisabledInner)::before {
+  border: 1px dashed #000000;
+}
 /* note: the following three files are not in alphabetical order and should be imported after InputBase.less */
 /* ======================================== */
 /* CSS for control sap.m/ComboBoxTextField  */
@@ -21589,11 +21592,6 @@ html.sap-desktop .sapContrastPlus.sapMIBar.sapMFooter-CTX {
 .sapContrastPlus.sapMBtn::-moz-focus-inner,
 .sapContrastPlus .sapMBtn::-moz-focus-inner {
   border: 0;
-}
-
-.sapContrastPlus.sapMBtn .sapMBtnContent:focus,
-.sapContrastPlus .sapMBtn .sapMBtnContent:focus {
-  outline: none;
 }
 
 .sapContrastPlus.sapMBtnInner,
@@ -28363,6 +28361,13 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus.sapMITBItem:focus.s
 .sapContrastPlus.sapMFocus .sapMInputDivWrapper:not(.sapMInputBaseDisabledInner)::before,
 .sapContrastPlus .sapMFocus .sapMInputDivWrapper:not(.sapMInputBaseDisabledInner)::before {
   border: 1px dotted #ffffff;
+}
+
+html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus .sapMFocus .sapMInputDivWrapper:not(.sapMInputBaseDisabledInner)::before,
+html[data-sap-ui-browser^="ie"].sap-desktop .sapContrastPlus.sapMFocus .sapMInputDivWrapper:not(.sapMInputBaseDisabledInner)::before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus .sapMFocus .sapMInputDivWrapper:not(.sapMInputBaseDisabledInner)::before,
+html[data-sap-ui-browser^="ed"].sap-desktop .sapContrastPlus.sapMFocus .sapMInputDivWrapper:not(.sapMInputBaseDisabledInner)::before {
+  border: 1px dashed #ffffff;
 }
 
 .sapContrastPlus.sapMComboBoxTextFieldWarning,
