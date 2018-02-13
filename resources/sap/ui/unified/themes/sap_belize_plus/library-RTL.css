@@ -771,6 +771,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:focus:not(:active) > .sap
   margin-right: 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 2rem;
 }
 .sapUiUfdCurrencyNoVal .sapUiUfdCurrencyValue,
 .sapUiUfdCurrencyNoVal .sapUiUfdCurrencyCurrency {
@@ -2873,10 +2874,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
 }
 .sapUiCalendarApp.sapUiCalendarAppSel > .sapUiCalendarAppCont > .sapUiCalendarAppIcon,
 .sapUiCalendarApp.sapUiCalendarAppSel > .sapUiCalendarAppCont > .sapUiCalendarAppTitle,
-.sapUiCalendarApp.sapUiCalendarAppSel > .sapUiCalendarAppCont > .sapUiCalendarAppText,
-.sapUiCalendarApp:active > .sapUiCalendarAppCont > .sapUiCalendarAppIcon,
-.sapUiCalendarApp:active > .sapUiCalendarAppCont > .sapUiCalendarAppTitle,
-.sapUiCalendarApp:active > .sapUiCalendarAppCont > .sapUiCalendarAppText {
+.sapUiCalendarApp.sapUiCalendarAppSel > .sapUiCalendarAppCont > .sapUiCalendarAppText {
   color: #ffffff;
 }
 .sapUiCalendarAppTitle {
@@ -4700,13 +4698,7 @@ html.sap-desktop .sapContrastPlus.sapUiCalendarApp.sapUiCalendarAppSel:hover:not
 .sapContrastPlus.sapUiCalendarApp.sapUiCalendarAppSel > .sapUiCalendarAppCont > .sapUiCalendarAppTitle,
 .sapContrastPlus .sapUiCalendarApp.sapUiCalendarAppSel > .sapUiCalendarAppCont > .sapUiCalendarAppTitle,
 .sapContrastPlus.sapUiCalendarApp.sapUiCalendarAppSel > .sapUiCalendarAppCont > .sapUiCalendarAppText,
-.sapContrastPlus .sapUiCalendarApp.sapUiCalendarAppSel > .sapUiCalendarAppCont > .sapUiCalendarAppText,
-.sapContrastPlus.sapUiCalendarApp:active > .sapUiCalendarAppCont > .sapUiCalendarAppIcon,
-.sapContrastPlus .sapUiCalendarApp:active > .sapUiCalendarAppCont > .sapUiCalendarAppIcon,
-.sapContrastPlus.sapUiCalendarApp:active > .sapUiCalendarAppCont > .sapUiCalendarAppTitle,
-.sapContrastPlus .sapUiCalendarApp:active > .sapUiCalendarAppCont > .sapUiCalendarAppTitle,
-.sapContrastPlus.sapUiCalendarApp:active > .sapUiCalendarAppCont > .sapUiCalendarAppText,
-.sapContrastPlus .sapUiCalendarApp:active > .sapUiCalendarAppCont > .sapUiCalendarAppText {
+.sapContrastPlus .sapUiCalendarApp.sapUiCalendarAppSel > .sapUiCalendarAppCont > .sapUiCalendarAppText {
   color: #2f3c48;
 }
 
