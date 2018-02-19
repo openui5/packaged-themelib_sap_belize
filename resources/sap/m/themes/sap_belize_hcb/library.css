@@ -3627,7 +3627,7 @@ html.sap-phone .sapMFeedListItemActionButton + .sapMFeedListItemHeader .sapMFeed
   box-sizing: border-box;
   background-position: 0px;
   background: #000000;
-  border: 1px solid transparent;
+  border: 1px solid #ffffff;
   box-shadow: 0 0 0 1px #ffffff;
   vertical-align: top;
 }
@@ -13290,6 +13290,9 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapMFocus > .sapMSFF::before {
   vertical-align: top;
   position: relative;
 }
+.sapMSegB:focus {
+  outline: none;
+}
 .sapMSegB .sapMSegBBtn {
   list-style: none;
   text-overflow: ellipsis;
@@ -19468,6 +19471,7 @@ html.sap-desktop .sapUiSizeCompact .sapUiSimpleForm .sapMCb:not(.sapMCbBgDis):fo
 /* ================================== */
 .sapMGT {
   border-radius: 0.125rem;
+  box-shadow: none;
 }
 .sapMGT.sapMGTBackgroundImage .sapMGTContent {
   border-bottom-left-radius: 0.125rem;
@@ -21536,6 +21540,7 @@ html[data-sap-ui-browser^='ed'] .sapMListTbl {
 .sapMCustomTile {
   border: 1px solid #ffffff;
   border-radius: 0.25rem;
+  box-shadow: none;
   -webkit-transition-property: none;
   transition-property: none;
   background-color: #000000;

@@ -13290,6 +13290,9 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapMFocus > .sapMSFF::before {
   vertical-align: top;
   position: relative;
 }
+.sapMSegB:focus {
+  outline: none;
+}
 .sapMSegB .sapMSegBBtn {
   list-style: none;
   text-overflow: ellipsis;
@@ -25609,6 +25612,11 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapContrast.sapMFocus > .sapMSFF::b
 .sapContrast .sapMSegB {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   border: none;
+}
+
+.sapContrast.sapMSegB:focus,
+.sapContrast .sapMSegB:focus {
+  outline: none;
 }
 
 .sapContrast.sapMSegB .sapMSegBBtn,
