@@ -1190,6 +1190,7 @@ html.sap-phone .sapMCustomTile {
 /* ===================================== */
 /* styles for popup */
 .sapMDateTimePopupCont {
+  display: flex;
   height: 25.25rem;
   min-width: 40.0625rem;
 }
@@ -14399,6 +14400,9 @@ html.sap-desktop .sapContrast .sapMBtn:focus > .sapMBtnEmphasized.sapMFocusable,
 html.sap-desktop .sapContrast.sapMBtn:focus > .sapMBtnEmphasized.sapMFocusable {
   outline-color: #ffffff;
 }
+html.sap-desktop .sapMBtn:focus > .sapMBtnActive.sapMBtnEmphasized.sapMFocusable {
+  outline-color: #ffffff;
+}
 /* ---------------------------------------------------------------------*/
 /* Custom focus outline for IE and Edge:                                */
 /* ---------------------------------------------------------------------*/
@@ -23535,6 +23539,11 @@ html.sap-desktop .sapContrast.sapMBtn:focus > .sapMBtnEmphasized.sapMFocusable {
 
 html.sap-desktop .sapContrast .sapMBtn:focus > .sapMBtnEmphasized.sapMFocusable,
 html.sap-desktop .sapContrast.sapMBtn:focus > .sapMBtnEmphasized.sapMFocusable {
+  outline-color: #000000;
+}
+
+html.sap-desktop .sapContrast .sapMBtn:focus > .sapMBtnActive.sapMBtnEmphasized.sapMFocusable,
+html.sap-desktop .sapContrast.sapMBtn:focus > .sapMBtnActive.sapMBtnEmphasized.sapMFocusable {
   outline-color: #000000;
 }
 
