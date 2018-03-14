@@ -932,6 +932,9 @@ span.sapMBtnInner.sapMBtnAccept {
   border-color: #2b7d2b;
   color: #2b7d2b;
 }
+span.sapMBtnInner.sapMBtnAccept .sapUiIcon {
+  color: #2b7d2b;
+}
 :not(.sapMBtnDisabled):not(.sapMSBActive) > span.sapMBtnInner.sapMBtnAccept:not(.sapMBtnActive):not(.sapMToggleBtnPressed) > .sapMBtnIcon {
   color: #2b7d2b;
 }
@@ -949,6 +952,9 @@ span.sapMBtnInner.sapMBtnReject {
   background-image: none;
   background-color: #f7f7f7;
   border-color: #bb0000;
+  color: #bb0000;
+}
+span.sapMBtnInner.sapMBtnReject .sapUiIcon {
   color: #bb0000;
 }
 :not(.sapMBtnDisabled):not(.sapMSBActive) > span.sapMBtnInner.sapMBtnReject:not(.sapMBtnActive):not(.sapMToggleBtnPressed) > .sapMBtnIcon {
@@ -970,6 +976,9 @@ span.sapMBtnInner.sapMBtnEmphasized {
   border-color: #418ac7;
   color: #ffffff;
   text-shadow: 0 0 0.125rem #000000;
+}
+span.sapMBtnInner.sapMBtnEmphasized .sapUiIcon {
+  color: #ffffff;
 }
 :not(.sapMBtnDisabled) > span.sapMBtnInner.sapMBtnEmphasized > .sapMBtnIcon {
   color: #ffffff;
@@ -7675,6 +7684,11 @@ html.sap-phone .sapMListInsetBG > .sapMListSwp {
 }
 /* end cozy */
 /* compact */
+.sapUiSizeCompact .sapMMenuLIArrowRightIcon {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+}
 /* end compact */
 /* end desktop and tablet */
 /* ================================= */
@@ -19677,6 +19691,9 @@ html.sap-desktop .sapMBtn:focus > .sapMBtnActive.sapMFocusable {
 html.sap-desktop .sapMBtn:focus > .sapMBtnEmphasized.sapMFocusable {
   outline-color: #000000;
 }
+html.sap-desktop .sapMBtn:focus > .sapMBtnActive.sapMBtnEmphasized.sapMFocusable {
+  outline-color: #ffffff;
+}
 .sapMTB-Transparent-CTX .sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive):not(.sapMBtnGhost) {
   border-color: transparent;
 }
@@ -21225,6 +21242,7 @@ html.sap-desktop .sapMSegBBtnFocusable.sapMSegBBtnSel:focus {
 html[data-sap-ui-browser^="ie"].sap-desktop .sapMSegBBtnFocusable.sapMSegBBtnSel:focus,
 html[data-sap-ui-browser^="ed"].sap-desktop .sapMSegBBtnFocusable.sapMSegBBtnSel:focus {
   outline-color: #000000;
+  outline-style: dashed;
 }
 .sapMSegB.sapMSegBIcons .sapMSegBBtn:not(.sapMSegBBtnMixed) {
   padding: 0;

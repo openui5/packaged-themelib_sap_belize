@@ -266,7 +266,7 @@
 .sapUiRta .sapUiDtOverlaySelected:after {
   border: 2px solid #004ccb;
 }
-.sapUiRta .sapUiDtOverlaySelected.sapUiErrorBg:after {
+.sapUiRta .sapUiDtOverlaySelected.sapUiRtaErrorBg:after {
   border: 2px solid #ab0000;
 }
 .sapUiRta .sapUiDtOverlaySelected.sapUiDtOverlayFocusable:focus:before {

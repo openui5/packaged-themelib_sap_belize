@@ -932,6 +932,9 @@ span.sapMBtnInner.sapMBtnAccept {
   border-color: #ffffff;
   color: #ffffff;
 }
+span.sapMBtnInner.sapMBtnAccept .sapUiIcon {
+  color: #ffffff;
+}
 :not(.sapMBtnDisabled):not(.sapMSBActive) > span.sapMBtnInner.sapMBtnAccept:not(.sapMBtnActive):not(.sapMToggleBtnPressed) > .sapMBtnIcon {
   color: #ffffff;
 }
@@ -949,6 +952,9 @@ span.sapMBtnInner.sapMBtnReject {
   background-image: none;
   background-color: #000000;
   border-color: #ffffff;
+  color: #ffffff;
+}
+span.sapMBtnInner.sapMBtnReject .sapUiIcon {
   color: #ffffff;
 }
 :not(.sapMBtnDisabled):not(.sapMSBActive) > span.sapMBtnInner.sapMBtnReject:not(.sapMBtnActive):not(.sapMToggleBtnPressed) > .sapMBtnIcon {
@@ -970,6 +976,9 @@ span.sapMBtnInner.sapMBtnEmphasized {
   border-color: #ffffff;
   color: #ffffff;
   text-shadow: 0 0 0.125rem none;
+}
+span.sapMBtnInner.sapMBtnEmphasized .sapUiIcon {
+  color: #ffffff;
 }
 :not(.sapMBtnDisabled) > span.sapMBtnInner.sapMBtnEmphasized > .sapMBtnIcon {
   color: #ffffff;
@@ -7675,6 +7684,11 @@ html.sap-phone .sapMListInsetBG > .sapMListSwp {
 }
 /* end cozy */
 /* compact */
+.sapUiSizeCompact .sapMMenuLIArrowRightIcon {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+}
 /* end compact */
 /* end desktop and tablet */
 /* ================================= */
@@ -19769,7 +19783,7 @@ html.sap-desktop .sapMBtn:focus > .sapMFocusable:not(.sapMBtnActive) {
   border-color: #666666;
   color: #666666;
 }
-.sapMBtnDisabled .sapMBtnInner .sapMBtnIcon {
+.sapMBtnDisabled > span.sapMBtnInner .sapMBtnIcon {
   border-color: #666666;
   color: #666666;
 }
@@ -21618,22 +21632,25 @@ html.sap-desktop .sapMSFB:hover,
   border-left: 1px solid transparent;
 }
 /* IE mobile and desctop ignores outline-offset. Use an overlay: */
-html[data-sap-ui-browser^="ie"] .sapMSegBBtn:focus {
+html[data-sap-ui-browser^="ed"].sap-desktop .sapMSegB .sapMSegBBtn:focus,
+html[data-sap-ui-browser^="ie"].sap-desktop .sapMSegB .sapMSegBBtn:focus {
   outline: none;
   position: relative;
 }
-html[data-sap-ui-browser^="ie"] .sapMSegBBtn:not(.sapMSegBBtnDis):focus:before {
+html[data-sap-ui-browser^="ed"].sap-desktop .sapMSegB .sapMSegBBtn:not(.sapMSegBBtnDis):focus:before,
+html[data-sap-ui-browser^="ie"].sap-desktop .sapMSegB .sapMSegBBtn:not(.sapMSegBBtnDis):focus:before {
   content: " ";
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   position: absolute;
-  left: 0;
-  top: 0;
-  border: 0.125rem dotted #ffffff;
+  left: -1px;
+  top: -1px;
+  border: 2px dashed #ffffff;
   pointer-events: none;
 }
-html[data-sap-ui-browser^="ie"] .sapMSegBBtn:last-child:focus {
+html[data-sap-ui-browser^="ed"].sap-desktop .sapMSegB .sapMSegBBtn:last-child:focus,
+html[data-sap-ui-browser^="ie"].sap-desktop .sapMSegB .sapMSegBBtn:last-child:focus {
   margin-right: 0;
 }
 /* Android 4.1 to 4.3 focus fix */
