@@ -582,11 +582,7 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
   border-radius: 1.125rem;
   height: 1.125rem;
   display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
   max-width: 100%;
-  line-height: 100%;
 }
 .sapTntInfoLabel .sapTntInfoLabelInner {
   font-size: 0.75rem;
@@ -595,6 +591,11 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
   font-weight: 600;
   letter-spacing: 0.0125rem;
   text-transform: uppercase;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
 }
 .sapTntInfoLabelRenderModeNarrow {
   padding: 0 0.3125rem;
@@ -656,63 +657,54 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
    ========================================================================== */
 .backgroundColor1 {
   background-color: #ffb200;
-  color: #333333;
 }
 .backgroundColor1 .sapTntInfoLabelInner {
   color: #333333;
 }
 .backgroundColor2 {
   background-color: #fe995b;
-  color: #333333;
 }
 .backgroundColor2 .sapTntInfoLabelInner {
   color: #333333;
 }
 .backgroundColor3 {
   background-color: #c14646;
-  color: #ffffff;
 }
 .backgroundColor3 .sapTntInfoLabelInner {
   color: #ffffff;
 }
 .backgroundColor4 {
   background-color: #ab218e;
-  color: #ffffff;
 }
 .backgroundColor4 .sapTntInfoLabelInner {
   color: #ffffff;
 }
 .backgroundColor5 {
   background-color: #4974bc;
-  color: #ffffff;
 }
 .backgroundColor5 .sapTntInfoLabelInner {
   color: #ffffff;
 }
 .backgroundColor6 {
   background-color: #007db2;
-  color: #ffffff;
 }
 .backgroundColor6 .sapTntInfoLabelInner {
   color: #ffffff;
 }
 .backgroundColor7 {
   background-color: #168282;
-  color: #ffffff;
 }
 .backgroundColor7 .sapTntInfoLabelInner {
   color: #ffffff;
 }
 .backgroundColor8 {
   background-color: #68831d;
-  color: #ffffff;
 }
 .backgroundColor8 .sapTntInfoLabelInner {
   color: #ffffff;
 }
 .backgroundColor9 {
   background-color: #666666;
-  color: #ffffff;
 }
 .backgroundColor9 .sapTntInfoLabelInner {
   color: #ffffff;

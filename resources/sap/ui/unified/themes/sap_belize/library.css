@@ -3702,7 +3702,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
 /* colors for types */
 .sapUiCalendarAppType01.sapUiCalendarApp,
 .sapUiCalendarAppType01.sapUiCalendarApp:active {
-  border-left-color: #e09d00;
+  border-left-color: #ad7900;
 }
 .sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType01.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
   background-color: #fff6e0;
@@ -3711,11 +3711,11 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
   background-color: #fff6e0;
 }
 .sapUiCalendarRowAppsIntHeadType01.sapUiCalendarRowAppsIntHeadFirst {
-  border-left-color: #e09d00;
+  border-left-color: #ad7900;
 }
 .sapUiCalendarAppType02.sapUiCalendarApp,
 .sapUiCalendarAppType02.sapUiCalendarApp:active {
-  border-left-color: #e6600d;
+  border-left-color: #dc5c0c;
 }
 .sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType02.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
   background-color: #feeee5;
@@ -3724,7 +3724,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
   background-color: #feeee5;
 }
 .sapUiCalendarRowAppsIntHeadType02.sapUiCalendarRowAppsIntHeadFirst {
-  border-left-color: #e6600d;
+  border-left-color: #dc5c0c;
 }
 .sapUiCalendarAppType03.sapUiCalendarApp,
 .sapUiCalendarAppType03.sapUiCalendarApp:active {
@@ -3754,7 +3754,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
 }
 .sapUiCalendarAppType05.sapUiCalendarApp,
 .sapUiCalendarAppType05.sapUiCalendarApp:active {
-  border-left-color: #de54c1;
+  border-left-color: #da3fb9;
 }
 .sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType05.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
   background-color: #fdf2fa;
@@ -3763,11 +3763,11 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
   background-color: #fdf2fa;
 }
 .sapUiCalendarRowAppsIntHeadType05.sapUiCalendarRowAppsIntHeadFirst {
-  border-left-color: #de54c1;
+  border-left-color: #da3fb9;
 }
 .sapUiCalendarAppType06.sapUiCalendarApp,
 .sapUiCalendarAppType06.sapUiCalendarApp:active {
-  border-left-color: #0092d1;
+  border-left-color: #008bc7;
 }
 .sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType06.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
   background-color: #f0f7fa;
@@ -3776,11 +3776,11 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
   background-color: #f0f7fa;
 }
 .sapUiCalendarRowAppsIntHeadType06.sapUiCalendarRowAppsIntHeadFirst {
-  border-left-color: #0092d1;
+  border-left-color: #008bc7;
 }
 .sapUiCalendarAppType07.sapUiCalendarApp,
 .sapUiCalendarAppType07.sapUiCalendarApp:active {
-  border-left-color: #1a9898;
+  border-left-color: #198f8f;
 }
 .sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType07.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
   background-color: #f2fdfd;
@@ -3789,11 +3789,11 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
   background-color: #f2fdfd;
 }
 .sapUiCalendarRowAppsIntHeadType07.sapUiCalendarRowAppsIntHeadFirst {
-  border-left-color: #1a9898;
+  border-left-color: #198f8f;
 }
 .sapUiCalendarAppType08.sapUiCalendarApp,
 .sapUiCalendarAppType08.sapUiCalendarApp:active {
-  border-left-color: #759421;
+  border-left-color: #6e8c1f;
 }
 .sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType08.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
   background-color: #f3f9e4;
@@ -3802,11 +3802,11 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
   background-color: #f3f9e4;
 }
 .sapUiCalendarRowAppsIntHeadType08.sapUiCalendarRowAppsIntHeadFirst {
-  border-left-color: #759421;
+  border-left-color: #6e8c1f;
 }
 .sapUiCalendarAppType09.sapUiCalendarApp,
 .sapUiCalendarAppType09.sapUiCalendarApp:active {
-  border-left-color: #1fbbff;
+  border-left-color: #648796;
 }
 .sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType09.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
   background-color: #f5fcff;
@@ -3815,7 +3815,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
   background-color: #f5fcff;
 }
 .sapUiCalendarRowAppsIntHeadType09.sapUiCalendarRowAppsIntHeadFirst {
-  border-left-color: #1fbbff;
+  border-left-color: #648796;
 }
 .sapUiCalendarAppType10.sapUiCalendarApp,
 .sapUiCalendarAppType10.sapUiCalendarApp:active {
@@ -3832,7 +3832,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
 }
 .sapUiCalendarAppType11.sapUiCalendarApp,
 .sapUiCalendarAppType11.sapUiCalendarApp:active {
-  border-left-color: #a97f1e;
+  border-left-color: #6f5925;
 }
 .sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType11.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
   background-color: #ffeec6;
@@ -3841,11 +3841,11 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
   background-color: #ffeec6;
 }
 .sapUiCalendarRowAppsIntHeadType11.sapUiCalendarRowAppsIntHeadFirst {
-  border-left-color: #a97f1e;
+  border-left-color: #6f5925;
 }
 .sapUiCalendarAppType12.sapUiCalendarApp,
 .sapUiCalendarAppType12.sapUiCalendarApp:active {
-  border-left-color: #c04900;
+  border-left-color: #b64600;
 }
 .sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType12.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
   background-color: #fbdfce;
@@ -3854,7 +3854,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
   background-color: #fbdfce;
 }
 .sapUiCalendarRowAppsIntHeadType12.sapUiCalendarRowAppsIntHeadFirst {
-  border-left-color: #c04900;
+  border-left-color: #b64600;
 }
 .sapUiCalendarAppType13.sapUiCalendarApp,
 .sapUiCalendarAppType13.sapUiCalendarApp:active {
@@ -3936,7 +3936,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
 }
 .sapUiCalendarAppType19.sapUiCalendarApp,
 .sapUiCalendarAppType19.sapUiCalendarApp:active {
-  border-left-color: #347d9d;
+  border-left-color: #284d5d;
 }
 .sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType19.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
   background-color: #cfebf7;
@@ -3945,7 +3945,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:hover:not(:active) > .sap
   background-color: #cfebf7;
 }
 .sapUiCalendarRowAppsIntHeadType19.sapUiCalendarRowAppsIntHeadFirst {
-  border-left-color: #347d9d;
+  border-left-color: #284d5d;
 }
 .sapUiCalendarAppType20.sapUiCalendarApp,
 .sapUiCalendarAppType20.sapUiCalendarApp:active {
@@ -4110,4 +4110,4 @@ html.sapUiMedia-Std-Desktop .sapUiUfdShellHeadUsrItm:hover:active > *,
 }
 
 /* Inline theming parameters */
-#sap-ui-theme-themelib_sap_belize { background-image: url('data:text/plain;utf-8,%7B%22_sap_ui_unified_Calendar_ItemColor%22:%22#f2f2f2%22,%22_sap_ui_unified_Calendar_ItemHoverColor%22:%22#d9d9d9%22,%22_sap_ui_unified_Calendar_ItemBorderColor%22:%22#ffffff%22,%22_sap_ui_unified_Calendar_ItemWeekEndColor%22:%22#e5e5e5%22,%22_sap_ui_unified_Calendar_ItemWeekEndHoverColor%22:%22#cccccc%22,%22_sap_ui_unified_Calendar_ItemOtherMonthColor%22:%22#808080%22,%22_sap_ui_unified_Calendar_ItemSelBetweenColor%22:%22#d9e6f0%22,%22_sap_ui_unified_Calendar_ItemSelBetweenHoverColor%22:%22#bbd2e5%22,%22_sap_ui_unified_Calendar_sapUiCalItemType01%22:%22#ad7900%22,%22_sap_ui_unified_Calendar_sapUiCalItemType02%22:%22#dc5c0c%22,%22_sap_ui_unified_Calendar_sapUiCalItemType03%22:%22#c14646%22,%22_sap_ui_unified_Calendar_sapUiCalItemType04%22:%22#853808%22,%22_sap_ui_unified_Calendar_sapUiCalItemType05%22:%22#da3fb9%22,%22_sap_ui_unified_Calendar_sapUiCalItemType06%22:%22#008bc7%22,%22_sap_ui_unified_Calendar_sapUiCalItemType07%22:%22#198f8f%22,%22_sap_ui_unified_Calendar_sapUiCalItemType08%22:%22#6e8c1f%22,%22_sap_ui_unified_Calendar_sapUiCalItemType09%22:%22#648796%22,%22_sap_ui_unified_Calendar_sapUiCalItemType10%22:%22#80196a%22,%22_sap_ui_unified_Calendar_sapUiCalItemType11%22:%22#6f5925%22,%22_sap_ui_unified_Calendar_sapUiCalItemType12%22:%22#b64600%22,%22_sap_ui_unified_Calendar_sapUiCalItemType13%22:%22#d61818%22,%22_sap_ui_unified_Calendar_sapUiCalItemType14%22:%22#976c52%22,%22_sap_ui_unified_Calendar_sapUiCalItemType15%22:%22#73596d%22,%22_sap_ui_unified_Calendar_sapUiCalItemType16%22:%22#5d759e%22,%22_sap_ui_unified_Calendar_sapUiCalItemType17%22:%22#466c6c%22,%22_sap_ui_unified_Calendar_sapUiCalItemType18%22:%22#626b4a%22,%22_sap_ui_unified_Calendar_sapUiCalItemType19%22:%22#284d5d%22,%22_sap_ui_unified_Calendar_sapUiCalItemType20%22:%22#1851b0%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType01%22:%22#ad7900%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType02%22:%22#dc5c0c%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType03%22:%22#c14646%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType04%22:%22#853808%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType05%22:%22#da3fb9%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType06%22:%22#008bc7%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType07%22:%22#198f8f%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType08%22:%22#6e8c1f%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType09%22:%22#648796%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType10%22:%22#80196a%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType11%22:%22#6f5925%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType12%22:%22#b64600%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType13%22:%22#d61818%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType14%22:%22#976c52%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType15%22:%22#73596d%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType16%22:%22#5d759e%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType17%22:%22#466c6c%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType18%22:%22#626b4a%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType19%22:%22#284d5d%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType20%22:%22#1851b0%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType01%22:%22#e09d00%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType02%22:%22#e6600d%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType03%22:%22#c14646%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType04%22:%22#853808%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType05%22:%22#de54c1%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType06%22:%22#0092d1%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType07%22:%22#1a9898%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType08%22:%22#759421%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType09%22:%22#1fbbff%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType10%22:%22#80196a%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType11%22:%22#a97f1e%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType12%22:%22#c04900%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType13%22:%22#d61818%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType14%22:%22#976c52%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType15%22:%22#73596d%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType16%22:%22#5d759e%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType17%22:%22#466c6c%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType18%22:%22#626b4a%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType19%22:%22#347d9d%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType20%22:%22#1851b0%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType01%22:%22#fff6e0%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType02%22:%22#feeee5%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType03%22:%22#f7e6e6%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType04%22:%22#f9efe9%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType05%22:%22#fdf2fa%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType06%22:%22#f0f7fa%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType07%22:%22#f2fdfd%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType08%22:%22#f3f9e4%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType09%22:%22#f5fcff%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType10%22:%22#f7edf5%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType11%22:%22#ffeec6%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType12%22:%22#fbdfce%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType13%22:%22#ffdcdc%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType14%22:%22#f2e2d8%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType15%22:%22#f0e5ee%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType16%22:%22#e7e8ea%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType17%22:%22#d7eaea%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType18%22:%22#e6edd1%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType19%22:%22#cfebf7%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType20%22:%22#ffffff%22,%22_sap_ui_unified_ShellLayout_CurtainBGStartColor%22:%22rgba%28255, 255, 255, 0.97%29%22,%22_sap_ui_unified_ShellLayout_CurtainBGEndColor%22:%22rgba%28255, 255, 255, 0.97%29%22%7D'); }
+#sap-ui-theme-themelib_sap_belize { background-image: url('data:text/plain;utf-8,%7B%22_sap_ui_unified_Calendar_ItemColor%22:%22#f2f2f2%22,%22_sap_ui_unified_Calendar_ItemHoverColor%22:%22#d9d9d9%22,%22_sap_ui_unified_Calendar_ItemBorderColor%22:%22#ffffff%22,%22_sap_ui_unified_Calendar_ItemWeekEndColor%22:%22#e5e5e5%22,%22_sap_ui_unified_Calendar_ItemWeekEndHoverColor%22:%22#cccccc%22,%22_sap_ui_unified_Calendar_ItemOtherMonthColor%22:%22#808080%22,%22_sap_ui_unified_Calendar_ItemSelBetweenColor%22:%22#d9e6f0%22,%22_sap_ui_unified_Calendar_ItemSelBetweenHoverColor%22:%22#bbd2e5%22,%22_sap_ui_unified_Calendar_sapUiCalItemType01%22:%22#ad7900%22,%22_sap_ui_unified_Calendar_sapUiCalItemType02%22:%22#dc5c0c%22,%22_sap_ui_unified_Calendar_sapUiCalItemType03%22:%22#c14646%22,%22_sap_ui_unified_Calendar_sapUiCalItemType04%22:%22#853808%22,%22_sap_ui_unified_Calendar_sapUiCalItemType05%22:%22#da3fb9%22,%22_sap_ui_unified_Calendar_sapUiCalItemType06%22:%22#008bc7%22,%22_sap_ui_unified_Calendar_sapUiCalItemType07%22:%22#198f8f%22,%22_sap_ui_unified_Calendar_sapUiCalItemType08%22:%22#6e8c1f%22,%22_sap_ui_unified_Calendar_sapUiCalItemType09%22:%22#648796%22,%22_sap_ui_unified_Calendar_sapUiCalItemType10%22:%22#80196a%22,%22_sap_ui_unified_Calendar_sapUiCalItemType11%22:%22#6f5925%22,%22_sap_ui_unified_Calendar_sapUiCalItemType12%22:%22#b64600%22,%22_sap_ui_unified_Calendar_sapUiCalItemType13%22:%22#d61818%22,%22_sap_ui_unified_Calendar_sapUiCalItemType14%22:%22#976c52%22,%22_sap_ui_unified_Calendar_sapUiCalItemType15%22:%22#73596d%22,%22_sap_ui_unified_Calendar_sapUiCalItemType16%22:%22#5d759e%22,%22_sap_ui_unified_Calendar_sapUiCalItemType17%22:%22#466c6c%22,%22_sap_ui_unified_Calendar_sapUiCalItemType18%22:%22#626b4a%22,%22_sap_ui_unified_Calendar_sapUiCalItemType19%22:%22#284d5d%22,%22_sap_ui_unified_Calendar_sapUiCalItemType20%22:%22#1851b0%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType01%22:%22#ad7900%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType02%22:%22#dc5c0c%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType03%22:%22#c14646%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType04%22:%22#853808%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType05%22:%22#da3fb9%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType06%22:%22#008bc7%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType07%22:%22#198f8f%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType08%22:%22#6e8c1f%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType09%22:%22#648796%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType10%22:%22#80196a%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType11%22:%22#6f5925%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType12%22:%22#b64600%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType13%22:%22#d61818%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType14%22:%22#976c52%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType15%22:%22#73596d%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType16%22:%22#5d759e%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType17%22:%22#466c6c%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType18%22:%22#626b4a%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType19%22:%22#284d5d%22,%22_sap_ui_unified_CalendarLegend_sapUiCalLegDayType20%22:%22#1851b0%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType01%22:%22#ad7900%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType02%22:%22#dc5c0c%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType03%22:%22#c14646%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType04%22:%22#853808%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType05%22:%22#da3fb9%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType06%22:%22#008bc7%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType07%22:%22#198f8f%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType08%22:%22#6e8c1f%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType09%22:%22#648796%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType10%22:%22#80196a%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType11%22:%22#6f5925%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType12%22:%22#b64600%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType13%22:%22#d61818%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType14%22:%22#976c52%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType15%22:%22#73596d%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType16%22:%22#5d759e%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType17%22:%22#466c6c%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType18%22:%22#626b4a%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType19%22:%22#284d5d%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarAppType20%22:%22#1851b0%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType01%22:%22#fff6e0%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType02%22:%22#feeee5%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType03%22:%22#f7e6e6%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType04%22:%22#f9efe9%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType05%22:%22#fdf2fa%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType06%22:%22#f0f7fa%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType07%22:%22#f2fdfd%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType08%22:%22#f3f9e4%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType09%22:%22#f5fcff%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType10%22:%22#f7edf5%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType11%22:%22#ffeec6%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType12%22:%22#fbdfce%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType13%22:%22#ffdcdc%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType14%22:%22#f2e2d8%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType15%22:%22#f0e5ee%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType16%22:%22#e7e8ea%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType17%22:%22#d7eaea%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType18%22:%22#e6edd1%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType19%22:%22#cfebf7%22,%22_sap_ui_unified_CalendarRow_sapUiCalendarRowAppsIntHeadType20%22:%22#ffffff%22,%22_sap_ui_unified_ShellLayout_CurtainBGStartColor%22:%22rgba%28255, 255, 255, 0.97%29%22,%22_sap_ui_unified_ShellLayout_CurtainBGEndColor%22:%22rgba%28255, 255, 255, 0.97%29%22%7D'); }
