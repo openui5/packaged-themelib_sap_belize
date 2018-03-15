@@ -1415,6 +1415,18 @@ html.sap-desktop:not(.sap-tablet) .sapUiTableHSb::-webkit-scrollbar:horizontal,
 html.sap-desktop.sap-tablet .sapUiTableHSb::-webkit-scrollbar:horizontal {
   height: 16px;
 }
+html.sap-desktop:not(.sap-tablet) .sapUiTableVSb::-webkit-scrollbar-thumb,
+html.sap-desktop.sap-tablet .sapUiTableVSb::-webkit-scrollbar-thumb,
+html.sap-desktop:not(.sap-tablet) .sapUiTableHSb::-webkit-scrollbar-thumb,
+html.sap-desktop.sap-tablet .sapUiTableHSb::-webkit-scrollbar-thumb {
+  background-color: #b2b2b2;
+}
+html.sap-desktop:not(.sap-tablet) .sapUiTableVSb::-webkit-scrollbar,
+html.sap-desktop.sap-tablet .sapUiTableVSb::-webkit-scrollbar,
+html.sap-desktop:not(.sap-tablet) .sapUiTableHSb::-webkit-scrollbar,
+html.sap-desktop.sap-tablet .sapUiTableHSb::-webkit-scrollbar {
+  background-color: #ffffff;
+}
 html.sap-tablet:not(.sap-desktop) .sapUiTableVSb::-webkit-scrollbar,
 html.sap-phone .sapUiTableVSb::-webkit-scrollbar,
 html.sap-tablet:not(.sap-desktop) .sapUiTableHSb::-webkit-scrollbar,
@@ -2478,6 +2490,28 @@ html.sap-desktop.sap-tablet .sapContrastPlus .sapUiTableHSb::-webkit-scrollbar-t
 html.sap-desktop.sap-tablet .sapContrastPlus.sapUiTableHSb::-webkit-scrollbar-thumb {
   border-top: 0.125rem solid #3f5161;
   border-bottom: 0.125rem solid #3f5161;
+}
+
+html.sap-desktop:not(.sap-tablet) .sapContrastPlus .sapUiTableVSb::-webkit-scrollbar-thumb,
+html.sap-desktop:not(.sap-tablet) .sapContrastPlus.sapUiTableVSb::-webkit-scrollbar-thumb,
+html.sap-desktop.sap-tablet .sapContrastPlus .sapUiTableVSb::-webkit-scrollbar-thumb,
+html.sap-desktop.sap-tablet .sapContrastPlus.sapUiTableVSb::-webkit-scrollbar-thumb,
+html.sap-desktop:not(.sap-tablet) .sapContrastPlus .sapUiTableHSb::-webkit-scrollbar-thumb,
+html.sap-desktop:not(.sap-tablet) .sapContrastPlus.sapUiTableHSb::-webkit-scrollbar-thumb,
+html.sap-desktop.sap-tablet .sapContrastPlus .sapUiTableHSb::-webkit-scrollbar-thumb,
+html.sap-desktop.sap-tablet .sapContrastPlus.sapUiTableHSb::-webkit-scrollbar-thumb {
+  background-color: #0099db;
+}
+
+html.sap-desktop:not(.sap-tablet) .sapContrastPlus .sapUiTableVSb::-webkit-scrollbar,
+html.sap-desktop:not(.sap-tablet) .sapContrastPlus.sapUiTableVSb::-webkit-scrollbar,
+html.sap-desktop.sap-tablet .sapContrastPlus .sapUiTableVSb::-webkit-scrollbar,
+html.sap-desktop.sap-tablet .sapContrastPlus.sapUiTableVSb::-webkit-scrollbar,
+html.sap-desktop:not(.sap-tablet) .sapContrastPlus .sapUiTableHSb::-webkit-scrollbar,
+html.sap-desktop:not(.sap-tablet) .sapContrastPlus.sapUiTableHSb::-webkit-scrollbar,
+html.sap-desktop.sap-tablet .sapContrastPlus .sapUiTableHSb::-webkit-scrollbar,
+html.sap-desktop.sap-tablet .sapContrastPlus.sapUiTableHSb::-webkit-scrollbar {
+  background-color: #3f5161;
 }
 
 html.sap-tablet:not(.sap-desktop) .sapContrastPlus .sapUiTableVSb::-webkit-scrollbar,
