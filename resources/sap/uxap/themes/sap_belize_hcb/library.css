@@ -34,6 +34,9 @@ html.sapUiMedia-Std-Desktop .sapUiContainer-Medium .sapUxAPAnchorBar.sapMTB,
 html .sapUiContainer-Wide .sapMSplitContainerDetail .sapUxAPAnchorBar.sapMTB {
   padding-left: 1rem;
 }
+html.sapUiMedia-Std-Desktop .sapUiContainer-Narrow .sapUxAPAnchorBar.sapMTB {
+  padding-left: 0;
+}
 .sapUxAPAnchorBar {
   vertical-align: middle;
 }
@@ -309,6 +312,9 @@ Compact
 /* CSS for control sap.uxap/BlockBase  */
 /* Base theme                          */
 /* =================================== */
+.sapUxAPBlockBase {
+  min-height: 8rem;
+}
 .sapUxAPBlockBaseDefaultSize {
   height: 8rem;
 }
@@ -424,7 +430,8 @@ Compact
 .sapUxAPHierarchicalSelect.sapMSltHoverable.sapMSltIconOnly.sapMSltPressed.sapMSlt:focus > .sapMSltIcon {
   outline: none;
 }
-.sapUiSizeCompact .sapUxAPHierarchicalSelect.sapMSlt {
+.sapUiSizeCompact .sapUxAPHierarchicalSelect.sapMSlt,
+.sapUiSizeCompact .sapUiContainer-Narrow .sapUxAPHierarchicalSelect.sapMSlt {
   height: 2rem;
   margin-top: 0;
   margin-bottom: 0;
@@ -1913,7 +1920,8 @@ html.sap-desktop .sapUxAPHierarchicalSelect.sapMSltPressed > .sapMSltIcon {
 .sapUiMedia-Std-Phone .sapUiSizeCompact .sapUxAPHierarchicalSelect .sapMSltArrow {
   width: 3rem;
 }
-.sapUiMedia-Std-Phone .sapUxAPHierarchicalSelect.sapMSltHoverable > .sapMSltArrow {
+.sapUiMedia-Std-Phone .sapUxAPHierarchicalSelect.sapMSltHoverable > .sapMSltArrow,
+html .sapUiContainer-Narrow .sapUxAPHierarchicalSelect.sapMSltHoverable > .sapMSltArrow {
   border-left: none;
 }
 .sapUxAPAnchorBar .sapUxAPHierarchicalSelect.sapMSltIconOnly {
@@ -1944,23 +1952,28 @@ html.sap-desktop .sapUxAPHierarchicalSelect.sapMSltPressed > .sapMSltIcon {
 }
 /* styling needed to achieve underline of the select label on phone */
 html.sapUiMedia-Std-Phone .sapMSltPressed > .sapMSltArrow,
-html.sap-phone .sapMSltPressed > .sapMSltArrow {
+html.sap-phone .sapMSltPressed > .sapMSltArrow,
+html .sapUiContainer-Narrow .sapMSltPressed > .sapMSltArrow {
   background: #7a5100;
 }
 html.sapUiMedia-Std-Phone .sapMSltPressed > .sapMSltArrow::before,
-html.sap-phone .sapMSltPressed > .sapMSltArrow::before {
+html.sap-phone .sapMSltPressed > .sapMSltArrow::before,
+html .sapUiContainer-Narrow .sapMSltPressed > .sapMSltArrow::before {
   color: #ffffff;
 }
 html.sapUiMedia-Std-Phone .sapUxAPHierarchicalSelect .sapMSltLabel,
-html.sap-phone .sapUxAPHierarchicalSelect .sapMSltLabel {
+html.sap-phone .sapUxAPHierarchicalSelect .sapMSltLabel,
+html .sapUiContainer-Narrow .sapUxAPHierarchicalSelect .sapMSltLabel {
   border-bottom: 0.125rem solid #ffffff;
 }
 html.sapUiMedia-Std-Phone .sapUxAPHierarchicalSelect .sapMSltArrow,
-html.sap-phone .sapUxAPHierarchicalSelect .sapMSltArrow {
+html.sap-phone .sapUxAPHierarchicalSelect .sapMSltArrow,
+html .sapUiContainer-Narrow .sapUxAPHierarchicalSelect .sapMSltArrow {
   box-shadow: inset 0 -0.125rem #ffffff, 0 0.125rem 0 0 #000000;
 }
 html.sapUiMedia-Std-Phone .sapMSlt.sapUxAPHierarchicalSelect,
-html.sap-phone .sapMSlt.sapUxAPHierarchicalSelect {
+html.sap-phone .sapMSlt.sapUxAPHierarchicalSelect,
+html .sapUiContainer-Narrow .sapMSlt.sapUxAPHierarchicalSelect {
   box-shadow: inset 0 -0.125rem #ffffff, 0 0.125rem 0 0 #000000;
 }
 /* styling needed to achieve underline of the select label on phone on Android 4.4.2

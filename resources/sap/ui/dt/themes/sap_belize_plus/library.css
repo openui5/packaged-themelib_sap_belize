@@ -124,4 +124,4 @@
 /* ===================================== */
 
 /* Inline theming parameters */
-#sap-ui-theme-themelib_sap_belize { background-image: url('data:text/plain;utf-8,%7B%7D'); }
+#sap-ui-theme-themelib_sap_belize { background-image: url('data:text/plain;utf-8,%7B%22_sap_ui_dt_Overlay_FocusColor%22:%22#ffffff%22,%22_sap_ui_dt_Overlay_TargetZoneColor%22:%22#91c8f6%22,%22_sap_ui_dt_Overlay_SelectionColor%22:%22#3355ff%22,%22_sap_ui_dt_Overlay_CuttedColor%22:%22#ffffff%22%7D'); }
