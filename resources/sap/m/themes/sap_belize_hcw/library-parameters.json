@@ -774,6 +774,7 @@
     "sapUiAccent6": "#0092d1",
     "sapUiAccent7": "#1a9898",
     "sapUiAccent8": "#759421",
+    "_sap_m_IconTabBar_SelectedTextColor": "#75a4ff",
     "sapMPopoverForceCompactArrowOffset": "true",
     "_sap_m_Slider_HandleHoverBackground": "rgba(217, 217, 217, 0.6)",
     "_sap_m_Slider_HandleBorderColor": "#000000",
