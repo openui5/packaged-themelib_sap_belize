@@ -831,4 +831,4 @@ html[data-sap-ui-animation='on'] .sapFFCL .sapFFCLColumn {
 }
 
 /* Inline theming parameters */
-#sap-ui-theme-themelib_sap_belize { background-image: url('data:text/plain;utf-8,%7B%22_sap_f_Avatar_Color%22:%22#ffffff%22,%22_sap_f_FlexibleColumnLayout_ButtonBackground%22:%22#e4ecf5%22,%22_sap_f_FlexibleColumnLayout_ButtonHoverBackground%22:%22#d1e0ee%22%7D'); }
+#sap-ui-theme-themelib_sap_belize { background-image: url('data:text/plain;utf-8,%7B%22_sap_f_Avatar_Color%22:%22%23ffffff%22,%22_sap_f_FlexibleColumnLayout_ButtonBackground%22:%22%23e4ecf5%22,%22_sap_f_FlexibleColumnLayout_ButtonHoverBackground%22:%22%23d1e0ee%22%7D'); }
