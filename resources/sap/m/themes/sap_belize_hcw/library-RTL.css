@@ -2963,7 +2963,7 @@ html[dir=rtl] .sapMDLIValue {
 }
 /* Allow MessagePage to be positioned inside ObjectPage */
 .sapUxAPBlockContainer .sapMMessagePageInner {
-  position: initial;
+  position: static;
 }
 .sapMMessagePageContentWrapper {
   margin: auto;
@@ -5472,6 +5472,23 @@ html.sap-desktop .sapMHrdrCntrInner:focus {
 }
 .sapMITBScrollContainer > div:nth-child(2) {
   visibility: hidden;
+}
+.sapMITHOverflowList .sapMITBScrollContainer {
+  margin: 0 1.75rem 0 4.25rem;
+}
+.sapMITHOverflowList .sapMITBArrowScrollRight {
+  left: 2.75rem;
+}
+.sapMITHOverflowList .sapMITBArrowScrollRightTextOnly {
+  left: 2.75rem;
+}
+.sapMITBArrowScrollLeftTextOnly {
+  right: 0.25rem;
+  padding: 1.0625rem 0.4rem;
+}
+.sapMITBArrowScrollRightTextOnly {
+  padding: 1.0625rem 0.4rem;
+  left: 0.25rem;
 }
 /* ------------------------------------------------ */
 /* Phone device                                     */
@@ -11357,6 +11374,7 @@ html[data-sap-ui-os^="Android"] .sapMObjectNumberUnit {
 .sapMObjStatusIcon > .sapUiIcon {
   font-size: 1rem;
   vertical-align: bottom;
+  line-height: inherit;
 }
 .sapMObjStatusIcon {
   padding-left: .5rem;
@@ -21946,7 +21964,7 @@ html.sap-desktop .sapMSFB:hover,
   border-top-right-radius: 0.375rem;
   border-bottom-right-radius: 0.375rem;
 }
-.sapMSegBBtn:last-child {
+.sapMSegBBtn.sapMSegBtnLastVisibleButton {
   border-top-left-radius: 0.375rem;
   border-bottom-left-radius: 0.375rem;
 }
@@ -21959,22 +21977,22 @@ html.sap-desktop .sapMSFB:hover,
   background-color: #b3b3b3;
   color: #585858;
 }
-.sapMSegBBtn.sapMSegBBtnDis:last-child {
+.sapMSegBBtn.sapMSegBBtnDis.sapMSegBtnLastVisibleButton {
   border-color: #888888;
 }
 .sapMSegBBtn.sapMSegBBtnSel:focus:not(.sapMSegBBtnDis) {
   border-radius: 0;
 }
-.sapMSegB .sapMSegBBtn:not(:last-child) {
+.sapMSegB .sapMSegBBtn:not(.sapMSegBtnLastVisibleButton) {
   border-left: 1px solid transparent;
 }
 .sapMSegB .sapMSegBBtn + .sapMSegBBtn.sapMSegBBtnFocusable:focus {
   border-left: 1px solid transparent;
 }
-.sapMSegB .sapMSegBBtn:last-child:not(.sapMSegBBtnDis) {
+.sapMSegB .sapMSegBBtn.sapMSegBtnLastVisibleButton:not(.sapMSegBBtnDis) {
   border-left: 1px solid #000000;
 }
-.sapMSegB .sapMSegBBtn.sapMSegBBtnDis:last-child {
+.sapMSegB .sapMSegBBtn.sapMSegBBtnDis.sapMSegBtnLastVisibleButton {
   border-left: 1px solid #888888;
 }
 /* Fix for disabled button border nested between active buttons */
@@ -22002,12 +22020,12 @@ html.sap-desktop .sapMSFB:hover,
 .sapMSegBBtnFocusable:focus + .sapMSegBBtn {
   border-right: 1px solid transparent;
 }
-.sapMSegBBtnFocusable:active + .sapMSegBBtn:not(:last-child),
-.sapMSegBBtnFocusable:focus + .sapMSegBBtn:not(:last-child) {
+.sapMSegBBtnFocusable:active + .sapMSegBBtn:not(.sapMSegBtnLastVisibleButton),
+.sapMSegBBtnFocusable:focus + .sapMSegBBtn:not(.sapMSegBtnLastVisibleButton) {
   border-right: 1px solid transparent;
 }
-.sapMSegBBtnFocusable:active + .sapMSegBBtn:last-child,
-.sapMSegBBtnFocusable:focus + .sapMSegBBtn:last-child {
+.sapMSegBBtnFocusable:active + .sapMSegBBtn.sapMSegBtnLastVisibleButton,
+.sapMSegBBtnFocusable:focus + .sapMSegBBtn.sapMSegBtnLastVisibleButton {
   border-right: 1px solid transparent;
 }
 .sapMSegBBtnFocusable.sapMSegBBtnSel:focus + .sapMSegBBtn {
@@ -22031,8 +22049,8 @@ html[data-sap-ui-browser^="ie"].sap-desktop .sapMSegB .sapMSegBBtn:not(.sapMSegB
   border: 2px dashed #000000;
   pointer-events: none;
 }
-html[data-sap-ui-browser^="ed"].sap-desktop .sapMSegB .sapMSegBBtn:last-child:focus,
-html[data-sap-ui-browser^="ie"].sap-desktop .sapMSegB .sapMSegBBtn:last-child:focus {
+html[data-sap-ui-browser^="ed"].sap-desktop .sapMSegB .sapMSegBBtn.sapMSegBtnLastVisibleButton:focus,
+html[data-sap-ui-browser^="ie"].sap-desktop .sapMSegB .sapMSegBBtn.sapMSegBtnLastVisibleButton:focus {
   margin-left: 0;
 }
 /* Android 4.1 to 4.3 focus fix */
@@ -22061,7 +22079,7 @@ html[data-sap-ui-os^="Android4.3"][data-sap-ui-browser^="an"] .sapMSegBBtnSel:fo
   border-top-right-radius: 0.375rem;
   border-bottom-right-radius: 0.375rem;
 }
-.sapUiSizeCompact .sapMSegBBtn:last-child {
+.sapUiSizeCompact .sapMSegBBtn.sapMSegBtnLastVisibleButton {
   border-top-left-radius: 0.375rem;
   border-bottom-left-radius: 0.375rem;
 }
