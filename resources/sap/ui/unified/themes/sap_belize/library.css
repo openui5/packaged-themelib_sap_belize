@@ -1655,11 +1655,11 @@ html[data-sap-ui-browser^="cr"] .sapUiFupInputMask > input {
 }
 .sapUiFup:hover .sapMBtnHoverable.sapMBtnAccept:not(.sapMBtnActive) {
   background-color: #ebebeb;
-  border-color: #2b7d2b;
+  border-color: #2b7c2b;
 }
 .sapUiFup:active .sapMBtnHoverable.sapMBtnAccept:not(.sapMBtnActive) {
-  background-color: #2b7d2b;
-  border-color: #2b7d2b;
+  background-color: #2b7c2b;
+  border-color: #2b7c2b;
 }
 .sapUiFup:hover .sapMBtnHoverable.sapMBtnReject:not(.sapMBtnActive) {
   background-color: #ebebeb;
@@ -1688,7 +1688,7 @@ html[data-sap-ui-browser^="cr"] .sapUiFupInputMask > input {
 }
 .sapMFooter-CTX .sapUiFup:hover .sapMBtnHoverable.sapMBtnAccept:not(.sapMBtnActive) {
   background-color: #ebebeb;
-  border-color: #2b7d2b;
+  border-color: #2b7c2b;
 }
 .sapMFooter-CTX .sapUiFup:hover .sapMBtnHoverable.sapMBtnReject:not(.sapMBtnActive) {
   background-color: #ebebeb;

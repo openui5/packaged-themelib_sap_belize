@@ -386,11 +386,11 @@ html[data-sap-ui-browser="sf5"] .sapUiBtnS > .sapUiBtnTxt {
   font-weight: bold;
 }
 .sapUiBtnS.sapUiBtnStd.sapUiBtnAccept {
-  color: #38a338;
+  color: #38a238;
 }
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept {
   background-color: #f7f7f7;
-  border-color: #2b7d2b;
+  border-color: #2b7c2b;
 }
 .sapUiBtnS.sapUiBtnAccept.sapUiBtnStd:focus,
 .sapUiBtnS.sapUiBtnAccept.sapUiBtnStd:hover {
@@ -399,19 +399,19 @@ html[data-sap-ui-browser="sf5"] .sapUiBtnS > .sapUiBtnTxt {
 }
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiBtnStd:focus,
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiBtnStd:hover {
-  border-color: #2b7d2b;
+  border-color: #2b7c2b;
 }
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiBtnAct,
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiBtnAct:focus,
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiBtnAct:hover,
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiBtnStd:active {
-  background-color: #2b7d2b;
-  border-color: #2b7d2b;
+  background-color: #2b7c2b;
+  border-color: #2b7c2b;
 }
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiBtnDsbl,
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiBtnDsbl:focus {
   background-color: #f7f7f7;
-  border-color: #2b7d2b;
+  border-color: #2b7c2b;
 }
 /* reject button*/
 .sapUiBtnS.sapUiBtnReject {
@@ -970,7 +970,7 @@ html[data-sap-ui-browser="ff3"] .sapUiDlgGrip {
 /* success state */
 .sapUiIpeSucc,
 .sapUiIpeUndo.sapUiIpeSucc {
-  border-color: #38a338;
+  border-color: #38a238;
   background-color: #ffffff;
 }
 /* invalid state */
@@ -3033,7 +3033,7 @@ html[data-sap-ui-browser*="ie"] .sapUiPanelTb {
 }
 .sapUiProgIndBarPos {
   position: relative;
-  background-color: #e4f6e4;
+  background-color: #e4f5e4;
   color: #333333;
   border-radius: 3px;
   box-sizing: border-box;
@@ -4152,7 +4152,7 @@ html[data-sap-ui-os^='mac'] .sapUiTfDsbl .sapUiTfInner.sapUiTf {
   border-color: #f9a429;
 }
 .sapUiTfBrd.sapUiTfSucc {
-  border-color: #38a338;
+  border-color: #38a238;
 }
 .sapUiTfErr.sapUiTfStd {
   background-color: #ffffff;
@@ -5234,11 +5234,11 @@ html[data-sap-ui-browser^="ie"] .sapUiBtnS.sapUiBtnDsbl:active > .sapUiBtnTxt {
 /* accept button */
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept {
   background-color: #f7f7f7;
-  color: #2b7d2b;
+  color: #2b7c2b;
 }
 .sapUiBtnS.sapUiBtnLite.sapUiBtnStd.sapUiBtnAccept,
 .sapUiBtnS.sapUiBtnLite.sapUiBtnStd.sapUiBtnAccept > span.sapUiBtnIco {
-  color: #38a338;
+  color: #38a238;
 }
 .sapUiBtnS.sapUiBtnLite.sapUiBtnStd.sapUiBtnAccept:focus {
   background-color: transparent;
@@ -5246,7 +5246,7 @@ html[data-sap-ui-browser^="ie"] .sapUiBtnS.sapUiBtnDsbl:active > .sapUiBtnTxt {
 .sapUiBtnS.sapUiBtnLite.sapUiBtnStd.sapUiBtnAccept:hover,
 .sapUiBtnS.sapUiBtnLite.sapUiBtnAct.sapUiBtnAccept:hover {
   background-color: #ebebeb;
-  color: #2b7d2b;
+  color: #2b7c2b;
 }
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiBtnStd {
   box-shadow: none;
@@ -5293,7 +5293,7 @@ html[data-sap-ui-browser^="ie"] .sapUiBtnS.sapUiBtnDsbl:active > .sapUiBtnTxt {
 }
 .sapUiBtnS.sapUiBtnLite.sapUiBtnAccept.sapUiBtnDsbl,
 .sapUiBtnS.sapUiBtnLite.sapUiBtnAccept.sapUiBtnDsbl > span.sapUiBtnIco {
-  color: #38a338;
+  color: #38a238;
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
@@ -6320,7 +6320,7 @@ html[data-sap-ui-browser^="ie"] .sapUiBtnLite > .sapUiMenuButtonIco {
 }
 .sapUiMsgTSuccess .sapUiMsgToastMsg {
   background-color: #ffffff;
-  border-color: #38a338;
+  border-color: #38a238;
 }
 /* Styling of the down-arrow is Type/Priority dependent */
 .sapUiMsgToastArrow {
@@ -7504,7 +7504,7 @@ html[data-sap-ui-browser^="ie"].sapUiRespGridMedia-Std-LargeDesktop.sapUiFormRes
 /* success state */
 .sapUiTvSucc,
 .sapUiInverted-CTX .sapUiTvSucc {
-  color: #2b7d2b;
+  color: #2b7c2b;
   background-color: transparent;
 }
 /* Designs */
@@ -7756,7 +7756,7 @@ html[data-sap-ui-browser^="ie"] .sapUiBtn.sapUiBtnS.sapUiBtnLite.sapUiBtnEmph.sa
   background-color: #ebebeb;
   background-image: none;
   border-color: #ebebeb;
-  color: #2b7d2b;
+  color: #2b7c2b;
 }
 .sapUiBtnS.sapUiBtnAccept.sapUiBtnStd.sapUiToggleBtn.sapUiToggleBtnPressed:focus,
 .sapUiBtn.sapUiBtnS.sapUiBtnLite.sapUiBtnAccept.sapUiToggleBtn.sapUiToggleBtnPressed:focus {
@@ -7768,8 +7768,8 @@ html[data-sap-ui-browser^="ie"] .sapUiBtn.sapUiBtnS.sapUiBtnLite.sapUiBtnAccept.
   outline: 1px dotted #315c80;
 }
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiToggleBtn.sapUiToggleBtnPressed {
-  background-color: #2b7d2b;
-  border-color: #2b7d2b;
+  background-color: #2b7c2b;
+  border-color: #2b7c2b;
   color: #ffffff;
 }
 .sapUiBtn.sapUiBtnS.sapUiBtnLite.sapUiBtnAccept.sapUiToggleBtn.sapUiToggleBtnPressed {
@@ -7791,12 +7791,12 @@ html[data-sap-ui-browser^="ie"] .sapUiBtn.sapUiBtnS.sapUiBtnLite.sapUiBtnAccept.
 }
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiBtnDsbl.sapUiToggleBtn {
   background-color: #f7f7f7;
-  border-color: #2b7d2b;
+  border-color: #2b7c2b;
   color: #cccccc;
 }
 .sapUiBtnS.sapUiBtnNorm.sapUiBtnAccept.sapUiBtnDsbl.sapUiToggleBtn.sapUiToggleBtnPressed {
   background-color: #f7f7f7;
-  border-color: #2b7d2b;
+  border-color: #2b7c2b;
   color: #cccccc;
 }
 /* reject button */

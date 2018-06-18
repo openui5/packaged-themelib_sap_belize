@@ -2968,7 +2968,7 @@ html[dir=rtl] .sapMDLIValue {
 }
 /* Allow MessagePage to be positioned inside ObjectPage */
 .sapUxAPBlockContainer .sapMMessagePageInner {
-  position: initial;
+  position: static;
 }
 .sapMMessagePageContentWrapper {
   margin: auto;
@@ -9614,6 +9614,12 @@ html[dir=rtl] .sapMNCValueScr {
   max-width: 50%;
   vertical-align: middle;
 }
+html[data-sap-ui-browser^='ie'] .sapMObjectAttributeActive .sapMObjectAttributeTitle,
+html[data-sap-ui-browser^='ed'] .sapMObjectAttributeActive .sapMObjectAttributeTitle,
+html[data-sap-ui-browser^='ie'] .sapMObjectAttributeActive .sapMObjectAttributeText,
+html[data-sap-ui-browser^='ed'] .sapMObjectAttributeActive .sapMObjectAttributeText {
+  display: inline-block;
+}
 .sapMListTblCell .sapMObjectAttributeActive .sapMObjectAttributeTitle,
 .sapMListTblCell .sapMObjectAttributeActive .sapMObjectAttributeText {
   white-space: normal;
@@ -9644,7 +9650,7 @@ html.sap-desktop .sapMObjectAttributeActive:focus {
   line-height: normal;
 }
 html[data-sap-ui-browser^='ie'] .sapMObjectAttributeActive:focus .sapMObjectAttributeText::after,
-html[data-sap-ui-browser^='ie'] .sapMObjectAttributeActive:focus .sapMObjectAttributeText::after {
+html[data-sap-ui-browser^='ed'] .sapMObjectAttributeActive:focus .sapMObjectAttributeText::after {
   outline-style: dashed;
 }
 /*=========================================== */
@@ -11089,6 +11095,7 @@ html[data-sap-ui-os^="Android"] .sapMObjectNumberUnit {
 .sapMObjStatusIcon > .sapUiIcon {
   font-size: 1rem;
   vertical-align: bottom;
+  line-height: inherit;
 }
 .sapMObjStatusIcon {
   padding-right: .5rem;
@@ -19938,8 +19945,7 @@ html.sap-desktop .sapMCb:not(.sapMCbBgDis):not(.sapMCbDisplayOnly).sapMCbHasLabe
   top: 0.6875rem;
   bottom: 0.6875rem;
   left: 0.6875rem;
-  right: -1px;
-  /* Cb in BC the outline should have offset 1px from the control */
+  right: 0;
   border: 1px dotted #ffffff;
 }
 html.sap-desktop .sapUiForm .sapMCb:not(.sapMCbBgDis).sapMCbHasLabel:focus:before {

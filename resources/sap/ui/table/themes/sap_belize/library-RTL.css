@@ -618,7 +618,7 @@ html[data-sap-ui-browser^="ie"] .sapUiTableColHdrCnt {
   display: none;
 }
 .sapUiTableRowHighlight.sapUiTableRowHighlightSuccess {
-  background-color: #38a338;
+  background-color: #38a238;
 }
 .sapUiTableRowHighlight.sapUiTableRowHighlightError {
   background-color: #ee0000;
