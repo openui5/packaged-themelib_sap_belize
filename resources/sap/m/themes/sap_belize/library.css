@@ -3728,6 +3728,10 @@ html.sap-desktop .sapUiSizeCondensed .sapUiTableCell .sapMLnk:focus:not(.sapMLnk
   -ms-user-select: none;
   user-select: none;
 }
+.sapMLIB:not(.sapMLIBFocusable):focus,
+.sapMListTblSubRow:focus {
+  outline: none;
+}
 /* IE ignores outline-offset. Use an overlay: */
 .sapMLIBLegacyOutline:focus {
   outline: none;
@@ -19695,6 +19699,13 @@ html.sap-desktop .sapContrast.sapMLnk:focus:not(.sapMLnkDsbl) {
 .sapContrast .sapMList:focus,
 .sapContrast.sapMListUl:focus,
 .sapContrast .sapMListUl:focus {
+  outline: none;
+}
+
+.sapContrast.sapMLIB:not(.sapMLIBFocusable):focus,
+.sapContrast .sapMLIB:not(.sapMLIBFocusable):focus,
+.sapContrast.sapMListTblSubRow:focus,
+.sapContrast .sapMListTblSubRow:focus {
   outline: none;
 }
 
