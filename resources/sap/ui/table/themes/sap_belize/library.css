@@ -28,7 +28,6 @@
   color: #333333;
   position: relative;
   box-sizing: border-box;
-  min-width: 1rem;
   z-index: 0;
 }
 .sapUiTableFtr {
@@ -621,7 +620,7 @@ html[data-sap-ui-browser^="ie"] .sapUiTableColHdrCnt {
   display: none;
 }
 .sapUiTableRowHighlight.sapUiTableRowHighlightSuccess {
-  background-color: #38a338;
+  background-color: #38a238;
 }
 .sapUiTableRowHighlight.sapUiTableRowHighlightError {
   background-color: #ee0000;

@@ -219,7 +219,6 @@ html.sap-desktop .sapUiCalHead > button.sapUiCalDsbl:focus,
   color: #000000;
   font-size: 11px;
   cursor: default;
-  pointer-events: none;
   top: -0.0625rem;
 }
 .sapUiCalWH {
@@ -259,7 +258,7 @@ html.sap-desktop .sapUiCalItem:focus {
   color: #ec8b46;
 }
 .sapUiCalItemWeekEnd {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 .sapUiCalItemWeekEnd.sapUiCalItemDsbl {
   background-color: rgba(255, 255, 255, 0.5);
@@ -448,7 +447,6 @@ html.sapUiMedia-Std-Phone .sapUiCalHeadB0 {
   line-height: 1rem;
   height: 1rem;
   font-size: 0.75rem;
-  color: #000000;
   padding-top: 0.375rem;
 }
 .sapUiCalNoNameLine > .sapUiCalItems > .sapUiCalItem.sapUiCalItemSel:not(.sapUiCalItemSelBetween) > .sapUiCalDayName {
@@ -799,7 +797,7 @@ html.sap-phone .sapUiCal[data-sap-ui-popup] > .sapUiCalContent > .sapUiCalYearPi
   background: #ffffff;
 }
 .sapUiUnifiedLegendNonWorkingDay > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
-  background: #ffffff;
+  background: #f7f7f7;
 }
 .sapUiUnifiedLegend hr {
   margin-right: -0.5rem;
@@ -3137,7 +3135,7 @@ html.sap-desktop .sapUiCalItemSel:focus {
   background-color: #8fb5ff;
 }
 /* define after weekend and selection focus to overrule it*/
-html.sap-desktop .sapUiCalItem:hover {
+html.sap-desktop .sapUiCalItem:not(.sapUiCalItemSel) :not(.sapUiCalWeekNum):hover {
   background-color: #ec8b46;
 }
 html.sap-desktop .sapUiCalItemOtherMonth:hover > .sapUiCalItemText {

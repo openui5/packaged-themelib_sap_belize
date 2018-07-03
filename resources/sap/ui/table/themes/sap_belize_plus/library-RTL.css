@@ -33,7 +33,6 @@
   color: #fafafa;
   position: relative;
   box-sizing: border-box;
-  min-width: 1rem;
   z-index: 0;
 }
 .sapUiTableFtr {

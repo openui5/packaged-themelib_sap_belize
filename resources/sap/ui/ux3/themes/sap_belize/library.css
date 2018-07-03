@@ -4126,7 +4126,7 @@ html[dir="rtl"] .sapUiUx3NavBarToplevel.sapUiUx3NavBarScrollForward > .sapUiUx3N
   border-right: 1px solid #666666;
 }
 .sapUiNotifierMessageCount.sapUiMessage.sapUiMessageSuccess {
-  background-color: #2b7d2b;
+  background-color: #2b7c2b;
 }
 /* Workaround: border of callout should be "border: 1px solid @sapUiNotificationBarBorder;" but arrow positioning wrong */
 .sapUiNotifierCallout {

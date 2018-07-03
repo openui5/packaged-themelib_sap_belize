@@ -219,7 +219,6 @@ html.sap-desktop .sapUiCalHead > button.sapUiCalDsbl:focus,
   color: #ffffff;
   font-size: 11px;
   cursor: default;
-  pointer-events: none;
   top: -0.0625rem;
 }
 .sapUiCalWH {
@@ -231,7 +230,7 @@ html.sap-desktop .sapUiCalHead > button.sapUiCalDsbl:focus,
 }
 .sapUiCalItem {
   color: #ffffff;
-  background-color: #0d0d0d;
+  background-color: #121212;
 }
 .sapUiCalItemDsbl {
   color: rgba(255, 255, 255, 0.5);
@@ -448,7 +447,6 @@ html.sapUiMedia-Std-Phone .sapUiCalHeadB0 {
   line-height: 1rem;
   height: 1rem;
   font-size: 0.75rem;
-  color: #ffffff;
   padding-top: 0.375rem;
 }
 .sapUiCalNoNameLine > .sapUiCalItems > .sapUiCalItem.sapUiCalItemSel:not(.sapUiCalItemSelBetween) > .sapUiCalDayName {
@@ -796,7 +794,7 @@ html.sap-phone .sapUiCal[data-sap-ui-popup] > .sapUiCalContent > .sapUiCalYearPi
   background: #0f5d94;
 }
 .sapUiUnifiedLegendWorkingDay > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
-  background: #0d0d0d;
+  background: #121212;
 }
 .sapUiUnifiedLegendNonWorkingDay > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor {
   background: #000000;
@@ -3111,8 +3109,8 @@ html[data-sap-ui-browser^="ie"].sap-desktop .sapUiCalYearPicker .sapUiCalItemSel
   border: 0.125rem solid #ffffff;
   pointer-events: none;
 }
-html.sap-desktop .sapUiCalItem:not(.sapUiCalItemNow):focus > .sapUiCalItemText,
-html.sap-desktop .sapUiCalItem:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
+html.sap-desktop .sapUiCalItem:not(.sapUiCalItemNow):focus > .sapUiCalItemText:not(.sapUiCalWeekNum):hover,
+html.sap-desktop .sapUiCalItem:not(.sapUiCalItemNow):hover > .sapUiCalItemText:not(.sapUiCalWeekNum):hover {
   border: 0 none;
   border-left: 0.0625rem solid transparent;
 }
@@ -3137,10 +3135,10 @@ html.sap-desktop .sapUiCalItemSel:focus {
   background-color: #0f5d94;
 }
 /* define after weekend and selection focus to overrule it*/
-html.sap-desktop .sapUiCalItem:hover {
+html.sap-desktop .sapUiCalItem:not(.sapUiCalItemSel) :not(.sapUiCalWeekNum):hover {
   background-color: #7a5100;
 }
-html.sap-desktop .sapUiCalItemOtherMonth:hover > .sapUiCalItemText {
+html.sap-desktop .sapUiCalItemOtherMonth:hover > .sapUiCalItemText:not(.sapUiCalWeekNum):hover {
   margin-left: -0.125rem;
 }
 /* Day names inside day */
