@@ -577,7 +577,7 @@
         "sapUiShadowLevel1": "0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.2), 0 0 0.125rem 0 rgba(0, 0, 0, 0.3)",
         "sapUiShadowLevel2": "0 0.375rem 0.75rem 0 rgba(0, 0, 0, 0.3), 0 0 0.125rem 0 rgba(0, 0, 0, 0.3)",
         "sapUiShadowLevel3": "0 1.25rem 2rem 0 rgba(0, 0, 0, 0.5), 0 0 0.125rem 0 rgba(0, 0, 0, 0.3)",
-        "sapUiShadowText": "0 1px rgba(255, 255, 255, 0.5)",
+        "sapUiShadowText": "0 0 0.125rem #ffffff",
         "sapUiShadowHeader": "0 0.125rem 0 0 #ffffff",
         "sapUiUx3ShellHeaderImageURL": "",
         "sapUiUx3ShellApplicationImageURL": "none",

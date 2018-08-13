@@ -1375,8 +1375,8 @@ html.sap-phone .sapMDateTimePopupCont .sapUiCalContent > .sapUiCalYearPicker {
   -webkit-transition: opacity .15s, transform 0.2s;
   transition: opacity .15s, transform 0.2s;
   -ms-transform: translate(50%, -50%) scale(0.9);
-  -webkit-transform: translate(50%, -50%) scale(0.9);
   transform: translate(50%, -50%) scale(0.9);
+  -webkit-transform: translate(50%, -50%) scale(0.9) translateZ(0px);
 }
 .sapMDialog:not(.sapMDialogHighPixelDensity) {
   -webkit-filter: blur(0);
@@ -1450,7 +1450,7 @@ html[data-sap-ui-browser^="ie9"] .sapMDialog:not(.sapMDialogHighPixelDensity) {
   box-shadow: ;
   transform: none;
   -ms-transform: none;
-  -webkit-transform: none;
+  -webkit-transform: scale(1) translateZ(0px);
   left: 0 !important;
   bottom: 0 !important;
   top: 0 !important;
@@ -1572,7 +1572,7 @@ html.sap-desktop .sapMDialog {
   opacity: 1;
   transform: translate(50%, -50%) scale(1);
   -ms-transform: translate(50%, -50%) scale(1);
-  -webkit-transform: translate(50%, -50%) scale(1);
+  -webkit-transform: translate(50%, -50%) scale(1) translateZ(0px);
 }
 .sapMDialogBlockLayerAnimation {
   position: absolute;
@@ -1742,7 +1742,7 @@ html.sap-desktop .sapMDialog {
 .sapMDialogTouched {
   transform: scale(1);
   -ms-transform: scale(1);
-  -webkit-transform: scale(1);
+  -webkit-transform: scale(1) translateZ(0px);
 }
 .sapDialogDisableTransition {
   transition: none;
@@ -7150,11 +7150,11 @@ html.sap-desktop.sapUiMedia-Std-Phone .sapMOHR,
 html.sap-phone .sapMOHR {
   padding: 0.625rem 1rem 0 1rem;
 }
-div[class*='sapMOHRBg']:only-child {
+div[class*='sapMOHRBg']:last-of-type {
   padding-bottom: 1.5rem;
 }
-html.sap-desktop.sapUiMedia-Std-Phone div[class*='sapMOHRBg']:only-child,
-html.sap-phone div[class*='sapMOHRBg']:only-child {
+html.sap-desktop.sapUiMedia-Std-Phone div[class*='sapMOHRBg']:last-of-type,
+html.sap-phone div[class*='sapMOHRBg']:last-of-type {
   padding-bottom: 1rem;
 }
 /* Group1 (title, flags and number) */
@@ -9137,6 +9137,7 @@ html.sap-phone .sapMQuickViewPage .sapUiHLayout {
 .sapMRbBInn {
   background-color: transparent;
   -webkit-user-select: none;
+  align-self: center;
 }
 .sapMRbB .sapMRbBInn {
   height: 0.625rem;
@@ -9244,6 +9245,27 @@ html[data-sap-ui-browser^="ie"] .sapMRbB .sapMRbBInn {
 .sapUiSizeCondensed .sapUiTable .sapMRbBLabel {
   line-height: 1.5rem;
   height: 1.5rem;
+}
+/* When printing border is needed for the selection */
+@media only print {
+  .sapMRbBInn {
+    box-sizing: border-box;
+  }
+  .sapMRbSel .sapMRbBInn {
+    border-color: #0f5d94;
+    border-style: solid;
+    border-width: 4px;
+  }
+  .sapMRbRo.sapMRbSel .sapMRbBInn {
+    border-color: #ffffff;
+  }
+  .sapMLIBActive .sapMRbSel .sapMRbBInn {
+    border-color: #ffffff;
+  }
+  /* Compact size */
+  .sapUiSizeCompact .sapMRbSel .sapMRbBInn {
+    border-width: 2px;
+  }
 }
 /* ======================================= */
 /* CSS for control sap.m/RadioButtonGroup  */
@@ -18423,6 +18445,18 @@ html.sap-desktop .sapMQuickViewPage .sapUiIcon:focus {
 .sapContrast .sapMRbWarn.sapMRbSel .sapMRbBInn,
 .sapContrast.sapMRbWarn.sapMRbSel .sapMRbBInn {
   background-color: #ffffff;
+}
+/* When printing border is needed for the selection */
+@media only print {
+  .sapMLIBActive .sapMRbSel .sapMRbBOut {
+    border-color: #7a5100;
+  }
+  .sapMRbErr.sapMRbSel .sapMRbBInn {
+    border-color: #ffffff;
+  }
+  .sapMRbWarn.sapMRbSel .sapMRbBInn {
+    border-color: #000000;
+  }
 }
 /* ====================================================== */
 /* CSS for sap.m.RangeSlider control's Belize theme */
