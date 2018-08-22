@@ -3020,9 +3020,6 @@ html.sapUiMedia-Std-Desktop .sapUiUfdShellOvrlyHeadClose:active:hover {
   color: #999999;
   background-color: #000000;
 }
-.sapUiCalItemText {
-  border-left: 0.0625rem solid #999999;
-}
 .sapUiCalWH {
   background-color: #000000;
   border-bottom-color: #999999;
@@ -3077,14 +3074,9 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapUiCalItem:focus,
 html[data-sap-ui-browser^="ie"].sap-desktop .sapUiCalItem:focus {
   border-style: dashed;
 }
-html.sap-desktop .sapUiCalItem:hover > .sapUiCalItemText,
-html.sap-desktop .sapUiCalItem:focus > .sapUiCalItemText {
-  line-height: 2.5rem;
-}
 html.sap-desktop .sapUiCalItemNow:hover > .sapUiCalItemText,
 html.sap-desktop .sapUiCalItemNow:focus > .sapUiCalItemText {
   border: 0.125rem solid #ffffff;
-  line-height: 2.5rem;
 }
 html.sap-desktop .sapUiCalMonthPicker .sapUiCalItemSel,
 html.sap-desktop .sapUiCalYearPicker .sapUiCalItemSel {
@@ -3120,7 +3112,6 @@ html[data-sap-ui-browser^="ie"].sap-desktop .sapUiCalYearPicker .sapUiCalItemSel
 html.sap-desktop .sapUiCalItem:not(.sapUiCalItemNow):focus > .sapUiCalItemText:not(.sapUiCalWeekNum):hover,
 html.sap-desktop .sapUiCalItem:not(.sapUiCalItemNow):hover > .sapUiCalItemText:not(.sapUiCalWeekNum):hover {
   border: 0 none;
-  border-left: 0.0625rem solid transparent;
 }
 html.sap-desktop .sapUiCalItemNow:focus > .sapUiCalItemText {
   line-height: 2.375rem;
@@ -3194,7 +3185,7 @@ html[data-sap-ui-browser^="ie"].sap-desktop .sapUiCalMonthSecType > .sapUiCalIte
 }
 html.sap-desktop .sapUiSizeCompact .sapUiCalItem:hover > .sapUiCalItemText,
 html.sap-desktop .sapUiSizeCompact .sapUiCalItem:focus > .sapUiCalItemText {
-  line-height: 1.625rem;
+  line-height: 1.875rem;
 }
 .sapUiSizeCompact .sapUiCalItemNow > .sapUiCalItemText,
 html.sap-desktop .sapUiSizeCompact .sapUiCalItemNow:hover > .sapUiCalItemText,
@@ -3204,10 +3195,6 @@ html.sap-desktop .sapUiSizeCompact .sapUiCalItemNow:focus > .sapUiCalItemText {
 /* Day names inside day */
 html.sap-desktop .sapUiSizeCompact .sapUiCalNoNameLine > .sapUiCalItems > .sapUiCalItem:focus > .sapUiCalItemText,
 html[data-sap-ui-browser^="ff"].sap-desktop .sapUiSizeCompact .sapUiCalNoNameLine > .sapUiCalItems > .sapUiCalItem:focus > .sapUiCalItemText {
-  line-height: inherit;
-}
-html.sap-desktop .sapUiSizeCompact .sapUiCalNoNameLine > .sapUiCalItems > .sapUiCalItem:focus > .sapUiCalDayName,
-html[data-sap-ui-browser^="ff"].sap-desktop .sapUiSizeCompact .sapUiCalNoNameLine > .sapUiCalItems > .sapUiCalItem:focus > .sapUiCalDayName {
   line-height: inherit;
 }
 .sapUiSizeCompact .sapUiCalItemNow > .sapUiCalItemText > .sapUiCalItemTextAmPm {
@@ -3376,24 +3363,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
 .sapUiCalItemType01.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
   box-shadow: none;
 }
-.sapUiCalItemType01:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffc847, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType01:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType01:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffc847, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType01:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType01.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffc847, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType01.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
 .sapUiCalItemType02.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ed884a, inset 0 -0.313rem 0 #000000;
 }
@@ -3410,24 +3379,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ed884a, inset 0 -0.313rem 0 #000000;
 }
 .sapUiCalItemType02.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType02:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ed884a, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType02:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType02:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ed884a, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType02:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType02.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ed884a, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType02.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
   box-shadow: none;
 }
 .sapUiCalItemType03.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
@@ -3448,24 +3399,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
 .sapUiCalItemType03.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
   box-shadow: none;
 }
-.sapUiCalItemType03:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #db9292, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType03:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType03:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #db9292, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType03:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType03.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #db9292, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType03.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
 .sapUiCalItemType04.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ff741f, inset 0 -0.313rem 0 #000000;
 }
@@ -3482,24 +3415,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ff741f, inset 0 -0.313rem 0 #000000;
 }
 .sapUiCalItemType04.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType04:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ff741f, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType04:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType04:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ff741f, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType04:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType04.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ff741f, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType04.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
   box-shadow: none;
 }
 .sapUiCalItemType05.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
@@ -3520,24 +3435,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
 .sapUiCalItemType05.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
   box-shadow: none;
 }
-.sapUiCalItemType05:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #e269c9, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType05:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType05:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #e269c9, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType05:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType05.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #e269c9, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType05.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
 .sapUiCalItemType06.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #6bd3ff, inset 0 -0.313rem 0 #000000;
 }
@@ -3554,24 +3451,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #6bd3ff, inset 0 -0.313rem 0 #000000;
 }
 .sapUiCalItemType06.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType06:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #6bd3ff, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType06:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType06:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #6bd3ff, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType06:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType06.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #6bd3ff, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType06.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
   box-shadow: none;
 }
 .sapUiCalItemType07.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
@@ -3592,24 +3471,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
 .sapUiCalItemType07.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
   box-shadow: none;
 }
-.sapUiCalItemType07:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #7fc6c6, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType07:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType07:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #7fc6c6, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType07:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType07.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #7fc6c6, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType07.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
 .sapUiCalItemType08.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #b2e484, inset 0 -0.313rem 0 #000000;
 }
@@ -3626,24 +3487,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #b2e484, inset 0 -0.313rem 0 #000000;
 }
 .sapUiCalItemType08.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType08:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #b2e484, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType08:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType08:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #b2e484, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType08:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType08.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #b2e484, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType08.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
   box-shadow: none;
 }
 .sapUiCalItemType09.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
@@ -3664,24 +3507,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
 .sapUiCalItemType09.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
   box-shadow: none;
 }
-.sapUiCalItemType09:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #1fbcff, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType09:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType09:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #1fbcff, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType09:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType09.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #1fbcff, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType09.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
 .sapUiCalItemType10.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #bb86b0, inset 0 -0.313rem 0 #000000;
 }
@@ -3698,24 +3523,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #bb86b0, inset 0 -0.313rem 0 #000000;
 }
 .sapUiCalItemType10.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType10:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #bb86b0, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType10:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType10:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #bb86b0, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType10:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType10.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #bb86b0, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType10.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
   box-shadow: none;
 }
 .sapUiCalItemType11.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
@@ -3736,24 +3543,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
 .sapUiCalItemType11.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
   box-shadow: none;
 }
-.sapUiCalItemType11:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffe6ad, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType11:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType11:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffe6ad, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType11:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType11.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffe6ad, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType11.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
 .sapUiCalItemType12.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #cdaf9d, inset 0 -0.313rem 0 #000000;
 }
@@ -3770,24 +3559,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #cdaf9d, inset 0 -0.313rem 0 #000000;
 }
 .sapUiCalItemType12.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType12:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #cdaf9d, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType12:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType12:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #cdaf9d, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType12:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType12.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #cdaf9d, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType12.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
   box-shadow: none;
 }
 .sapUiCalItemType13.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
@@ -3808,24 +3579,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
 .sapUiCalItemType13.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
   box-shadow: none;
 }
-.sapUiCalItemType13:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ff8787, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType13:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType13:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ff8787, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType13:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType13.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ff8787, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType13.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
 .sapUiCalItemType14.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffb385, inset 0 -0.313rem 0 #000000;
 }
@@ -3842,24 +3595,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffb385, inset 0 -0.313rem 0 #000000;
 }
 .sapUiCalItemType14.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType14:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffb385, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType14:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType14:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffb385, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType14:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType14.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffb385, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType14.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
   box-shadow: none;
 }
 .sapUiCalItemType15.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
@@ -3880,24 +3615,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
 .sapUiCalItemType15.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
   box-shadow: none;
 }
-.sapUiCalItemType15:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffb2ef, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType15:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType15:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffb2ef, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType15:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType15.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #ffb2ef, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType15.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
 .sapUiCalItemType16.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #edc159, inset 0 -0.313rem 0 #000000;
 }
@@ -3914,24 +3631,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #edc159, inset 0 -0.313rem 0 #000000;
 }
 .sapUiCalItemType16.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType16:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #edc159, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType16:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType16:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #edc159, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType16:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType16.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #edc159, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType16.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
   box-shadow: none;
 }
 .sapUiCalItemType17.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
@@ -3952,24 +3651,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
 .sapUiCalItemType17.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
   box-shadow: none;
 }
-.sapUiCalItemType17:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #a4eeee, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType17:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType17:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #a4eeee, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType17:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType17.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #a4eeee, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType17.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
 .sapUiCalItemType18.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #8d9e7e, inset 0 -0.313rem 0 #000000;
 }
@@ -3986,24 +3667,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #8d9e7e, inset 0 -0.313rem 0 #000000;
 }
 .sapUiCalItemType18.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType18:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #8d9e7e, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType18:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType18:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #8d9e7e, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType18:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType18.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #8d9e7e, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType18.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
   box-shadow: none;
 }
 .sapUiCalItemType19.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
@@ -4024,24 +3687,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
 .sapUiCalItemType19.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
   box-shadow: none;
 }
-.sapUiCalItemType19:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #addcf0, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType19:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType19:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #addcf0, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType19:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType19.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #addcf0, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType19.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
 .sapUiCalItemType20.sapUiCalItemSel:not(.sapUiCalItemNow) > .sapUiCalItemText {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #629cff, inset 0 -0.313rem 0 #000000;
 }
@@ -4058,24 +3703,6 @@ html.sap-tablet .sapUiCalYearPicker .sapUiCalItemSel {
   box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #629cff, inset 0 -0.313rem 0 #000000;
 }
 .sapUiCalItemType20.sapUiCalItemSel:not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType20:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #629cff, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType20:not(.sapUiCalItemSel):not(.sapUiCalItemNow):hover > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType20:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #629cff, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType20:not(.sapUiCalItemSel):not(.sapUiCalItemNow):focus > .sapUiCalItemText {
-  box-shadow: none;
-}
-.sapUiCalItemType20.sapUiCalItemSel:not(.sapUiCalItemNow):focus {
-  box-shadow: inset 0.0625rem 0.0625rem 0 0 #000000, inset -0.0625rem -0.0625rem 0 0 #000000, inset 0 -0.25rem 0 #629cff, inset 0 -0.313rem 0 #000000;
-}
-.sapUiCalItemType20.sapUiCalItemSel:not(.sapUiCalItemNow):focus > .sapUiCalItemText {
   box-shadow: none;
 }
 /* ============================================== */
