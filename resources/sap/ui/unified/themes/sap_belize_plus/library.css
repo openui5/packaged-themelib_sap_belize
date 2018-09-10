@@ -368,11 +368,14 @@ html.sapUiMedia-Std-Phone .sapUiCalHeadB0 {
   margin-left: 0.25rem;
 }
 .sapUiCalMulti .sapUiCalHeadB1,
-.sapUiCalIntLarge .sapUiCalHeadB1,
 .sapUiCalMonthInt .sapUiCalHeadB2,
 .sapUiCalMulti .sapUiCalHeadB3,
 .sapUiCalIntLarge .sapUiCalHeadB3,
 .sapUiCalMonthInt .sapUiCalHeadB4 {
+  width: 12.5rem;
+}
+.sapUiCalIntLarge .sapUiCalHeadB1 {
+  width: auto;
   width: 12.5rem;
 }
 .sapUiCalTwoMonthsTwoColumns .sapUiCalHeadB1,
@@ -566,8 +569,6 @@ html.sapUiMedia-Std-Phone .sapUiCalHeadB0 {
 }
 .sapUiSizeCompact .sapUiCalMulti .sapUiCalHeadB1,
 .sapUiSizeCompact.sapUiCalMulti .sapUiCalHeadB1,
-.sapUiSizeCompact .sapUiCalIntLarge .sapUiCalHeadB1,
-.sapUiSizeCompact.sapUiCalIntLarge .sapUiCalHeadB1,
 .sapUiSizeCompact .sapUiCalMonthInt .sapUiCalHeadB2,
 .sapUiSizeCompact.sapUiCalMonthInt .sapUiCalHeadB2,
 .sapUiSizeCompact .sapUiCalMulti .sapUiCalHeadB3,
@@ -577,6 +578,11 @@ html.sapUiMedia-Std-Phone .sapUiCalHeadB0 {
 .sapUiSizeCompact .sapUiCalMonthInt .sapUiCalHeadB4,
 .sapUiSizeCompact.sapUiCalMonthInt .sapUiCalHeadB4 {
   width: 12.5rem;
+}
+.sapUiSizeCompact .sapUiCalIntLarge .sapUiCalHeadB1,
+.sapUiSizeCompact.sapUiCalIntLarge .sapUiCalHeadB1 {
+  width: auto;
+  min-width: 12.5rem;
 }
 .sapUiSizeCompact .sapUiCalTwoMonthsTwoColumns .sapUiCalHeadB1,
 .sapUiSizeCompact.sapUiCalTwoMonthsTwoColumns .sapUiCalHeadB1,
@@ -1840,6 +1846,7 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:focus:not(:active) > .sap
 }
 .phoneGrid.sapUiColorPicker-ColorPickerMatrix.sapUnifiedColorPicker.sapUiRespGrid.sapUiRespGridHSpace1 > div:first-child {
   height: auto;
+  padding-top: 0;
 }
 .sapUiColorPicker-Simplified .sapUnifiedColorPicker.phoneGrid .simplifiedHex {
   width: 100%;
@@ -1858,11 +1865,8 @@ html.sap-desktop .sapUiCalendarApp.sapUiCalendarAppSel:focus:not(:active) > .sap
 .sapUiColorPicker-Simplified .sapUnifiedColorPicker.phoneGrid .phoneSliders > div:nth-child(3) {
   text-align: center;
 }
-.sapUiPopupWithPadding .sapMDialogScrollCont {
+.sapUiPopupWithPadding.colorPickerDialog .sapMDialogScrollCont {
   padding: 0;
-}
-.sapUiPopupWithPadding .sapMDialogScrollCont .sapUiRespGrid.sapUiRespGridHSpace1 > div:first-child {
-  padding-top: 0;
 }
 .sapMPopover .sapUiColorPicker-ColorPickerMatrix.sapUiRespGrid.sapUiRespGridHSpace1 {
   padding-bottom: 0.5rem;
