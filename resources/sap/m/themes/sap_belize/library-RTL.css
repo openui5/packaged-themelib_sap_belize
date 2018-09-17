@@ -10402,6 +10402,9 @@ html.sap-desktop .sapMOHRTitleArrow .sapUiIcon:hover {
 .sapMObjLItem {
   box-sizing: border-box;
   vertical-align: baseline;
+  /* set this otherwise if one of the parents has "nowrap" style this
+	affects the whole arrangement of the ObjectListItem */
+  white-space: normal;
 }
 .sapMObjLItem > .sapMLIBContent {
   overflow: hidden;
@@ -19999,7 +20002,7 @@ div.sapMInputSuggestionPopup {
 }
 /* Compact size */
 .sapUiSizeCompact .sapMInputBaseState.sapMInputDescription.sapMInputVH > span > .sapMInputValHelp {
-  right: -1.5rem;
+  right: -2rem;
 }
 /* ================================ */
 /* CSS for control sap.m/InputBase  */
