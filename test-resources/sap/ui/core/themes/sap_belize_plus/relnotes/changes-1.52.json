@@ -329,5 +329,33 @@
         "references": []
       }
     ]
+  },
+  "1.52.18": {
+    "date": "August 2018",
+    "notes": [
+      {
+        "id": "dd7456cd18ebe851f7df97613b9f81d38875a79c",
+        "type": "FIX",
+        "text": " sap.m.ComboBox: Items\u0027 loading indicator returned back",
+        "references": []
+      }
+    ]
+  },
+  "1.52.19": {
+    "date": "September 2018",
+    "notes": [
+      {
+        "id": "813aa26e5fa70bd872cba7f344c2191a097185a6",
+        "type": "FIX",
+        "text": " Calendar: Picker\u0027s selected month/year style overriding focus in HC fixed",
+        "references": []
+      },
+      {
+        "id": "c6a30262574141def43477473b8ddbc85688257f",
+        "type": "FIX",
+        "text": " sap.m.Input: Value help icon is now properly displayed in compact mode",
+        "references": []
+      }
+    ]
   }
 }
