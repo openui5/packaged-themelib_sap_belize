@@ -5488,11 +5488,11 @@ html.sap-desktop.sapUiMedia-Std-Phone .sapMOHR,
 html.sap-phone .sapMOHR {
   padding: 0.625rem 1rem 0 1rem;
 }
-div[class*='sapMOHRBg']:only-child {
+div[class*='sapMOHRBg']:last-of-type {
   padding-bottom: 1.5rem;
 }
-html.sap-desktop.sapUiMedia-Std-Phone div[class*='sapMOHRBg']:only-child,
-html.sap-phone div[class*='sapMOHRBg']:only-child {
+html.sap-desktop.sapUiMedia-Std-Phone div[class*='sapMOHRBg']:last-of-type,
+html.sap-phone div[class*='sapMOHRBg']:last-of-type {
   padding-bottom: 1rem;
 }
 /* Group1 (title, flags and number) */
@@ -7255,6 +7255,27 @@ html.sap-phone .sapMQuickViewPage .sapUiHLayout {
   bottom: .3125rem;
   right: .4375rem;
   left: .325rem;
+}
+/* When printing border is needed for the selection */
+@media only print {
+  .sapMRbBInn {
+    box-sizing: border-box;
+  }
+  .sapMRbSel .sapMRbBInn {
+    border-color: #427cac;
+    border-style: solid;
+    border-width: 4px;
+  }
+  .sapMRbRo.sapMRbSel .sapMRbBInn {
+    border-color: #878787;
+  }
+  .sapMLIBActive .sapMRbSel .sapMRbBInn {
+    border-color: #ffffff;
+  }
+  /* Compact size */
+  .sapUiSizeCompact .sapMRbSel .sapMRbBInn {
+    border-width: 2px;
+  }
 }
 /* ======================================= */
 /* CSS for control sap.m/RadioButtonGroup  */
@@ -16815,6 +16836,18 @@ html[data-sap-ui-browser^="ie"] .sapMRbB .sapMRbBInn {
   line-height: 1.5rem;
   height: 1.5rem;
 }
+/* When printing border is needed for the selection */
+@media only print {
+  .sapMLIBActive .sapMRbSel .sapMRbBOut {
+    border-color: #427cac;
+  }
+  .sapMRbErr.sapMRbSel .sapMRbBInn {
+    border-color: #ee0000;
+  }
+  .sapMRbWarn.sapMRbSel .sapMRbBInn {
+    border-color: #f9a429;
+  }
+}
 /* ======================================= */
 /* CSS for control sap.m/RadioButtonGroup  */
 /* Belize theme                            */
@@ -20177,6 +20210,23 @@ html.sap-desktop .sapContrast.sapMOHRTitleActive .sapMOHRTitleText:hover {
 .sapContrast.sapMRbB:focus,
 .sapContrast .sapMRbB:focus {
   outline: none;
+}
+
+@media only print {
+  .sapContrast.sapMRbSel .sapMRbBInn,
+  .sapContrast .sapMRbSel .sapMRbBInn {
+    border-color: #91c8f6;
+  }
+
+  .sapContrast.sapMRbRo.sapMRbSel .sapMRbBInn,
+  .sapContrast .sapMRbRo.sapMRbSel .sapMRbBInn {
+    border-color: #97aabb;
+  }
+
+  .sapContrast.sapMLIBActive .sapMRbSel .sapMRbBInn,
+  .sapContrast .sapMLIBActive .sapMRbSel .sapMRbBInn {
+    border-color: #ffffff;
+  }
 }
 
 .sapContrast.sapMRbGRo .sapMRb .sapMRbBOut,
@@ -24372,6 +24422,23 @@ html.sap-desktop .sapContrast.sapMQuickViewPage .sapUiIcon:focus {
 .sapContrast.sapMRbRo.sapMRbSel .sapMRbBInn,
 .sapContrast .sapMRbRo.sapMRbSel .sapMRbBInn {
   background-color: #cae4fb;
+}
+
+@media only print {
+  .sapContrast.sapMLIBActive .sapMRbSel .sapMRbBOut,
+  .sapContrast .sapMLIBActive .sapMRbSel .sapMRbBOut {
+    border-color: #427cac;
+  }
+
+  .sapContrast.sapMRbErr.sapMRbSel .sapMRbBInn,
+  .sapContrast .sapMRbErr.sapMRbSel .sapMRbBInn {
+    border-color: #ff8888;
+  }
+
+  .sapContrast.sapMRbWarn.sapMRbSel .sapMRbBInn,
+  .sapContrast .sapMRbWarn.sapMRbSel .sapMRbBInn {
+    border-color: #fabd64;
+  }
 }
 
 .sapContrast.sapUiRbG > .sapUiRb:focus,
