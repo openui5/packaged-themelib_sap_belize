@@ -3977,12 +3977,12 @@ html.sap-desktop .sapMInputVH:not(.sapMInputBaseReadonly) .sapMInputValHelp > .s
   width: 2rem;
 }
 .sapUiSizeCompact .sapMInputDescription.sapMInputVH > span > .sapMInputValHelp {
-  right: -1.5625rem;
+  right: -2.125rem;
 }
 .sapUiSizeCompact .sapMInputValHelp > .sapMInputValHelpInner {
   font-size: 1rem;
   height: 1.5rem;
-  width: 2rem;
+  width: 2.125rem;
   line-height: 1.5rem;
 }
 .sapUiSizeCompact .sapMInputDescription.sapMInputVH > span > .sapMInputValHelp > .sapMInputValHelpInner {
@@ -16300,8 +16300,8 @@ html.sap-desktop .sapMImageContent:focus:not([tabindex]) {
   top: 0.125rem;
 }
 .sapMInputBaseState .sapMInputValHelp {
-  min-height: 2.25rem;
-  min-width: 2.25rem;
+  min-height: 1.5rem;
+  min-width: 2rem;
 }
 .sapMInputBaseState .sapMInputValHelp > .sapMInputValHelpInner {
   height: 2.25rem;
@@ -16323,10 +16323,10 @@ div.sapMInputSuggestionPopup {
   width: 1.375rem;
 }
 .sapUiSizeCompact .sapMInputBaseState.sapMInputDescription.sapMInputVH > span > .sapMInputValHelp {
-  right: -1.5rem;
+  right: -2.125rem;
 }
 .sapUiSizeCompact .sapMInputBaseState .sapMInputValHelp > .sapMInputValHelpInner {
-  height: 2.125rem;
+  height: 1.375rem;
   width: 2.125rem;
   line-height: 1.375rem;
 }
