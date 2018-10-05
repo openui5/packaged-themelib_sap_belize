@@ -2251,6 +2251,14 @@ html.sapUiMedia-Std-Tablet .sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageHe
 .sapUshellShell .sapUxAPObjectPageHeaderIdentifier {
   background: rgba(63, 81, 97, 0.6);
 }
+/* ================================================= */
+/* CSS for control sap.uxap/ObjectPageHeaderContent  */
+/* Belize Plus theme                                 */
+/* ================================================= */
+.sapUshellShell .sapUxAPObjectPageHeaderContentDesign-Light,
+.sapUshellShell .sapUxAPObjectPageHeaderContentDesign-Dark {
+  background: rgba(63, 81, 97, 0.6);
+}
 /* ========================================== */
 /* CSS for control sap.uxap/ObjectPageLayout  */
 /* Belize Plus theme                          */
@@ -2288,6 +2296,12 @@ html.sapUiMedia-Std-Tablet .sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageHe
 .sapUshellShell .sapUxAPObjectPageLayout.sapUxAPObjectPageLayoutTitleClickEnabled .sapFDynamicPageTitle:hover,
 .sapUshellShell .sapUxAPObjectPageLayout.sapUxAPObjectPageLayoutTitleClickEnabled.sapUxAPObjectPageLayoutTitleForceHovered .sapFDynamicPageTitle {
   background-color: rgba(63, 81, 97, 0.75);
+}
+.sapUshellShell .sapUxAPObjectPageLayout .sapUxAPObjectPageNavigation {
+  background: rgba(63, 81, 97, 0.6);
+}
+.sapUshellShell .sapUxAPObjectPageLayout .sapUxAPObjectPageNavigation .sapUxAPAnchorBar.sapMTB.sapUxAPAnchorBar {
+  background: transparent;
 }
 /* =========================================== */
 /* CSS for control sap.uxap/ObjectPageSection  */
