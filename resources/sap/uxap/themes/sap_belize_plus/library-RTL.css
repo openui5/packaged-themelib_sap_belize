@@ -1652,6 +1652,9 @@ html .sapUiContainer-Medium .sapUxAPObjectPageSubSectionHeader {
 .sapUxAPBlockContainer .sapUiFormResGrid > .sapUiFormTitle {
   padding: 0;
 }
+.sapUxAPBlockContainer .sapUiFormResGrid.sapUiFormToolbar > .sapMTB {
+  padding: 0;
+}
 .sapUxAPBlockContainer .sapUxAPObjectPageSubSectionAlignContent {
   margin-right: -1rem;
   margin-left: -1rem;
@@ -2280,6 +2283,14 @@ html.sapUiMedia-Std-Tablet .sapUxAPObjectPageHeaderStickied .sapUxAPObjectPageHe
 /* Belize Plus theme                          */
 /* ========================================== */
 .sapUshellShell .sapUxAPObjectPageHeaderIdentifier {
+  background: rgba(63, 81, 97, 0.6);
+}
+/* ================================================= */
+/* CSS for control sap.uxap/ObjectPageHeaderContent  */
+/* Belize Plus theme                                 */
+/* ================================================= */
+.sapUshellShell .sapUxAPObjectPageHeaderContentDesign-Light,
+.sapUshellShell .sapUxAPObjectPageHeaderContentDesign-Dark {
   background: rgba(63, 81, 97, 0.6);
 }
 /* ========================================== */
