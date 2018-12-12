@@ -599,7 +599,6 @@ html[data-sap-ui-browser^="ff"].sap-desktop .sapFDynamicPageTitle:focus:before {
   -webkit-align-items: flex-start;
   flex-grow: 1;
   width: 100%;
-  /* Override Title and Label styles, required by VD */
 }
 .sapFDynamicPageTitleMain > .sapFDynamicPageTitleMainInner .sapFDynamicPageTitleMainHeading {
   display: flex;
@@ -626,6 +625,10 @@ html[data-sap-ui-browser^="ff"].sap-desktop .sapFDynamicPageTitle:focus:before {
   color: #fafafa;
   font-size: 1.25rem;
   margin-top: 0.1875rem;
+  /* Override Title styles, required by VD */
+}
+.sapFDynamicPageTitleMain > .sapFDynamicPageTitleMainInner .sapFDynamicPageTitleMainHeading .sapFDynamicPageTitleMainHeadingInner .sapMTitle {
+  font-size: 1.25rem;
 }
 .sapFDynamicPageTitleMain > .sapFDynamicPageTitleMainInner .sapFDynamicPageTitleMainHeading .sapFDynamicPageTitleMainHeadingSnappedExpandContent {
   color: #dddddd;
@@ -647,9 +650,6 @@ html[data-sap-ui-browser^="ff"].sap-desktop .sapFDynamicPageTitle:focus:before {
 .sapFDynamicPageTitleMain > .sapFDynamicPageTitleMainInner .sapFDynamicPageTitleMainActions .sapFDynamicPageTitleActionsBar .sapMLabel.sapMLabelMaxWidth,
 .sapFDynamicPageTitleMain > .sapFDynamicPageTitleMainInner .sapFDynamicPageTitleMainActions .sapFDynamicPageTitleActionsBar .sapMLnk.sapMLnkMaxWidth {
   max-width: none;
-}
-.sapFDynamicPageTitleMain > .sapFDynamicPageTitleMainInner .sapMTitle {
-  font-size: 1.25rem;
 }
 .sapFDynamicPageTitleMain.sapFDynamicPageTitleMainNoContent > .sapFDynamicPageTitleMainInner {
   width: 60%;
@@ -948,8 +948,8 @@ html[data-sap-ui-animation='on'] .sapFFCL .sapFFCLColumn {
   background: #91c8f6;
   color: #91c8f6;
 }
-.sapUshellShell .sapFDynamicPage.sapFDynamicPageTitleClickEnabled:not(.sapFDynamicPageHeaderPinned) .sapFDynamicPageTitle:hover,
-.sapUshellShell .sapFDynamicPage.sapFDynamicPageTitleClickEnabled:not(.sapFDynamicPageHeaderPinned).sapFDynamicPageTitleForceHovered .sapFDynamicPageTitle {
+.sapUshellShell .sapFDynamicPage.sapFDynamicPageTitleClickEnabled .sapFDynamicPageTitle:hover,
+.sapUshellShell .sapFDynamicPage.sapFDynamicPageTitleClickEnabled.sapFDynamicPageTitleForceHovered .sapFDynamicPageTitle {
   background-color: rgba(63, 81, 97, 0.75);
 }
 /* ======================================= */
